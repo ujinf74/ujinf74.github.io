@@ -81,6 +81,7 @@ classes: wide
 <div class="project-card">
   <h3 style="margin-top:.2rem;">EV Gear Reduction Sizing <small style="opacity:.72;">(early work)</small></h3>
   <div class="kicker">
-    Datasheet-based drivetrain sizing: torque–speed modeling + reduction ratio sweep for minimum-time estimates.
+    MATLAB-based drivetrain sizing: datasheet torque–speed modeling + longitudinal acceleration simulation, sweeping gear ratios to minimize run time.
   </div>
 </div>
+
