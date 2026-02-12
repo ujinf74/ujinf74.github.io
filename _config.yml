@@ -12,3 +12,22 @@ plugins:
 
 locale: "en-US"
 timezone: Asia/Seoul
+
+minimal_mistakes_skin: "air"
+
+author:
+  name: "권우진"
+  bio: "Optimal Control · Numerical Optimization · Dynamics"
+  avatar: "/assets/img/avatar.png"
+
+github_username: ujinf74
+
+navigation:
+  - title: "Projects"
+    url: /projects/
+  - title: "About"
+    url: /about/
+  - title: "CV"
+    url: /cv/
+  - title: "Contact"
+    url: /contact/
