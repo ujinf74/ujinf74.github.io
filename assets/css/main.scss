@@ -116,6 +116,7 @@ h4 {
 p { margin: 0.65rem 0 1.05rem; color: var(--text); }
 ul, ol { margin: 0.55rem 0 1.15rem; padding-left: 1.15rem; }
 li { margin: 0.35rem 0; }
+
 hr {
   border: 0;
   height: 1px;
@@ -132,9 +133,7 @@ a {
   transition: text-decoration-color 160ms ease, opacity 160ms ease;
 }
 
-a:hover {
-  text-decoration-color: rgba(59, 130, 246, 0.95);
-}
+a:hover { text-decoration-color: rgba(59, 130, 246, 0.95); }
 
 .subline {
   font-size: 0.95rem;
@@ -179,7 +178,9 @@ a:hover {
   box-shadow: none;
 }
 
-pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+pre, code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
 
 code {
   font-size: 0.95em;
@@ -195,7 +196,6 @@ pre {
   border: 1px solid var(--line);
   background: var(--card2);
   overflow: auto;
-  box-shadow: none;
 }
 
 pre code {
@@ -255,21 +255,7 @@ tr:last-child td { border-bottom: 0; }
   margin-bottom: 0.7rem;
 }
 
-.project-card ul {
-  margin-top: 0.35rem;
-}
-
-.project-card a {
-  text-decoration-color: rgba(59, 130, 246, 0.55);
-}
-
-.project-card a:hover {
-  text-decoration-color: rgba(59, 130, 246, 0.95);
-}
-
-@supports(selector(:has(*))) {
-  h2:has(+ h3) { border-top: 0; padding-top: 0; margin-top: 2.0rem; }
-}
+.project-card ul { margin-top: 0.35rem; }
 
 #infinity {
   font-size: 4.0rem;
