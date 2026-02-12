@@ -1,3 +1,14 @@
-theme: jekyll-theme-minimal
-title: ujinf74
-description: 
+title: "∞"
+description: "Robotics & Autonomous Systems — Optimal Control · Numerical Optimization · Dynamics"
+url: "https://ujinf74.github.io"
+baseurl: ""
+
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+locale: "en-US"
+timezone: Asia/Seoul
