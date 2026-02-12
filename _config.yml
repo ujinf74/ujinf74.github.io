@@ -13,7 +13,6 @@ plugins:
 locale: "en-US"
 timezone: Asia/Seoul
 
-search: false
 minimal_mistakes_skin: "air"
 
 author:
