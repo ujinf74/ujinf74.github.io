@@ -1,0 +1,142 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+
+.page-content,
+.wrapper,
+.container {
+  max-width: 980px;
+}
+
+body {
+  font-size: 16.5px;
+  line-height: 1.75;
+  letter-spacing: 0.1px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.4px;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 1.05;
+  margin-bottom: 0.4rem;
+}
+
+h2 {
+  font-size: 1.65rem;
+  margin-top: 2.2rem;
+  padding-top: 0.2rem;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 1.4rem;
+}
+
+p {
+  margin: 0.6rem 0 1.0rem;
+}
+
+ul, ol {
+  margin-top: 0.4rem;
+  margin-bottom: 1.1rem;
+}
+
+li {
+  margin: 0.35rem 0;
+}
+
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background: rgba(0,0,0,0.08);
+  margin: 1.6rem 0;
+}
+
+pre, code {
+  font-size: 0.95em;
+}
+
+pre {
+  padding: 1rem 1.1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: rgba(0,0,0,0.03);
+  overflow: auto;
+}
+
+code {
+  padding: 0.12rem 0.35rem;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.05);
+}
+
+blockquote {
+  border-left: 4px solid rgba(0,0,0,0.18);
+  background: rgba(0,0,0,0.02);
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+}
+
+h3 + p {
+  margin-top: 0.5rem;
+}
+
+h3 {
+  padding: 0.9rem 1.0rem 0.65rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-bottom: none;
+  border-radius: 14px 14px 0 0;
+  background: rgba(0,0,0,0.02);
+}
+
+h3 + p,
+h3 + p + ul,
+h3 + ul {
+  padding: 0 1.0rem 0.95rem;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-top: none;
+  border-radius: 0 0 14px 14px;
+  background: #fff;
+}
+
+.subline {
+  font-size: 0.95rem;
+  opacity: 0.72;
+  margin-top: 0.25rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.15);
+  background: rgba(0,0,0,0.02);
+  text-decoration: none !important;
+  font-weight: 600;
+  margin-right: 0.4rem;
+}
+
+.btn:hover {
+  background: rgba(0,0,0,0.06);
+}
+
+@media (max-width: 640px) {
+  h1 { font-size: 2.4rem; }
+  .page-content, .wrapper, .container { padding-left: 16px; padding-right: 16px; }
+}
