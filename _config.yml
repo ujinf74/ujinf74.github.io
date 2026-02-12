@@ -43,6 +43,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/ujinf74"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:ujin@tukorea.ac.kr"
 
 social:
   name: "Ujin Kwon"
