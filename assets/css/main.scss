@@ -150,8 +150,9 @@ body::after{
 }
 
 .site-title{
-  font-size: 2rem;
-  font-weight:900 !important;
+  font-size: 2.5rem;
+  line-height:1;
+  font-weight:300 !important;
   letter-spacing:-.5px;
 }
 
@@ -159,7 +160,7 @@ body::after{
 
 .greedy-nav .visible-links a{
   border-radius:var(--pill);
-  margin: 0 .3rem !important;
+  margin: 0 .4rem !important;
   padding:.45rem .75rem !important;
   text-decoration:none !important;
   color:var(--text) !important;
