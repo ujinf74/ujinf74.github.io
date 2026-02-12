@@ -5,7 +5,6 @@ permalink: /
 classes: wide
 author_profile: false
 sidebar: false
-classes: wide
 ---
 
 # <span id="infinity">∞</span>
