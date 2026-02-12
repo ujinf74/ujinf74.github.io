@@ -274,3 +274,14 @@ body {
     padding-right: var(--pad-m) !important;
   }
 }
+
+.masthead,
+.masthead__inner-wrap,
+.masthead__menu,
+.site-title,
+.greedy-nav {
+  max-width: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
