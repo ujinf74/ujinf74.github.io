@@ -159,6 +159,7 @@ body::after{
 
 .greedy-nav .visible-links a{
   border-radius:var(--pill);
+  margin: 0 .3rem !important;
   padding:.45rem .75rem !important;
   text-decoration:none !important;
   color:var(--text) !important;
