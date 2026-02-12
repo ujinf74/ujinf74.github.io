@@ -3,8 +3,8 @@ layout: single
 title: "Projects"
 permalink: /projects/
 classes: wide
-author_profile: false
-sidebar: false
+author_profile: true
+sidebar: true
 ---
 
 <div class="project-card">
