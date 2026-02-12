@@ -1,20 +1,39 @@
 title: "Ujin Kwon"
 description: "Robotics & Autonomous Systems — Optimal Control · Numerical Optimization · Dynamics"
+locale: "en-US"
+timezone: "Asia/Seoul"
 
 url: "https://ujinf74.github.io"
 baseurl: ""
 
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-include-cache
 
-locale: "en-US"
-timezone: "Asia/Seoul"
-
 minimal_mistakes_skin: "air"
+search: true
+breadcrumbs: false
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
+      toc: false
+      toc_sticky: false
 
 author:
   name: "권우진"
@@ -25,4 +44,13 @@ author:
       icon: "fab fa-github"
       url: "https://github.com/ujinf74"
 
-github_username: "ujinf74"
+social:
+  name: "Ujin Kwon"
+  links:
+    - "https://github.com/ujinf74"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
