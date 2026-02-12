@@ -61,20 +61,22 @@ body::before{
   mix-blend-mode:screen;
 }
 
-.page,.page__inner-wrap{
-  max-width:var(--maxw);
-  margin-left:auto !important;
-  margin-right:auto !important;
-  padding-left:var(--pad) !important;
-  padding-right:var(--pad) !important;
-  box-sizing:border-box;
+.page { max-width: none !important; margin: 0 !important; padding: 0 !important; }
+
+.page__inner-wrap{
+  max-width: var(--maxw);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--pad) !important;
+  padding-right: var(--pad) !important;
+  box-sizing: border-box;
 }
 
 @media (max-width:720px){
-  .page,.page__inner-wrap{
-    max-width:100%;
-    padding-left:var(--pad-m) !important;
-    padding-right:var(--pad-m) !important;
+  .page__inner-wrap{
+    max-width: 100%;
+    padding-left: var(--pad-m) !important;
+    padding-right: var(--pad-m) !important;
   }
 }
 
