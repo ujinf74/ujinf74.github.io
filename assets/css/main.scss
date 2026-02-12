@@ -250,3 +250,27 @@ body {
   outline-offset: 3px;
   border-radius: 10px;
 }
+
+/* ===== hard fix: horizontal padding ===== */
+.initial-content,
+.page,
+.page__inner-wrap,
+.page__content {
+  max-width: var(--maxw);
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--pad) !important;
+  padding-right: var(--pad) !important;
+  box-sizing: border-box;
+}
+
+@media (max-width: 720px) {
+  .initial-content,
+  .page,
+  .page__inner-wrap,
+  .page__content {
+    max-width: 100%;
+    padding-left: var(--pad-m) !important;
+    padding-right: var(--pad-m) !important;
+  }
+}
