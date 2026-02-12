@@ -41,6 +41,6 @@ classes: wide
   <ul>
     <li><b>Numerical optimization & solvers</b> for nonlinear dynamics (least-squares, damping, diagnostics)</li>
     <li><b>Dynamics-aware planning & control</b> (constraints, curvature–speed profiling, reverse maneuvers)</li>
-    <li><b>Real-time simulation & integration</b> (C/C++, Python, ROS 2, ABI/FFI, reproducible builds)</li>
+    <li><b>Real-time simulation & integration</b> (C/C++, MATLAB, Python, ROS 2, ABI/FFI, reproducible builds)</li>
   </ul>
 </div>
