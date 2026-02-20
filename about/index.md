@@ -21,7 +21,7 @@ classes: wide
     <li>
       <b>Undergraduate Research Intern, HuVILab</b>
       <small style="opacity:.7;">(Tech University of Korea / 한국공학대학교)</small><br/>
-      <b>Incoming (2026–2027)</b><br/>
+      <b>(2026–2027)</b><br/>
       Focus: <b>autonomous reverse parking</b> (planning/control under constraints) and <b>large-model-based driving coaching</b>
       (trajectory analysis and feedback generation).
     </li>
