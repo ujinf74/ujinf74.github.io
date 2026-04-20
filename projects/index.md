@@ -87,7 +87,7 @@ classes: wide
   <p>
     <b>Segment-based racing telemetry analysis GUI</b> for comparing multiple logged runs, visualizing driver/vehicle behavior,
     and supporting <b>coaching-oriented inspection</b> for circuit driving.
-    Developed and used in collaboration with <b>Luxon Racing Team</b>, competing in the <b>O-NE SUPERRACE CHAMPIONSHIP GTA class</b>.
+    Developed and used in collaboration with <b>Luxon Racing Team</b>, competing in the <b>GTA class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
   </p>
 
   <img src="/assets/images/racing_analyze_gui.png" alt="Racing Analyze GUI"
