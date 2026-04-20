@@ -33,7 +33,7 @@ classes: wide
     <li>
       <b>Racing telemetry analysis / visualization collaboration with Luxon Racing Team</b><br/>
       Built a <b>segment-based telemetry analysis GUI</b> and support <b>visualization</b> and <b>coaching-oriented run inspection</b>
-      for real racing data from a team competing in the <b>Superrace GT-A class</b>.
+      for real racing data from a team competing in the <b>O-NE SUPERRACE CHAMPIONSHIP GTA class</b>.
     </li>
   </ul>
 </div>
