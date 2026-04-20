@@ -26,7 +26,7 @@ classes: wide
     </li>
     <li>
       <b>Racing engineering collaboration:</b> built a <b>segment-based telemetry analysis GUI</b> and support <b>visualization / coaching workflow</b>
-      in collaboration with <b>Luxon Racing Team</b> competing in <b>O-NE SUPERRACE CHAMPIONSHIP GTA</b>.
+      in collaboration with <b>Luxon Racing Team</b> competing in <b>GTA class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
     </li>
     <li>
       <b>Featured:</b>
