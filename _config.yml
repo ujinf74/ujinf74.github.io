@@ -35,7 +35,7 @@ defaults:
 author:
   name: "Ujin Kwon · 권우진"
   bio: "Robotics & Autonomous Systems\n (Optimal Control · Numerical Optimization · Dynamics)"
-  avatar: "/assets/img/avatar.png"
+  avatar: "/assets/images/avatar.png"
   links:
     - label: "GitHub"
       icon: "fab fa-github"
