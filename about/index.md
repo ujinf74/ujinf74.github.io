@@ -10,35 +10,52 @@ classes: wide
 
   <p style="margin-top:.45rem;">
     I am a Mechanical & Computer Engineering student focused on <b>optimal control</b>, <b>numerical optimization</b>, and <b>dynamics</b>,
-    building <b>real-time simulation</b> and <b>numerical algorithms</b> for robotics and autonomous systems.
+    building <b>real-time simulation</b>, <b>control systems</b>, and <b>analysis tools</b> for robotics, autonomous systems, and vehicle dynamics.
   </p>
 </div>
-
 
 <div class="project-card">
   <h3>Research Experience</h3>
   <ul>
     <li>
-      <b>Undergraduate Research Intern, HuVILab</b>
+      <b>Undergraduate Research Intern / Autonomous Driving Team Lead, HuVILab</b>
       <small style="opacity:.7;">(Tech University of Korea / 한국공학대학교)</small><br/>
-      <b>(2026–2027)</b><br/>
-      Focus: <b>autonomous reverse parking</b> (planning/control under constraints) and <b>large-model-based driving coaching</b>
-      (trajectory analysis and feedback generation).
+      <b>(2026–Present)</b><br/>
+      Focus: <b>mapless autonomous reverse parking</b>, <b>planning/control under constraints</b>, and <b>driving coaching systems</b>
+      based on trajectory analysis and feedback generation.
     </li>
   </ul>
 </div>
 
+<div class="project-card">
+  <h3>Engineering Experience</h3>
+  <ul>
+    <li>
+      <b>Racing telemetry analysis / visualization collaboration with Luxon Racing Team</b><br/>
+      Built a <b>segment-based telemetry analysis GUI</b> and support <b>visualization</b> and <b>coaching-oriented run inspection</b>
+      for real racing data from a team competing in the <b>Superrace GT-A class</b>.
+    </li>
+  </ul>
+</div>
 
 <div class="project-card">
   <h3>Core Strengths</h3>
   <ul>
     <li><b>Dynamics & numerics</b>: modeling, RK4/ODE integration, solver stability</li>
     <li><b>Numerical optimization</b>: least-squares with damping, explicit diagnostics</li>
-    <li><b>Planning/control</b>: constraint-aware design, reverse maneuvers, tracking</li>
+    <li><b>Planning/control</b>: constraint-aware design, reverse maneuvers, trajectory tracking</li>
+    <li><b>Telemetry & driving analysis</b>: segment-based comparison, vehicle-state visualization, coaching-oriented inspection</li>
     <li><b>Integration</b>: ROS 2 QoS/TF, ABI/FFI boundaries, reproducible builds (CI)</li>
   </ul>
 </div>
 
+<div class="project-card">
+  <h3>Leadership</h3>
+  <ul>
+    <li><b>Autonomous Driving Team Lead</b>, HuVILab undergraduate research team</li>
+    <li><b>President</b>, 50-member fashion club</li>
+  </ul>
+</div>
 
 <div class="project-card">
   <h3>Awards</h3>
