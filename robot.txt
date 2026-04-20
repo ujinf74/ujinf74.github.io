@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ujinf74.github.io/sitemap.xml
