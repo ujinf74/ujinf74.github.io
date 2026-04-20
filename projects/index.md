@@ -33,13 +33,13 @@ classes: wide
   </div>
 </div>
 
-
 <div class="project-card">
   <h3>Mapless Autonomous Parking <small style="opacity:.7;">(Isaac Sim · ROS 2 Humble · Autoware Universe)</small></h3>
 
   <p>
     <b>Real-time mapless parking</b> without prebuilt pointcloud/vector maps:
-    <b>online occupancy mapping → occupancy-only Hybrid A*</b> replanning → <b>PP+PD trajectory tracking</b> for forward/reverse maneuvers.
+    <b>online occupancy mapping → occupancy-only Hybrid A*</b> replanning → <b>fraction-index path interpolation + Stanley-based tracking</b>
+    for forward/reverse parking maneuvers.
   </p>
 
   <video controls playsinline preload="metadata"
@@ -63,8 +63,12 @@ classes: wide
       custom node using Autoware freespace planning algorithms (<b>Hybrid A*</b>) from occupancy-only + vehicle constraints
     </li>
 
+    <li><b>Trajectory processing</b>:
+      <b>fraction-index-based interpolation</b> over waypoint segments to construct continuous virtual references for low-speed maneuver tracking
+    </li>
+
     <li><b>Trajectory follower (core control)</b>:
-      heading feedforward + curvature-corrected Pure Pursuit feedback, with a <b>PD-style damping term</b> from discretized arc/center-error changes for low-speed convergence
+      <b>Stanley-based lateral control</b> with a <b>lateral-error derivative damping term</b>, plus longitudinal velocity control for stable low-speed convergence
     </li>
 
     <li><b>Forward/Reverse execution</b>:
@@ -77,6 +81,53 @@ classes: wide
   </ul>
 </div>
 
+<div class="project-card">
+  <h3>Racing Analyze GUI <small style="opacity:.7;">(MATLAB · Telemetry Analysis · Driver Coaching)</small></h3>
+
+  <p>
+    <b>Segment-based racing telemetry analysis GUI</b> for comparing multiple logged runs, visualizing driver/vehicle behavior,
+    and supporting <b>coaching-oriented inspection</b> for circuit driving.
+    Developed and used in collaboration with <b>Luxon Racing Team</b>, competing in the <b>Superrace GT-A class</b>.
+  </p>
+
+  <img src="/assets/images/racing_analyze_gui.png" alt="Racing Analyze GUI"
+    style="width:100%; border-radius:18px; margin-top:.6rem; border:1px solid rgba(255,255,255,.14);">
+
+  <b>What I built</b>
+  <ul>
+    <li><b>Fast core build</b>:
+      GPS-fix-based <b>track core / segment reference</b> generation for repeated run comparison
+    </li>
+
+    <li><b>Fast multi-log workflow</b>:
+      efficient loading and caching of multiple logged runs, enabling quick switching across segments after a single build
+    </li>
+
+    <li><b>Segment-wise comparison</b>:
+      gate/segment-based run slicing to compare the same part of a lap across different sessions and drivers
+    </li>
+
+    <li><b>Flexible visualization modes</b>:
+      <b>XY, TS, MAP, POLAR, KDE, GG</b> views for telemetry inspection from multiple perspectives
+    </li>
+
+    <li><b>Sensor-channel flexibility</b>:
+      arbitrary logged channels can be assigned to <b>x / y / color</b>, enabling broad exploratory analysis across vehicle states and driver inputs
+    </li>
+
+    <li><b>Signal conditioning</b>:
+      smoothing and abnormal-data interpolation support for more stable visualization and comparison
+    </li>
+
+    <li><b>Metrics extraction</b>:
+      segment-level metrics such as <b>segment time</b>, <b>velocity statistics</b>, and <b>acceleration-related indicators</b> for quick run ranking and review
+    </li>
+
+    <li><b>Practical use case</b>:
+      supports <b>visualization assistance</b> and <b>coaching workflow</b> for real racing data analysis
+    </li>
+  </ul>
+</div>
 
 <div class="project-card">
   <h3 style="margin-top:.2rem;">EV Gear Reduction Sizing <small style="opacity:.72;">(early work)</small></h3>
@@ -84,4 +135,3 @@ classes: wide
     MATLAB-based drivetrain sizing: datasheet torque–speed modeling + longitudinal acceleration simulation, sweeping gear ratios to minimize run time.
   </div>
 </div>
-
