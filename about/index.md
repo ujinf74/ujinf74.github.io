@@ -33,7 +33,7 @@ classes: wide
     <li>
       <b>Racing telemetry analysis / visualization collaboration with Luxon Racing Team</b><br/>
       Built a <b>segment-based telemetry analysis GUI</b> and support <b>visualization</b> and <b>coaching-oriented run inspection</b>
-      for real racing data from a team competing in the <b>GTA class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
+      for real racing data in collaboration with <b>Luxon Racing Team</b> in the <b>GT-A class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
     </li>
   </ul>
 </div>
@@ -44,7 +44,7 @@ classes: wide
     <li><b>Dynamics & numerics</b>: modeling, RK4/ODE integration, solver stability</li>
     <li><b>Numerical optimization</b>: least-squares with damping, explicit diagnostics</li>
     <li><b>Planning/control</b>: constraint-aware design, reverse maneuvers, trajectory tracking</li>
-    <li><b>Telemetry & driving analysis</b>: segment-based comparison, vehicle-state visualization, coaching-oriented inspection</li>
+    <li><b>Telemetry & driving analysis</b>: segment-based comparison, vehicle-state visualization, replay-based inspection, coaching-oriented workflow</li>
     <li><b>Integration</b>: ROS 2 QoS/TF, ABI/FFI boundaries, reproducible builds (CI)</li>
   </ul>
 </div>
