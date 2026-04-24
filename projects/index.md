@@ -85,9 +85,9 @@ classes: wide
   <h3>Racing Analyze GUI <small style="opacity:.7;">(MATLAB · Telemetry Analysis · Driver Coaching)</small></h3>
 
   <p>
-    <b>Segment-based racing telemetry analysis GUI</b> for comparing multiple logged runs, visualizing driver/vehicle behavior,
+    <b>Segment-based racing telemetry analysis workbench</b> for comparing multiple logged runs, visualizing driver/vehicle behavior,
     and supporting <b>coaching-oriented inspection</b> for circuit driving.
-    Developed and used in collaboration with <b>Luxon Racing Team</b>, competing in the <b>GTA class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
+    Developed and used in collaboration with <b>Luxon Racing Team</b> in the <b>GT-A class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
   </p>
 
   <img src="/assets/images/racing_analyze_gui.png" alt="Racing Analyze GUI"
@@ -95,16 +95,20 @@ classes: wide
 
   <b>What I built</b>
   <ul>
-    <li><b>Fast core build</b>:
+    <li><b>Fast track/core build</b>:
       GPS-fix-based <b>track core / segment reference</b> generation for repeated run comparison
     </li>
 
     <li><b>Fast multi-log workflow</b>:
-      efficient loading and caching of multiple logged runs, enabling quick switching across segments after a single build
+      efficient loading and caching of multiple logged runs, enabling quick switching across segments after a single analysis pass
     </li>
 
     <li><b>Segment-wise comparison</b>:
-      gate/segment-based run slicing to compare the same part of a lap across different sessions and drivers
+      gate/segment-based run slicing across <b>All / S0 / S1..Sn / S(n+1)</b> for aligned comparison of the same track region
+    </li>
+
+    <li><b>Interactive replay</b>:
+      time-slider-based replay with <b>play / pause / stop / speed control</b> and pane-aware marker updates
     </li>
 
     <li><b>Flexible visualization modes</b>:
@@ -117,6 +121,10 @@ classes: wide
 
     <li><b>Signal conditioning</b>:
       smoothing and abnormal-data interpolation support for more stable visualization and comparison
+    </li>
+
+    <li><b>Pane-level workflow tools</b>:
+      per-pane rerender and pop-out windows for focused inspection without rebuilding the full workspace
     </li>
 
     <li><b>Metrics extraction</b>:
