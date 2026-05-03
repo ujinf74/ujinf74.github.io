@@ -87,17 +87,18 @@ classes: wide
   <p>
     <b>Field telemetry collection and monitoring stack</b> built for racing operations:
     a car-side runtime for GPS data collection, correction-input handling, date-based logging, and a browser monitoring path
-    for quick remote inspection during operation.
+    for quick remote inspection during operation. The emphasis was not just on recording data, but on keeping the runtime usable under
+    unstable serial input, intermittent correction streams, and track-side debugging constraints.
   </p>
 
   <b>What I built</b>
   <ul>
-    <li><b>Collector/runtime</b>: Python collection flow, shared env-driven configuration, and service-style deployment on Raspberry Pi</li>
-    <li><b>Device handling</b>: startup GPS initialization, serial retry/timeout handling, and runtime recovery path for unstable field conditions</li>
-    <li><b>Correction input</b>: assisted GPS correction flow with retry handling for practical track-side use</li>
-    <li><b>Logging</b>: date-foldered drive logs, optional raw GPS logs, and post-processing helpers for later inspection</li>
-    <li><b>Remote monitoring</b>: browser-facing monitoring path that avoids requiring direct local-network access to the car-side runtime</li>
-    <li><b>Practical use</b>: designed as an operations tool, not just an offline script, so the same stack supports collection, monitoring, and later review</li>
+    <li><b>Collector/runtime</b>: Python collection flow, shared env-driven configuration, buffered writes, and service-style deployment on Raspberry Pi</li>
+    <li><b>Device handling</b>: startup initialization, serial retry/timeout handling, invalid-data filtering, and recovery logic for unstable field conditions</li>
+    <li><b>Correction input</b>: assisted GPS correction flow with retry handling and practical fallback behavior when correction availability is poor</li>
+    <li><b>Logging</b>: date-foldered drive logs, optional raw GPS logs, and post-processing helpers so field data can move cleanly into later analysis</li>
+    <li><b>Remote monitoring</b>: browser-facing monitoring path that avoids requiring direct local-network access to the car-side runtime while still exposing useful live state</li>
+    <li><b>Operational design</b>: the same stack supports collection, monitoring, and later review, so it behaves as an end-to-end telemetry workflow rather than a single-purpose script</li>
   </ul>
 </div>
 

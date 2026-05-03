@@ -46,9 +46,9 @@ classes: wide
 <div class="project-card">
   <h3>How I work</h3>
   <ul>
-    <li><b>I turn vague engineering goals into operating systems</b>: not only algorithms, but also runtime, failure handling, diagnostics, and usable interfaces</li>
-    <li><b>I bridge research and operations</b>: simulation and planning work on one side, telemetry collection and analysis workflows on the other</li>
-    <li><b>I optimize for real use</b>: repeatable benchmarks, explicit status reporting, replayable logs, and tools that can survive field constraints</li>
+    <li><b>I turn vague engineering goals into working technical systems</b>: algorithm, runtime, diagnostics, interface, and operational flow are designed together</li>
+    <li><b>I bridge research and operations</b>: simulation, planning, and control work on one side, telemetry collection and analysis workflows on the other</li>
+    <li><b>I optimize for real use</b>: repeatable benchmarks, explicit status reporting, replayable logs, recovery behavior, and tools that survive field constraints</li>
   </ul>
 </div>
 
@@ -56,10 +56,10 @@ classes: wide
   <h3>Core Strengths</h3>
   <ul>
     <li><b>Dynamics & numerics</b>: modeling, RK4/ODE integration, solver stability</li>
-    <li><b>Numerical optimization</b>: least-squares with damping, explicit diagnostics</li>
+    <li><b>Numerical optimization</b>: least-squares with damping, residual design, convergence handling, explicit diagnostics</li>
     <li><b>Planning/control</b>: constraint-aware design, reverse maneuvers, trajectory tracking</li>
-    <li><b>Telemetry systems</b>: collection runtime, remote monitoring flow, segment-based comparison, replay-based inspection</li>
-    <li><b>Integration</b>: ROS 2 QoS/TF, ABI/FFI boundaries, Raspberry Pi services, browser-facing tooling, reproducible builds</li>
+    <li><b>Telemetry systems</b>: collection runtime, correction-input handling, remote monitoring flow, segment-based comparison, replay-based inspection</li>
+    <li><b>Integration</b>: ROS 2 QoS/TF, ABI/FFI boundaries, Raspberry Pi services, browser-facing tooling, reproducible builds, and deployment-oriented packaging</li>
   </ul>
 </div>
 

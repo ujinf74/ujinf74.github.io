@@ -51,9 +51,9 @@ classes: wide
 <div class="project-card">
   <h3>Selected Work</h3>
   <ul>
-    <li><b>ballistic-solver</b>: native projectile intercept solver with drag, wind, diagnostics, and cross-language deployment</li>
-    <li><b>Mapless Autonomous Parking</b>: online occupancy mapping, occupancy-only Hybrid A*, and low-speed tracking without prebuilt maps</li>
-    <li><b>Racing telemetry stack</b>: car-side GPS collection runtime, correction-input handling, logging, remote monitoring, and field operation support</li>
-    <li><b>Racing Analyze GUI</b>: multi-log segment comparison, replay, and visualization workbench for coaching-oriented telemetry review</li>
+    <li><b>ballistic-solver</b>: native intercept solver built around RK4 simulation, closest-approach residuals, damped least squares, and deployable C/Python/C# interfaces</li>
+    <li><b>Mapless Autonomous Parking</b>: occupancy mapping, occupancy-only Hybrid A*, fraction-index trajectory interpolation, and low-speed tracking without prebuilt maps</li>
+    <li><b>Racing telemetry stack</b>: car-side GPS runtime with correction input, buffered logging, failure recovery, remote monitoring, and post-run data handling</li>
+    <li><b>Racing Analyze GUI</b>: segment-based multi-log comparison, replay, metrics extraction, and flexible telemetry visualization for coaching-oriented review</li>
   </ul>
 </div>
