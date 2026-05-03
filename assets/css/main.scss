@@ -231,6 +231,105 @@ body::after{
   margin-top: 0.2rem !important;
 }
 
+.eyebrow{
+  display:inline-block;
+  font-size:.82rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:rgba(34,211,238,.88);
+}
+
+.mini-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:.8rem;
+}
+
+.mini-card{
+  padding:.85rem;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:16px;
+  background:rgba(255,255,255,.035);
+}
+
+.mini-card p{
+  margin:.35rem 0 .8rem;
+}
+
+.mini-kicker{
+  font-size:.8rem;
+  font-weight:800;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+.flow-diagram{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.65rem;
+  align-items:stretch;
+}
+
+.flow-step{
+  flex:1 1 180px;
+  min-width:180px;
+  padding:.85rem;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:16px;
+  background:rgba(255,255,255,.035);
+}
+
+.flow-step b,
+.flow-step span{
+  display:block;
+}
+
+.flow-step span{
+  margin-top:.3rem;
+  color:var(--muted);
+}
+
+.flow-arrow{
+  align-self:center;
+  font-size:1.1rem;
+  color:rgba(34,211,238,.75);
+}
+
+.result-strip{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.55rem;
+  margin-top:.85rem;
+}
+
+.result-strip span{
+  padding:.38rem .65rem;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.04);
+  font-size:.92rem;
+}
+
+.result-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:.45rem;
+}
+
+.result-table th,
+.result-table td{
+  padding:.65rem .6rem;
+  border-bottom:1px solid rgba(255,255,255,.12);
+  text-align:left;
+}
+
+.result-table th{
+  color:var(--muted);
+  font-weight:800;
+}
+
 .btn{
   display:inline-flex;
   align-items:center;
@@ -255,4 +354,20 @@ body::after{
   outline:3px solid rgba(34,211,238,.25);
   outline-offset:3px;
   border-radius:10px;
+}
+
+@media (max-width:720px){
+  .mini-grid{
+    grid-template-columns:1fr;
+  }
+
+  .flow-diagram{
+    flex-direction:column;
+  }
+
+  .flow-arrow{
+    align-self:flex-start;
+    transform:rotate(90deg);
+    margin:.1rem 0;
+  }
 }

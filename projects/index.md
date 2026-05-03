@@ -28,8 +28,16 @@ classes: wide
   </ul>
 
   <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
+    <a class="btn" href="/projects/ballistic-solver/">Detailed page</a>
     <a class="btn" href="https://github.com/ujinf74/ballistic-solver">Repo</a>
     <a class="btn" href="https://pypi.org/project/ballistic-solver/">PyPI</a>
+  </div>
+
+  <div class="result-strip">
+    <span><b>Verified benchmark</b></span>
+    <span>fast 0.107 ms median</span>
+    <span>balanced 0.219 ms median</span>
+    <span>precise 0.265 ms median</span>
   </div>
 </div>
 
@@ -38,7 +46,7 @@ classes: wide
 
   <p>
     <b>Real-time mapless parking</b> without prebuilt pointcloud/vector maps:
-    <b>online occupancy mapping → occupancy-only Hybrid A*</b> replanning → <b>fraction-index path interpolation + Stanley-based tracking</b>
+    <b>online occupancy mapping → occupancy-only Hybrid A*</b> replanning → <b>trajectory processing + low-speed parking execution</b>
     for forward/reverse parking maneuvers.
   </p>
 
@@ -64,11 +72,11 @@ classes: wide
     </li>
 
     <li><b>Trajectory processing</b>:
-      <b>fraction-index-based interpolation</b> over waypoint segments to construct continuous virtual references for low-speed maneuver tracking
+      resampling / filling and continuous-reference preparation for low-speed maneuver tracking
     </li>
 
-    <li><b>Trajectory follower (core control)</b>:
-      <b>Stanley-based lateral control</b> with a <b>lateral-error derivative damping term</b>, plus longitudinal velocity control for stable low-speed convergence
+    <li><b>Execution layer</b>:
+      parking follower path with longitudinal control, reverse-capable execution, and trajectory-direction-aware handling
     </li>
 
     <li><b>Forward/Reverse execution</b>:
@@ -79,6 +87,10 @@ classes: wide
       QoS tuning to avoid backlog/timing loss, RViz2 visualization (OGM/trajectory/vehicle), and CLI status reporting
     </li>
   </ul>
+
+  <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
+    <a class="btn" href="/projects/mapless-autonomous-parking/">Detailed page</a>
+  </div>
 </div>
 
 <div class="project-card">
@@ -101,6 +113,10 @@ classes: wide
     <li><b>Remote monitoring</b>: Raspberry Pi posts live debug packets to Cloudflare Worker; Durable Object stores latest state and streams updates to browser clients using SSE with Leaflet map visualization</li>
     <li><b>Wireless operations</b>: Git/SSH/Tailscale-based update workflow for deploying package changes to the Raspberry Pi without direct physical access</li>
   </ul>
+
+  <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
+    <a class="btn" href="/projects/racing-telemetry-stack/">Detailed page</a>
+  </div>
 </div>
 
 <div class="project-card">
@@ -157,6 +173,10 @@ classes: wide
       supports <b>visualization assistance</b> and <b>coaching workflow</b> for real racing data analysis
     </li>
   </ul>
+
+  <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
+    <a class="btn" href="/projects/racing-analyze-gui/">Detailed page</a>
+  </div>
 </div>
 
 <div class="project-card">

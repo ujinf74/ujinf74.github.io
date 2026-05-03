@@ -46,9 +46,9 @@ classes: wide
 <div class="project-card">
   <h3>How I work</h3>
   <ul>
-    <li><b>I turn vague engineering goals into working technical systems</b>: algorithm, runtime, diagnostics, interface, and operational flow are designed together</li>
-    <li><b>I bridge research and operations</b>: simulation, planning, and control work on one side, telemetry collection and analysis workflows on the other</li>
-    <li><b>I optimize for real use</b>: repeatable benchmarks, explicit status reporting, replayable logs, recovery behavior, and tools that survive field constraints</li>
+    <li><b>I turn vague engineering goals into working technical systems</b>: algorithm, runtime, diagnostics, interface, and operational flow are designed together. See <a href="/projects/mapless-autonomous-parking/">Mapless Autonomous Parking</a>.</li>
+    <li><b>I bridge research and operations</b>: simulation, planning, and control work on one side, telemetry collection and analysis workflows on the other. See <a href="/projects/racing-telemetry-stack/">Racing Telemetry Stack</a> and <a href="/projects/racing-analyze-gui/">Racing Analyze GUI</a>.</li>
+    <li><b>I optimize for real use</b>: repeatable benchmarks, explicit status reporting, replayable logs, recovery behavior, and tools that survive field constraints. See <a href="/projects/ballistic-solver/">ballistic-solver</a>.</li>
   </ul>
 </div>
 
