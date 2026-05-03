@@ -82,23 +82,24 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Racing Telemetry Stack <small style="opacity:.7;">(Python · Raspberry Pi · GPS runtime · browser monitoring)</small></h3>
+  <h3>Racing Telemetry Stack <small style="opacity:.7;">(Python · Raspberry Pi · ZED-F9R · RTK/NTRIP · Cloudflare Worker)</small></h3>
 
   <p>
-    <b>Field telemetry collection and monitoring stack</b> built for racing operations:
-    a car-side runtime for GPS data collection, correction-input handling, date-based logging, and a browser monitoring path
-    for quick remote inspection during operation. The emphasis was not just on recording data, but on keeping the runtime usable under
-    unstable serial input, intermittent correction streams, and track-side debugging constraints.
+    <b>Car-side telemetry runtime</b> for racing data collection, built around a Raspberry Pi and <b>u-blox ZED-F9R GPS/IMU receiver</b>.
+    The system configures the receiver at startup, collects high-rate UBX GPS/IMU messages, injects RTCM correction data from an
+    <b>NTRIP caster</b>, writes buffered CSV/UBX logs, and publishes live debug state to a browser dashboard through a
+    <b>Cloudflare Worker + Durable Object + SSE</b> pipeline.
   </p>
 
   <b>What I built</b>
   <ul>
-    <li><b>Collector/runtime</b>: Python collection flow, shared env-driven configuration, buffered writes, and service-style deployment on Raspberry Pi</li>
-    <li><b>Device handling</b>: startup initialization, serial retry/timeout handling, invalid-data filtering, and recovery logic for unstable field conditions</li>
-    <li><b>Correction input</b>: assisted GPS correction flow with retry handling and practical fallback behavior when correction availability is poor</li>
-    <li><b>Logging</b>: date-foldered drive logs, optional raw GPS logs, and post-processing helpers so field data can move cleanly into later analysis</li>
-    <li><b>Remote monitoring</b>: browser-facing monitoring path that avoids requiring direct local-network access to the car-side runtime while still exposing useful live state</li>
-    <li><b>Operational design</b>: the same stack supports collection, monitoring, and later review, so it behaves as an end-to-end telemetry workflow rather than a single-purpose script</li>
+    <li><b>Raspberry Pi runtime</b>: systemd-managed Python collector with boot persistence, automatic restart, environment-based configuration, and pre-start ZED-F9R configuration</li>
+    <li><b>Receiver configuration</b>: automated UART/UBX setup for 20 Hz measurement, NAV-PVT, HPPOSLLH, RAWX, ESF-RAW, MON-HW/RF, and RTCM3 input</li>
+    <li><b>RTK correction flow</b>: NTRIP connection, periodic GGA injection, RTCM queueing, retry handling, and fallback behavior under poor correction availability</li>
+    <li><b>Robust field logging</b>: date-foldered drive logs, GPS/IMU merged CSV output, optional raw UBX capture, buffered writes, and post-processing helpers</li>
+    <li><b>Fault tolerance</b>: serial retry, idle timeout detection, invalid GPS jump/speed filtering, frame/PVT timeout handling, and optional receiver reconfiguration</li>
+    <li><b>Remote monitoring</b>: Raspberry Pi posts live debug packets to Cloudflare Worker; Durable Object stores latest state and streams updates to browser clients using SSE with Leaflet map visualization</li>
+    <li><b>Wireless operations</b>: Git/SSH/Tailscale-based update workflow for deploying package changes to the Raspberry Pi without direct physical access</li>
   </ul>
 </div>
 

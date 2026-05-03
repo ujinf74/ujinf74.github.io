@@ -25,7 +25,7 @@ classes: wide
       <b>Award:</b> KSAE 2024 Smart e-Mobility Competition (EV Division) — <i>Encouragement Prize</i> (Honorable Mention)
     </li>
     <li>
-      <b>Racing engineering collaboration:</b> built a <b>car-side telemetry collection stack</b>, a <b>remote monitoring path</b>,
+      <b>Racing engineering collaboration:</b> built a <b>car-side telemetry runtime</b> with RTK/NTRIP correction, remote browser monitoring,
       and a <b>segment-based telemetry analysis GUI</b> for work with <b>Luxon Racing Team</b> in the <b>GTA class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
     </li>
     <li>
@@ -53,7 +53,7 @@ classes: wide
   <ul>
     <li><b>ballistic-solver</b>: native intercept solver built around RK4 simulation, closest-approach residuals, damped least squares, and deployable C/Python/C# interfaces</li>
     <li><b>Mapless Autonomous Parking</b>: occupancy mapping, occupancy-only Hybrid A*, fraction-index trajectory interpolation, and low-speed tracking without prebuilt maps</li>
-    <li><b>Racing telemetry stack</b>: car-side GPS runtime with correction input, buffered logging, failure recovery, remote monitoring, and post-run data handling</li>
+    <li><b>Racing telemetry stack</b>: Raspberry Pi + ZED-F9R runtime with RTK/NTRIP correction, buffered CSV/UBX logging, fault tolerance, and browser-based live monitoring</li>
     <li><b>Racing Analyze GUI</b>: segment-based multi-log comparison, replay, metrics extraction, and flexible telemetry visualization for coaching-oriented review</li>
   </ul>
 </div>

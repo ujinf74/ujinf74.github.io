@@ -33,8 +33,8 @@ classes: wide
   <ul>
     <li>
       <b>Racing telemetry runtime / monitoring / analysis collaboration with Luxon Racing Team</b><br/>
-      Built a <b>car-side GPS collection runtime</b> with device initialization, correction-input handling, buffered logging,
-      and operational monitoring for field use.
+      Built a <b>Raspberry Pi telemetry runtime</b> around a <b>u-blox ZED-F9R GPS/IMU receiver</b> with startup configuration,
+      RTK/NTRIP correction input, buffered CSV/UBX logging, and operational monitoring for field use.
     </li>
     <li>
       Extended the same workflow with a <b>browser-based remote monitoring path</b> and a <b>segment-based telemetry analysis GUI</b> for
@@ -58,8 +58,8 @@ classes: wide
     <li><b>Dynamics & numerics</b>: modeling, RK4/ODE integration, solver stability</li>
     <li><b>Numerical optimization</b>: least-squares with damping, residual design, convergence handling, explicit diagnostics</li>
     <li><b>Planning/control</b>: constraint-aware design, reverse maneuvers, trajectory tracking</li>
-    <li><b>Telemetry systems</b>: collection runtime, correction-input handling, remote monitoring flow, segment-based comparison, replay-based inspection</li>
-    <li><b>Integration</b>: ROS 2 QoS/TF, ABI/FFI boundaries, Raspberry Pi services, browser-facing tooling, reproducible builds, and deployment-oriented packaging</li>
+    <li><b>Telemetry systems</b>: collection runtime, RTK/NTRIP correction flow, remote monitoring, segment-based comparison, replay-based inspection</li>
+    <li><b>Integration</b>: ROS 2 QoS/TF, ABI/FFI boundaries, Raspberry Pi services, Cloudflare-based browser monitoring, reproducible builds, and deployment-oriented packaging</li>
   </ul>
 </div>
 
