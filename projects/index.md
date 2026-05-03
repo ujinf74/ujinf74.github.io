@@ -82,22 +82,22 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Racing GPS Telemetry Stack <small style="opacity:.7;">(Python · Raspberry Pi · u-blox F9R · Cloudflare Worker)</small></h3>
+  <h3>Racing Telemetry Stack <small style="opacity:.7;">(Python · Raspberry Pi · GPS runtime · browser monitoring)</small></h3>
 
   <p>
-    <b>Field telemetry collection and live-debug stack</b> built for racing operations:
-    Raspberry Pi runtime on the car side, <b>F9R configuration and serial handling</b>, <b>NTRIP-assisted collection</b>,
-    date-based <b>CSV/UBX logging</b>, and a <b>public browser endpoint</b> for quick remote inspection.
+    <b>Field telemetry collection and monitoring stack</b> built for racing operations:
+    a car-side runtime for GPS data collection, correction-input handling, date-based logging, and a browser monitoring path
+    for quick remote inspection during operation.
   </p>
 
   <b>What I built</b>
   <ul>
-    <li><b>Collector/runtime</b>: Python collector around <code>collect.py</code>, shared env-driven configuration, and systemd service deployment</li>
-    <li><b>GPS device handling</b>: startup <code>configure_f9r.py</code>, serial retry/timeout handling, and runtime reconfiguration path</li>
-    <li><b>Correction input</b>: NTRIP client settings and retry flow for assisted GPS operation in the field</li>
-    <li><b>Logging</b>: date-foldered <code>drive_*.csv</code>, optional <code>gps_*.csv</code>, and UBX parsing helpers for later inspection</li>
-    <li><b>Live view</b>: collector HTTP ingest to <a href="https://gps.ujinf.net">gps.ujinf.net</a> through a Cloudflare Worker + Durable Object + SSE path</li>
-    <li><b>Practical use</b>: supports public live debugging and operations visibility without requiring direct LAN access to the car-side runtime</li>
+    <li><b>Collector/runtime</b>: Python collection flow, shared env-driven configuration, and service-style deployment on Raspberry Pi</li>
+    <li><b>Device handling</b>: startup GPS initialization, serial retry/timeout handling, and runtime recovery path for unstable field conditions</li>
+    <li><b>Correction input</b>: assisted GPS correction flow with retry handling for practical track-side use</li>
+    <li><b>Logging</b>: date-foldered drive logs, optional raw GPS logs, and post-processing helpers for later inspection</li>
+    <li><b>Remote monitoring</b>: browser-facing monitoring path that avoids requiring direct local-network access to the car-side runtime</li>
+    <li><b>Practical use</b>: designed as an operations tool, not just an offline script, so the same stack supports collection, monitoring, and later review</li>
   </ul>
 </div>
 
@@ -107,7 +107,7 @@ classes: wide
   <p>
     <b>Segment-based racing telemetry analysis workbench</b> for comparing multiple logged runs, visualizing driver/vehicle behavior,
     and supporting <b>coaching-oriented inspection</b> for circuit driving.
-    Developed and used together with the telemetry collection workflow for <b>Luxon Racing Team</b> in the <b>GT-A class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
+    Developed and used together with the telemetry collection workflow for <b>Luxon Racing Team</b> in the <b>GTA class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
   </p>
 
   <img src="/assets/images/racing_analyze_gui.png" alt="Racing Analyze GUI"

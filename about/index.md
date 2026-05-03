@@ -10,7 +10,7 @@ classes: wide
 
   <p style="margin-top:.45rem;">
     I am a Mechanical & Computer Engineering student focused on <b>optimal control</b>, <b>numerical optimization</b>, and <b>dynamics</b>,
-    building <b>real-time simulation</b>, <b>control systems</b>, <b>telemetry runtime</b>, and <b>analysis tools</b>
+    building <b>real-time simulation</b>, <b>control systems</b>, <b>telemetry software</b>, and <b>analysis tools</b>
     for robotics, autonomous systems, and vehicle dynamics.
   </p>
 </div>
@@ -32,15 +32,23 @@ classes: wide
   <h3>Engineering Experience</h3>
   <ul>
     <li>
-      <b>Racing telemetry runtime / live-debug / analysis collaboration with Luxon Racing Team</b><br/>
-      Built a <b>Raspberry Pi GPS collection runtime</b> with <b>F9R configuration</b>, <b>NTRIP-assisted logging</b>, and
-      <b>CSV/UBX output handling</b> for field use.
+      <b>Racing telemetry runtime / monitoring / analysis collaboration with Luxon Racing Team</b><br/>
+      Built a <b>car-side GPS collection runtime</b> with device initialization, correction-input handling, buffered logging,
+      and operational monitoring for field use.
     </li>
     <li>
-      Extended the same workflow with a <b>Cloudflare Worker + Durable Object live endpoint</b> at
-      <a href="https://gps.ujinf.net">gps.ujinf.net</a> and a <b>segment-based telemetry analysis GUI</b> for
-      <b>visualization</b> and <b>coaching-oriented run inspection</b> in the <b>GT-A class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
+      Extended the same workflow with a <b>browser-based remote monitoring path</b> and a <b>segment-based telemetry analysis GUI</b> for
+      <b>visualization</b> and <b>coaching-oriented run inspection</b> in the <b>GTA class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
     </li>
+  </ul>
+</div>
+
+<div class="project-card">
+  <h3>How I work</h3>
+  <ul>
+    <li><b>I turn vague engineering goals into operating systems</b>: not only algorithms, but also runtime, failure handling, diagnostics, and usable interfaces</li>
+    <li><b>I bridge research and operations</b>: simulation and planning work on one side, telemetry collection and analysis workflows on the other</li>
+    <li><b>I optimize for real use</b>: repeatable benchmarks, explicit status reporting, replayable logs, and tools that can survive field constraints</li>
   </ul>
 </div>
 
@@ -50,8 +58,8 @@ classes: wide
     <li><b>Dynamics & numerics</b>: modeling, RK4/ODE integration, solver stability</li>
     <li><b>Numerical optimization</b>: least-squares with damping, explicit diagnostics</li>
     <li><b>Planning/control</b>: constraint-aware design, reverse maneuvers, trajectory tracking</li>
-    <li><b>Telemetry systems</b>: collection runtime, live-debug transport, segment-based comparison, replay-based inspection</li>
-    <li><b>Integration</b>: ROS 2 QoS/TF, ABI/FFI boundaries, Raspberry Pi services, Cloudflare Worker deployment, reproducible builds</li>
+    <li><b>Telemetry systems</b>: collection runtime, remote monitoring flow, segment-based comparison, replay-based inspection</li>
+    <li><b>Integration</b>: ROS 2 QoS/TF, ABI/FFI boundaries, Raspberry Pi services, browser-facing tooling, reproducible builds</li>
   </ul>
 </div>
 
