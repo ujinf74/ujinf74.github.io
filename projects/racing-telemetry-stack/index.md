@@ -60,6 +60,15 @@ classes: wide
 </div>
 
 <div class="project-card">
+  <h3>What This Project Proves</h3>
+  <ul>
+    <li><b>Field-runtime mindset</b>: I think about unstable inputs, retries, timeouts, and recoverability, not just happy-path logging.</li>
+    <li><b>Hardware-to-browser flow design</b>: I can connect device IO, correction streams, service management, cloud relay, and operator visibility.</li>
+    <li><b>Operational continuity</b>: I value tools that support collection, monitoring, and later analysis as one loop.</li>
+  </ul>
+</div>
+
+<div class="project-card">
   <h3>Evidence</h3>
   <ul>
     <li>The project description is tied to concrete runtime components: receiver configuration, NTRIP handling, buffered logs, remote state publishing, and browser streaming.</li>

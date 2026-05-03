@@ -68,6 +68,15 @@ classes: wide
 </div>
 
 <div class="project-card">
+  <h3>What This Project Proves</h3>
+  <ul>
+    <li><b>Autonomy-stack composition</b>: I can work around an existing stack and add the missing layers instead of needing a blank slate.</li>
+    <li><b>Geometry and runtime awareness</b>: I care about frames, trajectories, direction changes, QoS, and operator control paths together.</li>
+    <li><b>Prototype depth</b>: this is more than a tutorial assembly; it reflects actual system wiring, message adaptation, and execution logic.</li>
+  </ul>
+</div>
+
+<div class="project-card">
   <h3>Evidence</h3>
   <ul>
     <li>The addon package explicitly separates its scope from the base vehicle/control stack and documents the nodes it adds.</li>

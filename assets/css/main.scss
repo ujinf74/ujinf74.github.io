@@ -372,6 +372,28 @@ body::after{
   border-bottom:0;
 }
 
+.proof-callout{
+  display:flex;
+  flex-direction:column;
+  gap:.22rem;
+  margin-top:.9rem;
+  padding:.82rem .9rem;
+  border-left:3px solid var(--accent);
+  border-radius:14px;
+  background:rgba(125,211,199,.08);
+}
+
+.proof-callout b{
+  font-family:"IBM Plex Mono", monospace;
+  font-size:.78rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.proof-callout span{
+  color:var(--muted);
+}
+
 .btn{
   display:inline-flex;
   align-items:center;

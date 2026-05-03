@@ -16,6 +16,15 @@ classes: wide
 </div>
 
 <div class="project-card">
+  <h3>How To Read This Portfolio</h3>
+  <p>
+    The work here is less about project count and more about what those projects imply technically.
+    The recurring pattern is <b>model the problem</b>, <b>make it run</b>, <b>expose diagnostics</b>, and <b>turn the result into a usable interface</b>.
+    See the capability breakdown on <a href="/capabilities/">Capabilities</a>.
+  </p>
+</div>
+
+<div class="project-card">
   <h3>Research Experience</h3>
   <ul>
     <li>
@@ -44,22 +53,31 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>How I work</h3>
+  <h3>What Tends To Stand Out</h3>
   <ul>
-    <li><b>I turn vague engineering goals into working technical systems</b>: algorithm, runtime, diagnostics, interface, and operational flow are designed together. See <a href="/projects/mapless-autonomous-parking/">Mapless Autonomous Parking</a>.</li>
-    <li><b>I bridge research and operations</b>: simulation, planning, and control work on one side, telemetry collection and analysis workflows on the other. See <a href="/projects/racing-telemetry-stack/">Racing Telemetry Stack</a> and <a href="/projects/racing-analyze-gui/">Racing Analyze GUI</a>.</li>
-    <li><b>I optimize for real use</b>: repeatable benchmarks, explicit status reporting, replayable logs, recovery behavior, and tools that survive field constraints. See <a href="/projects/ballistic-solver/">ballistic-solver</a>.</li>
+    <li><b>Abstraction under real constraints</b>: I like turning messy physical or runtime behavior into something structured enough to reason about and debug.</li>
+    <li><b>Cross-domain connection</b>: I move between solver work, runtime work, autonomy integration, and telemetry/analysis tooling rather than staying inside one layer.</li>
+    <li><b>Diagnostics-first habits</b>: benchmarks, explicit status reporting, replayable logs, monitoring paths, and inspectable outputs show up repeatedly.</li>
+    <li><b>Tool-building instinct</b>: I usually try to leave behind an API, a dashboard, a launch path, or an analysis workbench, not just a successful experiment.</li>
   </ul>
 </div>
 
 <div class="project-card">
-  <h3>Core Strengths</h3>
+  <h3>Technical Strengths</h3>
   <ul>
-    <li><b>Dynamics & numerics</b>: modeling, RK4/ODE integration, solver stability</li>
-    <li><b>Numerical optimization</b>: least-squares with damping, residual design, convergence handling, explicit diagnostics</li>
-    <li><b>Planning/control</b>: constraint-aware design, reverse maneuvers, trajectory tracking</li>
-    <li><b>Telemetry systems</b>: collection runtime, RTK/NTRIP correction flow, remote monitoring, segment-based comparison, replay-based inspection</li>
-    <li><b>Integration</b>: ROS 2 QoS/TF, ABI/FFI boundaries, Raspberry Pi services, Cloudflare-based browser monitoring, reproducible builds, and deployment-oriented packaging</li>
+    <li><b>Dynamics and numerics</b>: RK4 integration, residual design, damping, convergence handling, and solver-facing diagnostics.</li>
+    <li><b>Systems integration</b>: ROS 2 messages, QoS/TF, launch composition, service/runtime boundaries, and multi-stage engineering flows.</li>
+    <li><b>Telemetry and field tooling</b>: GNSS/RTK collection, logging, monitoring, replay, and analysis loops tied to real operations.</li>
+    <li><b>Packaging and interfaces</b>: C ABI boundaries, Python bindings, deployable runtime configuration, and user-facing analysis tools.</li>
+  </ul>
+</div>
+
+<div class="project-card">
+  <h3>Where I Am Still Improving</h3>
+  <ul>
+    <li><b>Repository discipline</b>: some work is better engineered than it is cleanly packaged, and I keep pushing artifact separation and test consistency further.</li>
+    <li><b>Safety and validation depth</b>: the autonomy and field-runtime projects show strong prototype ability, but production-grade validation is a different bar.</li>
+    <li><b>Evidence density</b>: the next upgrade is more measured proof, diagrams, screenshots, and repeatable validation paths rather than just more project count.</li>
   </ul>
 </div>
 

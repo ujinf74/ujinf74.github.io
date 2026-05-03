@@ -6,6 +6,15 @@ classes: wide
 ---
 
 <div class="project-card">
+  <p class="eyebrow">Read By Capability</p>
+  <p>
+    These projects are best read as evidence for different engineering strengths:
+    solver design, autonomy-stack integration, field runtime robustness, and analysis-tool construction.
+    If you want the summary first, start from <a href="/capabilities/">Capabilities</a>.
+  </p>
+</div>
+
+<div class="project-card">
   <h3>ballistic-solver <small style="opacity:.7;">(C/C++ · Python · Unity/C#)</small></h3>
 
   <p>
@@ -38,6 +47,11 @@ classes: wide
     <span>fast 0.107 ms median</span>
     <span>balanced 0.219 ms median</span>
     <span>precise 0.265 ms median</span>
+  </div>
+
+  <div class="proof-callout">
+    <b>What this proves</b>
+    <span>numerical modeling, nonlinear solver construction, API design, packaging discipline, and diagnostic awareness.</span>
   </div>
 </div>
 
@@ -91,6 +105,11 @@ classes: wide
   <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
     <a class="btn" href="/projects/mapless-autonomous-parking/">Detailed page</a>
   </div>
+
+  <div class="proof-callout">
+    <b>What this proves</b>
+    <span>ROS 2 / autonomy integration depth, system composition under constraints, and practical operator-facing tooling.</span>
+  </div>
 </div>
 
 <div class="project-card">
@@ -116,6 +135,11 @@ classes: wide
 
   <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
     <a class="btn" href="/projects/racing-telemetry-stack/">Detailed page</a>
+  </div>
+
+  <div class="proof-callout">
+    <b>What this proves</b>
+    <span>real-device handling, field recovery thinking, live monitoring, and end-to-end operational data flow design.</span>
   </div>
 </div>
 
@@ -176,6 +200,11 @@ classes: wide
 
   <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
     <a class="btn" href="/projects/racing-analyze-gui/">Detailed page</a>
+  </div>
+
+  <div class="proof-callout">
+    <b>What this proves</b>
+    <span>stateful analysis-tool construction, domain-specific metrics, replay, and UI-driven engineering workflow design.</span>
   </div>
 </div>
 

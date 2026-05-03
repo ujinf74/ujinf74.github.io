@@ -66,6 +66,16 @@ classes: wide
 </div>
 
 <div class="project-card">
+  <h3>What This Project Proves</h3>
+  <ul>
+    <li><b>Mathematical modeling</b>: I can translate a nonlinear physical intercept problem into a solver with explicit assumptions.</li>
+    <li><b>Numerical-method judgment</b>: I can combine integration, residual design, damping, line search, and Jacobian updates into one practical method.</li>
+    <li><b>Deployable engineering</b>: I can expose the same core through C ABI, Python, and Unity/C# instead of leaving it as lab-only code.</li>
+    <li><b>Debuggability</b>: explicit statuses and best-effort outputs matter to me as much as nominal success cases.</li>
+  </ul>
+</div>
+
+<div class="project-card">
   <h3>Verified Results</h3>
   <p>From the repository README benchmark on a local Windows release build over 500 generated linear-target cases:</p>
   <table class="result-table">

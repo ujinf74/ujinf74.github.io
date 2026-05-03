@@ -1,4 +1,6 @@
 main:
+  - title: "Capabilities"
+    url: /capabilities/
   - title: "Projects"
     url: /projects/
   - title: "About"

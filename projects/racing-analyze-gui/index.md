@@ -58,6 +58,15 @@ classes: wide
 </div>
 
 <div class="project-card">
+  <h3>What This Project Proves</h3>
+  <ul>
+    <li><b>Tool-building discipline</b>: I can turn raw telemetry into a reusable inspection workflow rather than a temporary notebook or script pile.</li>
+    <li><b>Domain-aware analysis</b>: the app is built around track segments, replay, and coaching review, not generic plotting alone.</li>
+    <li><b>Stateful UI engineering</b>: repeated workflows, pane state, replay control, and metrics output are treated as product features.</li>
+  </ul>
+</div>
+
+<div class="project-card">
   <h3>Evidence</h3>
   <ul>
     <li>The GUI is structured as an actual workbench, not a one-off plotting script: track build, run caching, segment slicing, replay, plots, and metrics are separate steps in one flow.</li>

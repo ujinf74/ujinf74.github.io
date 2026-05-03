@@ -1,0 +1,50 @@
+title: "Ujin Kwon"
+description: "Robotics & Autonomous Systems — Optimal Control · Numerical Optimization · Dynamics"
+
+locale: "en-US"
+timezone: "Asia/Seoul"
+
+url: "https://ujinf74.github.io"
+baseurl: ""
+
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+minimal_mistakes_skin: "dark"
+
+search: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: false    
+      sidebar: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
+      toc: false
+      toc_sticky: false
+
+author:
+  name: "권우진"
+  bio: "Optimal Control · Numerical Optimization · Dynamics"
+  avatar: "/assets/img/avatar.png"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/ujinf74"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:ujin@tukorea.ac.kr"
+
+social:
+  name: "Ujin Kwon"
+  links:
+    - "https://github.com/ujinf74"

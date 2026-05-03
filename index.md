@@ -11,77 +11,83 @@ classes: wide
   <p class="eyebrow" style="margin-top:.35rem;">Numerical solvers, telemetry systems, control, and real-time engineering</p>
 
   <p style="margin-top:.45rem;">
-    Mechanical & Computer Engineering student building <b>numerical solvers</b>, <b>vehicle telemetry tools</b>, <b>control software</b>,
+    Mechanical & Computer Engineering student building <b>numerical solvers</b>, <b>telemetry runtimes</b>, <b>control software</b>,
     and <b>analysis workflows</b> for <b>vehicle dynamics</b>, <b>robotics</b>, and <b>autonomous systems</b>.
   </p>
 
   <p style="opacity:.86; margin-top:.25rem;">
     Interests: <b>Optimal Control</b> · <b>Numerical Optimization</b> · <b>Dynamics</b> · <b>Driving Intelligence</b> · <b>Real-time Systems</b>
   </p>
+
+  <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.8rem;">
+    <a class="btn" href="/capabilities/">Read by capability</a>
+    <a class="btn" href="/projects/">Browse projects</a>
+  </div>
 </div>
 
 <div class="project-card">
-  <h3>Highlights</h3>
+  <h3>What This Portfolio Proves</h3>
   <ul>
-    <li>
-      <b>Award:</b> KSAE 2024 Smart e-Mobility Competition (EV Division) — <i>Encouragement Prize</i> (Honorable Mention)
-    </li>
-    <li>
-      <b>Racing engineering collaboration:</b> built a <b>car-side telemetry runtime</b> with RTK/NTRIP correction, remote browser monitoring,
-      and a <b>segment-based telemetry analysis GUI</b> for work with <b>Luxon Racing Team</b> in the <b>GTA class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
-    </li>
-    <li>
-      <b>Featured:</b>
-      <a href="https://github.com/ujinf74/ballistic-solver">ballistic-solver</a>
-      <span style="opacity:.75;">·</span>
-      <a href="/projects/">Mapless Autonomous Parking</a>
-      <small style="opacity:.7;">(Isaac Sim · ROS 2 · Autoware)</small>
-    </li>
+    <li><b>Deployable numerics</b>: I do not stop at equations; I package solvers behind stable interfaces, diagnostics, and repeatable benchmarks.</li>
+    <li><b>Cross-stack integration</b>: I can connect sensing, planning, control, runtime tooling, and operator-facing workflows into one system.</li>
+    <li><b>Field-minded engineering</b>: I care about unstable inputs, failure visibility, recovery behavior, and analysis after the fact.</li>
+    <li><b>Tool-building bias</b>: I tend to turn raw engineering work into reusable APIs, runtimes, dashboards, or analysis workbenches.</li>
   </ul>
 </div>
 
 <div class="project-card">
-  <h3>Focus</h3>
-  <ul>
-    <li><b>Numerical optimization & solvers</b> for nonlinear dynamics (least-squares, damping, diagnostics)</li>
-    <li><b>Dynamics-aware planning & control</b> for low-speed vehicle maneuvers and constrained motion</li>
-    <li><b>Telemetry collection, monitoring, and analysis</b> for racing operations and driver-performance review</li>
-    <li><b>Real-time simulation & integration</b> across C/C++, MATLAB, Python, ROS 2, embedded runtime, and web tooling</li>
-  </ul>
+  <h3>Core Axes</h3>
+  <div class="mini-grid">
+    <div class="mini-card">
+      <div class="mini-kicker">Numerical Optimization</div>
+      <p>Nonlinear dynamics, residual design, damping, convergence handling, and explicit failure states.</p>
+    </div>
+    <div class="mini-card">
+      <div class="mini-kicker">Planning And Control</div>
+      <p>Mapless parking, occupancy-driven planning, reverse-capable execution, and runtime-aware integration work.</p>
+    </div>
+    <div class="mini-card">
+      <div class="mini-kicker">Telemetry Operations</div>
+      <p>GNSS/RTK collection, browser monitoring, logging pipelines, and track-side recovery under imperfect conditions.</p>
+    </div>
+    <div class="mini-card">
+      <div class="mini-kicker">Analysis Workflows</div>
+      <p>Replay, segment metrics, multi-run comparison, and domain-specific inspection tools for driver review.</p>
+    </div>
+  </div>
 </div>
 
 <div class="project-card">
-  <h3>Selected Work</h3>
-  <ul>
-    <li><a href="/projects/ballistic-solver/"><b>ballistic-solver</b></a>: native intercept solver built around RK4 simulation, closest-approach residuals, damped least squares, and deployable C/Python/C# interfaces</li>
-    <li><a href="/projects/mapless-autonomous-parking/"><b>Mapless Autonomous Parking</b></a>: occupancy mapping, occupancy-only Hybrid A*, trajectory processing, and low-speed parking without prebuilt maps</li>
-    <li><a href="/projects/racing-telemetry-stack/"><b>Racing telemetry stack</b></a>: Raspberry Pi + ZED-F9R runtime with RTK/NTRIP correction, buffered CSV/UBX logging, fault tolerance, and browser-based live monitoring</li>
-    <li><a href="/projects/racing-analyze-gui/"><b>Racing Analyze GUI</b></a>: segment-based multi-log comparison, replay, metrics extraction, and flexible telemetry visualization for coaching-oriented review</li>
-  </ul>
-</div>
-
-<div class="project-card">
-  <h3>Proof Points</h3>
+  <h3>Project Evidence</h3>
   <div class="mini-grid">
     <div class="mini-card">
       <div class="mini-kicker">Deployable Numerics</div>
-      <p><b>ballistic-solver</b> ships as a native core with a stable C ABI, PyPI package, and Unity/C# interop, with benchmark numbers and failure status reporting.</p>
+      <p><b>ballistic-solver</b> shows mathematical modeling, solver design, API boundaries, packaging, diagnostics, and published benchmark numbers.</p>
       <a class="btn" href="/projects/ballistic-solver/">View details</a>
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Planning + Integration</div>
-      <p><b>Mapless Autonomous Parking</b> covers occupancy mapping, planner integration, trajectory processing, QoS tuning, RViz control, and reverse-capable execution.</p>
+      <p><b>Mapless Autonomous Parking</b> shows ROS 2 integration depth, autonomy-stack composition, vehicle-state reasoning, and operator-facing debug tooling.</p>
       <a class="btn" href="/projects/mapless-autonomous-parking/">View details</a>
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Field Runtime</div>
-      <p><b>Racing Telemetry Stack</b> handles receiver setup, correction ingestion, buffered logging, live browser monitoring, and recovery under unstable track-side conditions.</p>
+      <p><b>Racing Telemetry Stack</b> shows real-device handling, correction ingestion, fault tolerance, browser monitoring, and operational data flow design.</p>
       <a class="btn" href="/projects/racing-telemetry-stack/">View details</a>
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Analysis Workflow</div>
-      <p><b>Racing Analyze GUI</b> turns raw logs into segment metrics, synchronized replay, and multi-pane inspection for coaching-oriented comparison.</p>
+      <p><b>Racing Analyze GUI</b> shows tool-building discipline: stateful UI, replay, metrics, and domain-specific workflows rather than one-off plotting.</p>
       <a class="btn" href="/projects/racing-analyze-gui/">View details</a>
     </div>
   </div>
+</div>
+
+<div class="project-card">
+  <h3>Context</h3>
+  <ul>
+    <li><b>Award</b>: KSAE 2024 Smart e-Mobility Competition (EV Division) — Encouragement Prize.</li>
+    <li><b>Research</b>: autonomous driving team lead at HuVILab, focused on mapless parking, planning/control under constraints, and coaching systems.</li>
+    <li><b>Operations</b>: telemetry runtime / monitoring / analysis collaboration with Luxon Racing Team in the GTA class of the O-NE SUPERRACE CHAMPIONSHIP.</li>
+  </ul>
 </div>
