@@ -82,12 +82,32 @@ classes: wide
 </div>
 
 <div class="project-card">
+  <h3>Racing GPS Telemetry Stack <small style="opacity:.7;">(Python · Raspberry Pi · u-blox F9R · Cloudflare Worker)</small></h3>
+
+  <p>
+    <b>Field telemetry collection and live-debug stack</b> built for racing operations:
+    Raspberry Pi runtime on the car side, <b>F9R configuration and serial handling</b>, <b>NTRIP-assisted collection</b>,
+    date-based <b>CSV/UBX logging</b>, and a <b>public browser endpoint</b> for quick remote inspection.
+  </p>
+
+  <b>What I built</b>
+  <ul>
+    <li><b>Collector/runtime</b>: Python collector around <code>collect.py</code>, shared env-driven configuration, and systemd service deployment</li>
+    <li><b>GPS device handling</b>: startup <code>configure_f9r.py</code>, serial retry/timeout handling, and runtime reconfiguration path</li>
+    <li><b>Correction input</b>: NTRIP client settings and retry flow for assisted GPS operation in the field</li>
+    <li><b>Logging</b>: date-foldered <code>drive_*.csv</code>, optional <code>gps_*.csv</code>, and UBX parsing helpers for later inspection</li>
+    <li><b>Live view</b>: collector HTTP ingest to <a href="https://gps.ujinf.net">gps.ujinf.net</a> through a Cloudflare Worker + Durable Object + SSE path</li>
+    <li><b>Practical use</b>: supports public live debugging and operations visibility without requiring direct LAN access to the car-side runtime</li>
+  </ul>
+</div>
+
+<div class="project-card">
   <h3>Racing Analyze GUI <small style="opacity:.7;">(MATLAB · Telemetry Analysis · Driver Coaching)</small></h3>
 
   <p>
     <b>Segment-based racing telemetry analysis workbench</b> for comparing multiple logged runs, visualizing driver/vehicle behavior,
     and supporting <b>coaching-oriented inspection</b> for circuit driving.
-    Developed and used in collaboration with <b>Luxon Racing Team</b> in the <b>GT-A class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
+    Developed and used together with the telemetry collection workflow for <b>Luxon Racing Team</b> in the <b>GT-A class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
   </p>
 
   <img src="/assets/images/racing_analyze_gui.png" alt="Racing Analyze GUI"

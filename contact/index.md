@@ -9,5 +9,6 @@ classes: wide
   <ul>
     <li>Email: <a href="mailto:ujin@tukorea.ac.kr">ujin@tukorea.ac.kr</a></li>
     <li>GitHub: <a href="https://github.com/ujinf74">github.com/ujinf74</a></li>
+    <li>Public telemetry endpoint: <a href="https://gps.ujinf.net">gps.ujinf.net</a></li>
   </ul>
 </div>

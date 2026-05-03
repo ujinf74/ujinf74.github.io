@@ -1,5 +1,5 @@
 title: "∞"
-description: "Robotics & Autonomous Systems — Optimal Control · Numerical Optimization · Dynamics"
+description: "Numerical solvers, telemetry systems, control, and real-time engineering"
 
 locale: "en-US"
 timezone: "Asia/Seoul"
@@ -34,7 +34,7 @@ defaults:
 
 author:
   name: "Ujin Kwon · 권우진"
-  bio: "Robotics & Autonomous Systems\n (Optimal Control · Numerical Optimization · Dynamics)"
+  bio: "Numerical solvers, telemetry systems,\n control, and real-time engineering"
   avatar: "/assets/images/avatar.png"
   links:
     - label: "GitHub"
