@@ -51,20 +51,20 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Why It Matters</h3>
+  <h3>Implementation Notes</h3>
   <ul>
-    <li>This is not just a logger; it is an <b>operational runtime</b> built for track-side use.</li>
-    <li>The monitoring and recovery pieces make the system understandable when something goes wrong, instead of leaving operators blind.</li>
+    <li>The collector is a systemd-managed runtime with receiver setup, correction handling, logging, and restart behavior.</li>
+    <li>The monitoring and recovery pieces expose serial state, correction state, GPS validity, and timeout conditions to the operator.</li>
     <li>The same collected data feeds the analysis workflow, so collection and review are part of one engineering loop.</li>
   </ul>
 </div>
 
 <div class="project-card">
-  <h3>What This Project Proves</h3>
+  <h3>Result</h3>
   <ul>
-    <li><b>Field-runtime mindset</b>: I think about unstable inputs, retries, timeouts, and recoverability, not just happy-path logging.</li>
-    <li><b>Hardware-to-browser flow design</b>: I can connect device IO, correction streams, service management, cloud relay, and operator visibility.</li>
-    <li><b>Operational continuity</b>: I value tools that support collection, monitoring, and later analysis as one loop.</li>
+    <li>Configured and monitored a ZED-F9R-based Raspberry Pi telemetry runtime.</li>
+    <li>Connected device IO, RTK correction streams, local logging, cloud relay, browser monitoring, and downstream analysis.</li>
+    <li>Added retry, timeout, filtering, and recovery behavior around field data collection.</li>
   </ul>
 </div>
 
@@ -73,14 +73,14 @@ classes: wide
   <ul>
     <li>The project description is tied to concrete runtime components: receiver configuration, NTRIP handling, buffered logs, remote state publishing, and browser streaming.</li>
     <li>The architecture is explicitly connected to the downstream <a href="/projects/racing-analyze-gui/">Racing Analyze GUI</a> instead of being presented as an isolated script.</li>
-    <li>Field constraints and recovery behavior are treated as first-class design goals, which is the part most generic student telemetry demos usually skip.</li>
+    <li>Field constraints and recovery behavior are part of the implementation: retries, timeouts, filtering, and monitoring are described as runtime features.</li>
   </ul>
 </div>
 
 <div class="project-card">
-  <h3>Current Limits</h3>
+  <h3>Validation Scope</h3>
   <ul>
-    <li>This page still needs direct screenshots from the live monitor and logging artifacts to become stronger than a text-only architecture summary.</li>
-    <li>I am not publishing unverified operational numbers here yet; adding measured recovery and logging-rate data would strengthen this page further.</li>
+    <li>This page describes implemented runtime behavior: receiver configuration, NTRIP handling, buffered logs, remote state publishing, and browser streaming.</li>
+    <li>Operational recovery-rate numbers are not listed because they have not been published as a reviewed measurement set.</li>
   </ul>
 </div>

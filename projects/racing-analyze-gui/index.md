@@ -58,27 +58,27 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>What This Project Proves</h3>
+  <h3>Result</h3>
   <ul>
-    <li><b>Tool-building discipline</b>: I can turn raw telemetry into a reusable inspection workflow rather than a temporary notebook or script pile.</li>
-    <li><b>Domain-aware analysis</b>: the app is built around track segments, replay, and coaching review, not generic plotting alone.</li>
-    <li><b>Stateful UI engineering</b>: repeated workflows, pane state, replay control, and metrics output are treated as product features.</li>
+    <li>Built a reusable telemetry inspection workflow around track segments, replay, and multi-run comparison.</li>
+    <li>Implemented pane state, replay control, flexible channel mapping, and segment metrics as UI features.</li>
+    <li>Connected the analysis workflow to the same racing telemetry data collection path.</li>
   </ul>
 </div>
 
 <div class="project-card">
   <h3>Evidence</h3>
   <ul>
-    <li>The GUI is structured as an actual workbench, not a one-off plotting script: track build, run caching, segment slicing, replay, plots, and metrics are separate steps in one flow.</li>
+    <li>The GUI is structured as a workbench: track build, run caching, segment slicing, replay, plots, and metrics are separate steps in one flow.</li>
     <li>The app supports multiple analysis views and pane-level tools, which is stronger evidence of repeated real use than a single static screenshot.</li>
     <li>The telemetry workflow is connected upstream to the <a href="/projects/racing-telemetry-stack/">Racing Telemetry Stack</a>, so this page describes the analysis side of the same system.</li>
   </ul>
 </div>
 
 <div class="project-card">
-  <h3>Current Limits</h3>
+  <h3>Validation Scope</h3>
   <ul>
-    <li>This page still needs a short usage video or an applied case-study block to show how a comparison changes an actual driving/coaching decision.</li>
-    <li>I am keeping the claims here tied to implemented UI and metric features rather than inventing user-study style outcomes that are not currently published.</li>
+    <li>This page focuses on implemented UI behavior and exposed metrics.</li>
+    <li>A driving/coaching decision-impact case study is not included because no reviewed outcome summary is currently published.</li>
   </ul>
 </div>

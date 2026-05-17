@@ -16,10 +16,10 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>How To Read This Portfolio</h3>
+  <h3>Current Work</h3>
   <p>
-    The recurring pattern is <b>model the problem</b>, <b>make it run</b>, <b>expose diagnostics</b>, and <b>turn the result into a usable interface</b>.
-    See the capability breakdown on <a href="/capabilities/">Capabilities</a>.
+    Recent work includes a Hyundai Ioniq mapless parking addon, a C++/Python ballistic interception solver,
+    and RTK/GNSS telemetry collection and analysis tools for racing data.
   </p>
 </div>
 
@@ -52,12 +52,12 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>What Tends To Stand Out</h3>
+  <h3>Technical Areas</h3>
   <ul>
-    <li><b>Abstraction under real constraints</b>: I turn messy physical or runtime behavior into something structured enough to reason about and debug.</li>
-    <li><b>Cross-domain connection</b>: I move between solver work, runtime work, autonomy integration, and telemetry/analysis tooling rather than staying inside one layer.</li>
-    <li><b>Diagnostics-first habits</b>: benchmarks, explicit status reporting, replayable logs, monitoring paths, and inspectable outputs show up repeatedly.</li>
-    <li><b>Reusable tools</b>: I usually leave behind an API, a dashboard, a launch path, or an analysis workbench, not just a successful experiment.</li>
+    <li><b>Vehicle autonomy</b>: ROS 2, Autoware topic wiring, FAST-LIO odometry, occupancy-grid parking, and CAN-facing command paths.</li>
+    <li><b>Numerical methods</b>: RK4 integration, auxiliary residual design, damping, convergence handling, and solver diagnostics.</li>
+    <li><b>Telemetry systems</b>: GNSS/RTK collection, logging, monitoring, replay, and analysis loops tied to real operations.</li>
+    <li><b>Interfaces</b>: C ABI boundaries, Python bindings, launch files, dashboards, and user-facing analysis tools.</li>
   </ul>
 </div>
 

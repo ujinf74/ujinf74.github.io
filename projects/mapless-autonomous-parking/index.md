@@ -15,7 +15,7 @@ classes: wide
 
   <video controls playsinline preload="metadata"
     style="width:100%; border-radius:18px; margin-top:.6rem; border:1px solid rgba(255,255,255,.14);">
-    <source src="/assets/videos/autopark_demo.mp4" type="video/mp4">
+    <source src="/assets/videos/real-vehicle_demo.mp4" type="video/mp4">
   </video>
 
   <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.8rem;">
@@ -69,11 +69,11 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>What This Project Proves</h3>
+  <h3>Result</h3>
   <ul>
-    <li><b>Real-vehicle autonomy integration</b>: I can add missing autonomy layers around an existing validated vehicle stack and make them drive.</li>
-    <li><b>End-to-end ROS 2 wiring</b>: I connected odometry, occupancy mapping, goal-pose planning, trajectory following, Autoware command topics, and the Ioniq CAN path.</li>
-    <li><b>Runtime judgment</b>: I handled frames, QoS, direction changes, command keepalive, launch composition, and operator control as one system.</li>
+    <li>Implemented a mapless parking addon on a real Hyundai Ioniq platform.</li>
+    <li>Connected FAST-LIO odometry, LiDAR occupancy mapping, RViz goal input, trajectory following, Autoware command topics, and the Ioniq CAN path.</li>
+    <li>Validated low-speed parking execution with stable odometry and vehicle motion.</li>
   </ul>
 </div>
 
@@ -83,7 +83,7 @@ classes: wide
     <li>Real Hyundai Ioniq parking execution was validated with stable odometry and vehicle motion.</li>
     <li>The launch path wires FAST-LIO odometry, occupancy-grid generation, planner output, trajectory processing, control output, and RViz interaction into one runnable parking stack.</li>
     <li>The control path publishes <code>/control/command/control_cmd</code>, <code>/control/command/actuation_cmd</code>, and <code>/control/command/gear_cmd</code>, then follows the Ioniq <code>control_converter</code> / <code>control_command</code> / CAN interface.</li>
-    <li>The demo video shows the parking stack as a running system rather than only an architecture sketch.</li>
+    <li>The demo video shows the parking stack running on the real vehicle.</li>
   </ul>
 </div>
 

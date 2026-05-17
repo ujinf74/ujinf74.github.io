@@ -6,10 +6,9 @@ classes: wide
 ---
 
 <div class="project-card">
-  <p class="eyebrow">Read By Capability</p>
+  <p class="eyebrow">Representative Projects</p>
   <p>
-    These projects are best read as evidence for different engineering strengths:
-    solver design, autonomy-stack integration, field runtime robustness, and analysis-tool construction.
+    Four projects covering solver design, autonomy-stack integration, field telemetry runtime, and analysis-tool construction.
     If you want the summary first, start from <a href="/capabilities/">Capabilities</a>.
   </p>
 </div>
@@ -52,8 +51,8 @@ classes: wide
   </div>
 
   <div class="proof-callout">
-    <b>What this proves</b>
-    <span>paper-backed numerical method design, nonlinear solver construction, API design, packaging discipline, and diagnostic awareness.</span>
+    <b>Result</b>
+    <span>Paper-backed residual method, packaged C++/Python runtime, benchmark tables, and explicit solver status outputs.</span>
   </div>
 </div>
 
@@ -67,12 +66,12 @@ classes: wide
 
   <video controls playsinline preload="metadata"
     style="width:100%; border-radius:18px; margin-top:.6rem; border:1px solid rgba(255,255,255,.14);">
-    <source src="/assets/videos/autopark_demo.mp4" type="video/mp4">
+    <source src="/assets/videos/real-vehicle_demo.mp4" type="video/mp4">
   </video>
 
   <b>What I built</b>
   <ul>
-    <li><b>Real-vehicle addon layer</b>: integrated with the existing HVL/Autoware/Ioniq stack rather than replacing it</li>
+    <li><b>Real-vehicle addon layer</b>: integrated with the existing HVL/Autoware/Ioniq stack</li>
 
     <li><b>FAST-LIO bridge</b>: <code>/Odometry_base_link</code> aligned into the Autoware localization and TF path</li>
 
@@ -112,8 +111,8 @@ classes: wide
   </div>
 
   <div class="proof-callout">
-    <b>What this proves</b>
-    <span>real-vehicle autonomy validation, ROS 2 / Autoware integration depth, Ioniq command wiring, and practical operator-facing tooling.</span>
+    <b>Result</b>
+    <span>Real Hyundai Ioniq parking execution with FAST-LIO odometry, LiDAR occupancy mapping, trajectory following, and CAN-facing command output.</span>
   </div>
 </div>
 
@@ -135,7 +134,7 @@ classes: wide
     <li><b>Robust field logging</b>: date-foldered drive logs, GPS/IMU merged CSV output, optional raw UBX capture, buffered writes, and post-processing helpers</li>
     <li><b>Fault tolerance</b>: serial retry, idle timeout detection, invalid GPS jump/speed filtering, frame/PVT timeout handling, and optional receiver reconfiguration</li>
     <li><b>Remote monitoring</b>: Raspberry Pi posts live debug packets to Cloudflare Worker; Durable Object stores latest state and streams updates to browser clients using SSE with Leaflet map visualization</li>
-    <li><b>Wireless operations</b>: Git/SSH/Tailscale-based update workflow for deploying package changes to the Raspberry Pi without direct physical access</li>
+    <li><b>Wireless operations</b>: Git/SSH/Tailscale-based update workflow for deploying package changes to the Raspberry Pi</li>
   </ul>
 
   <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
@@ -143,8 +142,8 @@ classes: wide
   </div>
 
   <div class="proof-callout">
-    <b>What this proves</b>
-    <span>real-device handling, field recovery thinking, live monitoring, and end-to-end operational data flow design.</span>
+    <b>Result</b>
+    <span>Real-device receiver setup, correction ingestion, buffered logging, browser monitoring, and operational recovery paths.</span>
   </div>
 </div>
 
@@ -208,8 +207,8 @@ classes: wide
   </div>
 
   <div class="proof-callout">
-    <b>What this proves</b>
-    <span>stateful analysis-tool construction, domain-specific metrics, replay, and UI-driven engineering workflow design.</span>
+    <b>Result</b>
+    <span>Multi-run telemetry workbench with segment slicing, synchronized replay, flexible plots, and metrics extraction.</span>
   </div>
 </div>
 

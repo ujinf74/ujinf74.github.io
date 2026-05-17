@@ -26,12 +26,12 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>What This Portfolio Proves</h3>
+  <h3>Selected Work</h3>
   <ul>
-    <li><b>Research-backed numerics</b>: I turn nonlinear physical problems into solver methods, benchmarks, papers, and deployable packages.</li>
-    <li><b>Real-vehicle integration</b>: I connect sensing, localization, planning, control topics, and CAN-facing vehicle stacks into running systems.</li>
-    <li><b>Field-minded engineering</b>: I care about unstable inputs, failure visibility, recovery behavior, and analysis after the fact.</li>
-    <li><b>Reusable engineering tools</b>: I turn raw engineering work into APIs, runtimes, dashboards, and analysis workbenches.</li>
+    <li><b>ballistic-solver</b>: C++/Python intercept solver with drag dynamics, auxiliary residual correction, benchmarks, and an ICROS 2026 manuscript.</li>
+    <li><b>Mapless Autonomous Parking</b>: Hyundai Ioniq parking addon using FAST-LIO odometry, LiDAR occupancy grids, RViz goal input, and CAN-facing control.</li>
+    <li><b>Racing Telemetry Stack</b>: Raspberry Pi GNSS/RTK runtime with receiver configuration, buffered logging, remote monitoring, and recovery handling.</li>
+    <li><b>Racing Analyze GUI</b>: MATLAB telemetry workbench for multi-run loading, segment comparison, replay, and metrics extraction.</li>
   </ul>
 </div>
 
@@ -58,7 +58,7 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Project Evidence</h3>
+  <h3>Project Highlights</h3>
   <div class="mini-grid">
     <div class="mini-card">
       <div class="mini-kicker">Deployable Numerics</div>
@@ -77,7 +77,7 @@ classes: wide
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Analysis Workflow</div>
-      <p><b>Racing Analyze GUI</b> shows tool-building discipline: stateful UI, replay, metrics, and domain-specific workflows rather than one-off plotting.</p>
+      <p><b>Racing Analyze GUI</b> provides a stateful analysis interface with replay, segment metrics, and pane-based telemetry inspection.</p>
       <a class="btn" href="/projects/racing-analyze-gui/">View details</a>
     </div>
   </div>

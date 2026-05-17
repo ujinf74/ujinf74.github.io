@@ -61,7 +61,7 @@ classes: wide
   <h3>What I Built</h3>
   <ul>
     <li><b>Auxiliary-solution-induced residual method</b> for nonlinear correction when residual space and correction-variable space are not directly aligned.</li>
-    <li><b>Header-only C++ core</b> focused on solver logic rather than app-specific wrappers.</li>
+    <li><b>Header-only C++ core</b> focused on solver logic, with separate bindings for runtime integration.</li>
     <li><b>Stable C ABI</b> with plain-C data layout and fixed-size arrays for FFI-safe integration.</li>
     <li><b>Python package</b> with presets, utility helpers, and prebuilt binaries through PyPI.</li>
     <li><b>Unity/C#, .NET, and Godot paths</b> so the same native solver can be used in game/runtime contexts.</li>
@@ -70,13 +70,11 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>What This Project Proves</h3>
+  <h3>Result</h3>
   <ul>
-    <li><b>Mathematical modeling</b>: I can translate a nonlinear physical intercept problem into a solver with explicit assumptions.</li>
-    <li><b>Research-to-runtime engineering</b>: the residual transformation is paper-backed, benchmarked, and shipped through a reusable library.</li>
-    <li><b>Numerical-method judgment</b>: I can combine integration, residual design, damping, line search, initialization, and Jacobian updates into one practical method.</li>
-    <li><b>Deployable engineering</b>: I can expose the same core through C ABI, Python, Unity/C#, .NET, and Godot instead of leaving it as lab-only code.</li>
-    <li><b>Debuggability</b>: explicit statuses and best-effort outputs matter to me as much as nominal success cases.</li>
+    <li>Built a deployable nonlinear interception solver with explicit physics assumptions and status outputs.</li>
+    <li>Packaged the same core through a C ABI, Python/PyPI, Unity/C#, .NET, and Godot integration paths.</li>
+    <li>Benchmarked the auxiliary residual method against direct line-of-sight residual correction in the ICROS 2026 manuscript.</li>
   </ul>
 </div>
 
@@ -180,10 +178,10 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Limits And Failure Cases</h3>
+  <h3>Known Limits</h3>
   <ul>
     <li>The runtime using the solver must match the same physics and integration assumptions; different timesteps or integrators can invalidate the hit.</li>
     <li>Strongly nonlinear cases are handled numerically, so convergence quality depends on solver settings and problem conditioning.</li>
-    <li>The implementation prioritizes <b>deployable robustness</b>, explicit diagnostics, and best-effort outputs instead of hiding difficult convergence states.</li>
+    <li>Non-converged cases return explicit status codes and the best result found, so callers can decide how to handle difficult shots.</li>
   </ul>
 </div>

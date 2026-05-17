@@ -6,15 +6,15 @@ classes: wide
 ---
 
 <div class="project-card">
-  <p class="eyebrow">How The Work Reads Technically</p>
+  <p class="eyebrow">Engineering Focus</p>
   <p>
-    The recurring pattern across the work is direct:
-    define a hard physical or runtime problem, model it precisely, make it run, and expose enough diagnostics to debug it in practice.
+    The projects below share a practical structure: model the physical or runtime problem, implement the working path,
+    and leave enough logs, metrics, or interfaces to inspect the result.
   </p>
 </div>
 
 <div class="project-card">
-  <h3>Primary Signals</h3>
+  <h3>Technical Areas</h3>
   <div class="mini-grid">
     <div class="mini-card">
       <div class="mini-kicker">Applied Algorithms</div>
@@ -87,15 +87,15 @@ classes: wide
 <div class="project-card">
   <h3>How I Tend To Work</h3>
   <ul>
-    <li><b>Problem first</b>: I usually start from an engineering bottleneck rather than a technology checklist.</li>
-    <li><b>Runtime matters</b>: I care whether a thing can actually run, fail visibly, recover, and be inspected afterward.</li>
+    <li><b>Problem first</b>: I start from the engineering bottleneck before choosing the implementation path.</li>
+    <li><b>Runtime matters</b>: implementations should run, fail visibly, recover, and leave inspectable state afterward.</li>
     <li><b>Diagnostics matter</b>: explicit statuses, replayable logs, plots, debug streams, and operational visibility are recurring themes.</li>
-    <li><b>Interfaces matter</b>: I try to package useful cores behind APIs, launch files, services, or analysis workflows rather than leaving them as one-off scripts.</li>
+    <li><b>Interfaces matter</b>: useful cores are packaged behind APIs, launch files, services, or analysis workflows.</li>
   </ul>
 </div>
 
 <div class="project-card">
-  <h3>Evidence To Look For</h3>
+  <h3>Evidence Map</h3>
   <ul>
     <li><b>Measured behavior</b>: solver benchmark tables, regression scripts, and paper-level comparison metrics.</li>
     <li><b>Runtime integration</b>: launch paths, ROS 2 topic contracts, odometry alignment, command outputs, and real-vehicle parking validation.</li>
