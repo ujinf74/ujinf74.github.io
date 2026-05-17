@@ -10,7 +10,7 @@ classes: wide
 
   <p style="margin-top:.45rem;">
     I am a Mechanical & Computer Engineering student focused on <b>optimal control</b>, <b>numerical optimization</b>, and <b>dynamics</b>,
-    building <b>real-time simulation</b>, <b>control systems</b>, <b>telemetry software</b>, and <b>analysis tools</b>
+    building <b>nonlinear solvers</b>, <b>real-vehicle autonomy integrations</b>, <b>telemetry software</b>, and <b>analysis tools</b>
     for robotics, autonomous systems, and vehicle dynamics.
   </p>
 </div>
@@ -18,7 +18,6 @@ classes: wide
 <div class="project-card">
   <h3>How To Read This Portfolio</h3>
   <p>
-    The work here is less about project count and more about what those projects imply technically.
     The recurring pattern is <b>model the problem</b>, <b>make it run</b>, <b>expose diagnostics</b>, and <b>turn the result into a usable interface</b>.
     See the capability breakdown on <a href="/capabilities/">Capabilities</a>.
   </p>
@@ -31,7 +30,7 @@ classes: wide
       <b>Undergraduate Research Intern / Autonomous Driving Team Lead, HuVILab</b>
       <small style="opacity:.7;">(Tech University of Korea / 한국공학대학교)</small><br/>
       <b>(2026–Present)</b><br/>
-      Focus: <b>mapless autonomous reverse parking</b>, <b>planning/control under constraints</b>, and <b>driving coaching systems</b>
+      Focus: <b>real-vehicle mapless autonomous reverse parking</b>, <b>planning/control under constraints</b>, and <b>driving coaching systems</b>
       based on trajectory analysis and feedback generation.
     </li>
   </ul>
@@ -55,29 +54,20 @@ classes: wide
 <div class="project-card">
   <h3>What Tends To Stand Out</h3>
   <ul>
-    <li><b>Abstraction under real constraints</b>: I like turning messy physical or runtime behavior into something structured enough to reason about and debug.</li>
+    <li><b>Abstraction under real constraints</b>: I turn messy physical or runtime behavior into something structured enough to reason about and debug.</li>
     <li><b>Cross-domain connection</b>: I move between solver work, runtime work, autonomy integration, and telemetry/analysis tooling rather than staying inside one layer.</li>
     <li><b>Diagnostics-first habits</b>: benchmarks, explicit status reporting, replayable logs, monitoring paths, and inspectable outputs show up repeatedly.</li>
-    <li><b>Tool-building instinct</b>: I usually try to leave behind an API, a dashboard, a launch path, or an analysis workbench, not just a successful experiment.</li>
+    <li><b>Reusable tools</b>: I usually leave behind an API, a dashboard, a launch path, or an analysis workbench, not just a successful experiment.</li>
   </ul>
 </div>
 
 <div class="project-card">
   <h3>Technical Strengths</h3>
   <ul>
-    <li><b>Dynamics and numerics</b>: RK4 integration, residual design, damping, convergence handling, and solver-facing diagnostics.</li>
-    <li><b>Systems integration</b>: ROS 2 messages, QoS/TF, launch composition, service/runtime boundaries, and multi-stage engineering flows.</li>
+    <li><b>Dynamics and numerics</b>: RK4 integration, auxiliary residual design, damping, convergence handling, and solver-facing diagnostics.</li>
+    <li><b>Systems integration</b>: ROS 2 messages, QoS/TF, launch composition, Autoware command topics, CAN-facing vehicle interfaces, and multi-stage engineering flows.</li>
     <li><b>Telemetry and field tooling</b>: GNSS/RTK collection, logging, monitoring, replay, and analysis loops tied to real operations.</li>
     <li><b>Packaging and interfaces</b>: C ABI boundaries, Python bindings, deployable runtime configuration, and user-facing analysis tools.</li>
-  </ul>
-</div>
-
-<div class="project-card">
-  <h3>Where I Am Still Improving</h3>
-  <ul>
-    <li><b>Repository discipline</b>: some work is better engineered than it is cleanly packaged, and I keep pushing artifact separation and test consistency further.</li>
-    <li><b>Safety and validation depth</b>: the autonomy and field-runtime projects show strong prototype ability, but production-grade validation is a different bar.</li>
-    <li><b>Evidence density</b>: the next upgrade is more measured proof, diagrams, screenshots, and repeatable validation paths rather than just more project count.</li>
   </ul>
 </div>
 
@@ -85,7 +75,6 @@ classes: wide
   <h3>Leadership</h3>
   <ul>
     <li><b>Autonomous Driving Team Lead</b>, HuVILab undergraduate research team</li>
-    <li><b>President</b>, 50-member fashion club</li>
   </ul>
 </div>
 

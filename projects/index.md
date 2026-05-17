@@ -19,7 +19,8 @@ classes: wide
 
   <p>
     <b>Simulate-first intercept optimizer</b> for moving targets under <b>gravity</b> and <b>quadratic drag</b> (+ optional wind).
-    It integrates nonlinear projectile dynamics (RK4) and solves launch angles (θ, φ) by forming a <b>closest-approach miss residual</b> and running <b>Levenberg–Marquardt</b>.
+    It integrates nonlinear projectile dynamics (RK4) and solves launch angles (θ, φ) using an <b>auxiliary-solution-induced residual</b>
+    with <b>Levenberg–Marquardt</b>, line search, and Broyden-style Jacobian refinement.
   </p>
 
   <video controls playsinline preload="metadata"
@@ -30,7 +31,8 @@ classes: wide
   <b>What I built</b>
   <ul>
     <li><b>Dynamics</b>: fixed-step RK4 with quadratic drag (+ wind as air-velocity)</li>
-    <li><b>Numerical optimization</b>: closest-approach residual → LM (damped least squares) + line-search/lambda tries</li>
+    <li><b>Residual method</b>: drag-inclusive miss transformed through an auxiliary vacuum ballistic response</li>
+    <li><b>Numerical optimization</b>: auxiliary residual → LM (damped least squares) + line-search/lambda tries</li>
     <li><b>Speed</b>: Broyden-style Jacobian refinement to reduce full re-linearizations</li>
     <li><b>Robust outputs</b>: explicit status/message + best-effort solution even on non-ideal convergence</li>
     <li><b>Deployment</b>: stable C ABI (FFI-ready), PyPI package with prebuilt binaries, Unity/C# via P/Invoke</li>
@@ -44,24 +46,23 @@ classes: wide
 
   <div class="result-strip">
     <span><b>Verified benchmark</b></span>
-    <span>fast 0.107 ms median</span>
-    <span>balanced 0.219 ms median</span>
-    <span>precise 0.265 ms median</span>
+    <span>fast 0.094 ms median</span>
+    <span>balanced 0.182 ms median</span>
+    <span>precise 0.199 ms median</span>
   </div>
 
   <div class="proof-callout">
     <b>What this proves</b>
-    <span>numerical modeling, nonlinear solver construction, API design, packaging discipline, and diagnostic awareness.</span>
+    <span>paper-backed numerical method design, nonlinear solver construction, API design, packaging discipline, and diagnostic awareness.</span>
   </div>
 </div>
 
 <div class="project-card">
-  <h3>Mapless Autonomous Parking <small style="opacity:.7;">(Isaac Sim · ROS 2 Humble · Autoware Universe)</small></h3>
+  <h3>Mapless Autonomous Parking <small style="opacity:.7;">(Hyundai Ioniq · ROS 2 Humble · Autoware Universe · FAST-LIO)</small></h3>
 
   <p>
-    <b>Real-time mapless parking</b> without prebuilt pointcloud/vector maps:
-    <b>online occupancy mapping → occupancy-only Hybrid A*</b> replanning → <b>trajectory processing + low-speed parking execution</b>
-    for forward/reverse parking maneuvers.
+    <b>Real-vehicle mapless autonomous parking</b> on a Hyundai Ioniq without prebuilt pointcloud/vector maps:
+    <b>FAST-LIO odometry → LiDAR probabilistic occupancy grid → RViz goal-pose planning → trajectory following → Ioniq CAN command path</b>.
   </p>
 
   <video controls playsinline preload="metadata"
@@ -71,6 +72,10 @@ classes: wide
 
   <b>What I built</b>
   <ul>
+    <li><b>Real-vehicle addon layer</b>: integrated with the existing HVL/Autoware/Ioniq stack rather than replacing it</li>
+
+    <li><b>FAST-LIO bridge</b>: <code>/Odometry_base_link</code> aligned into the Autoware localization and TF path</li>
+
     <li><b>Autoware compatibility layer</b>: pointcloud fields/frame adaptation + self-cropping + ground filtering</li>
 
     <li><b>Occupancy mapping</b>:
@@ -82,7 +87,7 @@ classes: wide
     </li>
 
     <li><b>Planning without vector maps</b>:
-      custom node using Autoware freespace planning algorithms (<b>Hybrid A*</b>) from occupancy-only + vehicle constraints
+      custom node using Autoware freespace planning algorithms from occupancy-only + vehicle constraints
     </li>
 
     <li><b>Trajectory processing</b>:
@@ -90,11 +95,11 @@ classes: wide
     </li>
 
     <li><b>Execution layer</b>:
-      parking follower path with longitudinal control, reverse-capable execution, and trajectory-direction-aware handling
+      trajectory follower publishing <code>/control/command/control_cmd</code>, <code>/control/command/actuation_cmd</code>, and <code>/control/command/gear_cmd</code>
     </li>
 
-    <li><b>Forward/Reverse execution</b>:
-      segment-wise direction handling + gear command integration based on trajectory direction/velocity sign
+    <li><b>Ioniq vehicle interface</b>:
+      engage/hazard/turn command keepalive plus <code>control_converter</code> / <code>control_command</code> / CAN integration
     </li>
 
     <li><b>Real-time engineering & debugging</b>:
@@ -108,7 +113,7 @@ classes: wide
 
   <div class="proof-callout">
     <b>What this proves</b>
-    <span>ROS 2 / autonomy integration depth, system composition under constraints, and practical operator-facing tooling.</span>
+    <span>real-vehicle autonomy validation, ROS 2 / Autoware integration depth, Ioniq command wiring, and practical operator-facing tooling.</span>
   </div>
 </div>
 

@@ -8,9 +8,8 @@ classes: wide
 <div class="project-card">
   <p class="eyebrow">How The Work Reads Technically</p>
   <p>
-    This portfolio is strongest when read as a set of <b>ability signals</b>, not just a list of projects.
-    Across the repositories, the recurring pattern is the same:
-    define a hard problem, model it precisely, make it run, then expose enough diagnostics to debug it in practice.
+    The recurring pattern across the work is direct:
+    define a hard physical or runtime problem, model it precisely, make it run, and expose enough diagnostics to debug it in practice.
   </p>
 </div>
 
@@ -18,13 +17,13 @@ classes: wide
   <h3>Primary Signals</h3>
   <div class="mini-grid">
     <div class="mini-card">
-      <div class="mini-kicker">Numerical Thinking</div>
-      <p>Nonlinear solver design, RK4 integration, residual construction, damping, convergence handling, and benchmark-minded implementation.</p>
+      <div class="mini-kicker">Applied Algorithms</div>
+      <p>Nonlinear solver design, RK4 integration, auxiliary residual construction, damping, convergence handling, and benchmark-minded implementation.</p>
       <a class="btn" href="/projects/ballistic-solver/">Seen in ballistic-solver</a>
     </div>
     <div class="mini-card">
-      <div class="mini-kicker">System Integration</div>
-      <p>Bridging perception, planning, control, messages, launch composition, and operator tooling into one working parking stack.</p>
+      <div class="mini-kicker">Vehicle Integration</div>
+      <p>Bridging odometry, perception, planning, control messages, launch composition, and Ioniq CAN-facing tooling into one validated parking stack.</p>
       <a class="btn" href="/projects/mapless-autonomous-parking/">Seen in autonomous parking</a>
     </div>
     <div class="mini-card">
@@ -53,7 +52,7 @@ classes: wide
     <tbody>
       <tr>
         <td>Mathematical modeling</td>
-        <td>Turning physical behavior into a solvable computational model</td>
+        <td>Turning physical behavior into a solvable computational model and residual formulation</td>
         <td><a href="/projects/ballistic-solver/">ballistic-solver</a></td>
       </tr>
       <tr>
@@ -62,8 +61,8 @@ classes: wide
         <td><a href="/projects/ballistic-solver/">ballistic-solver</a></td>
       </tr>
       <tr>
-        <td>ROS 2 / autonomy integration</td>
-        <td>Localization bridge, occupancy flow, planner wiring, follower path, RViz control</td>
+        <td>ROS 2 / vehicle autonomy integration</td>
+        <td>FAST-LIO bridge, occupancy flow, planner wiring, Autoware command topics, Ioniq CAN path, RViz control</td>
         <td><a href="/projects/mapless-autonomous-parking/">Mapless Autonomous Parking</a></td>
       </tr>
       <tr>
@@ -96,10 +95,10 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>What Is Still Weak</h3>
+  <h3>Evidence To Look For</h3>
   <ul>
-    <li>Some repos still need stronger test consistency, cleaner artifact separation, and tighter packaging discipline.</li>
-    <li>The autonomy and field-runtime work shows strong prototype ability, but not full production safety validation.</li>
-    <li>The strongest next step is not more project count; it is denser proof: diagrams, measured regressions, screenshots, and repeatable validation paths.</li>
+    <li><b>Measured behavior</b>: solver benchmark tables, regression scripts, and paper-level comparison metrics.</li>
+    <li><b>Runtime integration</b>: launch paths, ROS 2 topic contracts, odometry alignment, command outputs, and real-vehicle parking validation.</li>
+    <li><b>Operational tooling</b>: logs, monitoring, replay, and analysis interfaces that make field behavior inspectable.</li>
   </ul>
 </div>

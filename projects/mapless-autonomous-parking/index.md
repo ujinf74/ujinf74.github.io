@@ -6,10 +6,11 @@ classes: wide
 ---
 
 <div class="project-card">
-  <p class="eyebrow">Isaac Sim · ROS 2 Humble · Autoware Universe · HuVILab</p>
+  <p class="eyebrow">Hyundai Ioniq · ROS 2 Humble · Autoware Universe · FAST-LIO · HuVILab</p>
   <p>
-    This project targets <b>real-time parking without prebuilt pointcloud/vector maps</b>.
-    The stack builds local occupancy information online, plans parking motion from occupancy-only inputs, and executes low-speed forward/reverse maneuvers through a custom addon layer on top of an existing vehicle stack.
+    I implemented and validated a <b>mapless autonomous parking addon on a real Hyundai Ioniq platform</b>.
+    The stack uses FAST-LIO odometry, LiDAR-based probabilistic occupancy grids, RViz goal-pose input,
+    parking trajectory generation, and Autoware-compatible control commands wired into the Ioniq CAN control path.
   </p>
 
   <video controls playsinline preload="metadata"
@@ -26,69 +27,71 @@ classes: wide
   <h3>Problem</h3>
   <ul>
     <li>No prebuilt parking map available.</li>
-    <li>The addon had to fit around an existing vehicle/control stack instead of replacing the whole system.</li>
-    <li>Parking had to work under low-speed, reverse-capable, compute-bounded conditions with practical ROS 2 timing and visualization needs.</li>
+    <li>The addon had to fit around the existing validated HVL/Autoware/Ioniq stack instead of replacing the vehicle platform.</li>
+    <li>Parking had to work on the real vehicle under low-speed, reverse-capable, compute-bounded conditions with practical ROS 2 timing and visualization needs.</li>
   </ul>
 </div>
 
 <div class="project-card">
   <h3>Architecture</h3>
   <div class="flow-diagram">
-    <div class="flow-step"><b>Perception Adapter</b><span>pointcloud field/frame adaptation for occupancy-grid input</span></div>
+    <div class="flow-step"><b>FAST-LIO Bridge</b><span>/Odometry_base_link aligned into the Autoware localization path</span></div>
     <div class="flow-arrow">→</div>
-    <div class="flow-step"><b>OGM Layer</b><span>occupancy accumulation, ROI handling, decay for stale cells</span></div>
+    <div class="flow-step"><b>LiDAR OGM</b><span>pointcloud adaptation, ground filtering, probabilistic occupancy grid</span></div>
     <div class="flow-arrow">→</div>
-    <div class="flow-step"><b>Planner</b><span>occupancy-only parking trajectory generation</span></div>
+    <div class="flow-step"><b>Goal-Pose Planner</b><span>RViz target pose to parking trajectory without prebuilt maps</span></div>
     <div class="flow-arrow">→</div>
-    <div class="flow-step"><b>Trajectory Processing</b><span>resampler, filler, direction-aware preparation</span></div>
+    <div class="flow-step"><b>Trajectory Follower</b><span>control, actuation, and gear command topics</span></div>
     <div class="flow-arrow">→</div>
-    <div class="flow-step"><b>Follower + UI</b><span>parking tracking, RViz control, CLI/RViz debug</span></div>
+    <div class="flow-step"><b>Ioniq CAN Path</b><span>control_converter/control_command to socketcan and can0</span></div>
   </div>
 </div>
 
 <div class="project-card">
   <h3>What I Built</h3>
   <ul>
-    <li><b>Addon package composition</b> that layers autonomous parking and FAST_LIO linkage onto an existing validated stack.</li>
-    <li><b>Pointcloud adapter</b> to make LiDAR data usable by the occupancy-grid path.</li>
-    <li><b>OGM accumulator</b> for occupancy-map accumulation and post-processing.</li>
-    <li><b>Parking planner</b> driven by occupancy grid, current pose, and goal pose.</li>
-    <li><b>Trajectory resampler / filler / follower</b> for parking-specific post-processing and execution.</li>
-    <li><b>RViz control path</b> with interactive-marker-based enable/cancel UI.</li>
-    <li><b>ROS 2 integration work</b> including QoS handling, topic alignment, and launch composition around the existing vehicle stack.</li>
+    <li><b>Real-vehicle addon package</b> that layers autonomous parking and FAST-LIO linkage onto the existing HVL/Autoware/Ioniq stack.</li>
+    <li><b>FAST-LIO localization bridge</b> that aligns external odometry with the Autoware pose/TF path used by the parking stack.</li>
+    <li><b>LiDAR pointcloud adapter and OGM path</b> for probabilistic occupancy-grid generation without prebuilt pointcloud/vector maps.</li>
+    <li><b>Parking planner</b> driven by occupancy grid, current pose, and RViz goal pose.</li>
+    <li><b>Trajectory resampler / filler / follower</b> that produces Autoware control, actuation, and gear command topics.</li>
+    <li><b>Ioniq command keepalive</b> for engage, hazard, and turn-indicator inputs required by the vehicle command converter.</li>
+    <li><b>Launch integration</b> that can bring up the Ioniq driver, ros2_socketcan bridge, and CAN interface path around the existing vehicle stack.</li>
   </ul>
 </div>
 
 <div class="project-card">
   <h3>Built vs Used</h3>
   <ul>
-    <li><b>Used</b>: ROS 2 Humble, Autoware components, Isaac Sim, FAST_LIO-linked localization path, existing vehicle/control stack.</li>
-    <li><b>Built</b>: compatibility layer, occupancy accumulation path, parking planner integration, trajectory processing nodes, parking follower path, RViz control interface, launch integration.</li>
+    <li><b>Used</b>: ROS 2 Humble, Autoware components, FAST-LIO, the existing HVL vehicle stack, and the Ioniq driver/CAN command interface.</li>
+    <li><b>Built</b>: localization bridge, compatibility layer, occupancy accumulation path, parking planner integration, trajectory processing nodes, Ioniq command keepalive, RViz control interface, and launch integration.</li>
   </ul>
 </div>
 
 <div class="project-card">
   <h3>What This Project Proves</h3>
   <ul>
-    <li><b>Autonomy-stack composition</b>: I can work around an existing stack and add the missing layers instead of needing a blank slate.</li>
-    <li><b>Geometry and runtime awareness</b>: I care about frames, trajectories, direction changes, QoS, and operator control paths together.</li>
-    <li><b>Prototype depth</b>: this is more than a tutorial assembly; it reflects actual system wiring, message adaptation, and execution logic.</li>
+    <li><b>Real-vehicle autonomy integration</b>: I can add missing autonomy layers around an existing validated vehicle stack and make them drive.</li>
+    <li><b>End-to-end ROS 2 wiring</b>: I connected odometry, occupancy mapping, goal-pose planning, trajectory following, Autoware command topics, and the Ioniq CAN path.</li>
+    <li><b>Runtime judgment</b>: I handled frames, QoS, direction changes, command keepalive, launch composition, and operator control as one system.</li>
   </ul>
 </div>
 
 <div class="project-card">
   <h3>Evidence</h3>
   <ul>
-    <li>The addon package explicitly separates its scope from the base vehicle/control stack and documents the nodes it adds.</li>
-    <li>The launch path wires occupancy-grid generation, planner output, trajectory processing, follower integration, and RViz interaction into one runnable parking stack.</li>
-    <li>The public portfolio now shows the parking video directly so the project is not just described as text.</li>
+    <li>Real Hyundai Ioniq parking execution was validated with stable odometry and vehicle motion.</li>
+    <li>The launch path wires FAST-LIO odometry, occupancy-grid generation, planner output, trajectory processing, control output, and RViz interaction into one runnable parking stack.</li>
+    <li>The control path publishes <code>/control/command/control_cmd</code>, <code>/control/command/actuation_cmd</code>, and <code>/control/command/gear_cmd</code>, then follows the Ioniq <code>control_converter</code> / <code>control_command</code> / CAN interface.</li>
+    <li>The demo video shows the parking stack as a running system rather than only an architecture sketch.</li>
   </ul>
 </div>
 
 <div class="project-card">
-  <h3>Current Limits</h3>
+  <h3>Implementation Notes</h3>
   <ul>
-    <li>This page does not yet publish a public repo or rosgraph-level artifact, so the strongest proof remains the architecture summary and demo video.</li>
-    <li>I am describing the control layer conservatively here as a <b>parking follower path</b> rather than over-claiming a single named controller variant.</li>
+    <li>The base HVL/Autoware/Ioniq platform remains the vehicle foundation; the parking package is an addon layer, not a replacement stack.</li>
+    <li>The default path uses LiDAR pointcloud-based probabilistic occupancy grids. A pose-only straight-line mode exists only for debug and bring-up.</li>
+    <li>Simulation support remains useful for iteration, but the main claim here is real-vehicle Ioniq integration and validation.</li>
   </ul>
 </div>

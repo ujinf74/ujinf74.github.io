@@ -1,5 +1,5 @@
 title: "∞"
-description: "Numerical solvers, telemetry systems, control, and real-time engineering"
+description: "Applied algorithms, vehicle software, telemetry runtimes, and analysis tools"
 
 locale: "en-US"
 timezone: "Asia/Seoul"
@@ -34,7 +34,7 @@ defaults:
 
 author:
   name: "Ujin Kwon · 권우진"
-  bio: "Numerical solvers, telemetry systems,\n control, and real-time engineering"
+  bio: "Applied algorithms, vehicle software,\n telemetry runtimes, and analysis tools"
   avatar: "/assets/images/avatar.png"
   links:
     - label: "GitHub"
