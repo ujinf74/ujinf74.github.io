@@ -1,69 +1,23 @@
-# Build outputs
-build/
-out/
-cmake-build-*/
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-compile_commands.json
-**/dist/
+# Jekyll / GitHub Pages
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
-# Object / binary / library files
-*.o
-*.obj
-*.exe
-*.out
-*.a
-*.lib
-*.so
-*.dll
-*.dylib
-*.whl
-*.zip
-*.sln
+# Local tooling
+.bundle/
+vendor/
+Gemfile.lock
 
-# Debug symbols / misc
-*.pdb
-*.ilk
-*.dSYM/
-*.log
-
-# IDE/editor
+# Editor / OS
 .vscode/
 .idea/
-*.user
-*.suo
-*.vcxproj*
-*.filters
-*.xcodeproj/
-*.xcworkspace/
-
-# OS
 .DS_Store
 Thumbs.db
 
-# Visual Studio
-.vs/
-
-# .NET build outputs
-**/bin/
-**/obj/
-
-# Python
-__pycache__/
-*.py[cod]
-**/*.egg-info/
-bindings/python/*/_version.py
-.venv/
-venv/
-.bench_*/
-.test_site*/
-.pip_cache/
-.pip_tmp/
-benchmarks/benchmark_report.md
-
-# Assets
-assets/
-*.pdf
-_*backup/
+# Local backups and scratch files
+_local_*/
+*_backup/
+*.bak
+*.tmp
+*.log
