@@ -1,12 +1,12 @@
 ---
 ---
 
-$primary-color: #9b6cff;
-$link-color: #9b6cff;
+$primary-color: #6f82ff;
+$link-color: #6f82ff;
 $link-color-hover: #d55cff;
-$link-color-visited: #8370d8;
+$link-color-visited: #7f88d8;
 $masthead-link-color: #e8eeff;
-$masthead-link-color-hover: #d55cff;
+$masthead-link-color-hover: #6f82ff;
 
 @import "minimal-mistakes/skins/dark";
 @import "minimal-mistakes";
@@ -41,7 +41,7 @@ $masthead-link-color-hover: #d55cff;
   --accent-2:#9b6cff;
   --accent-3:#d55cff;
   --accent-soft:rgba(111,130,255,.14);
-  --accent-line:rgba(155,108,255,.45);
+  --accent-line:rgba(111,130,255,.48);
 }
 
 @media (prefers-reduced-motion: reduce){
@@ -64,7 +64,7 @@ body{
   font-smooth:never;
   text-rendering:optimizeSpeed;
   font-synthesis:none;
-  font-size:14px;
+  font-size:15px;
   font-weight:400;
   line-height:1.62;
 }
@@ -163,7 +163,7 @@ body::after{
 
 .site-title{
   font-family:var(--font-mono);
-  font-size:22px;
+  font-size:24px;
   line-height:1.2;
   font-weight:400 !important;
   letter-spacing:0;
@@ -180,20 +180,20 @@ body::after{
   color:var(--text) !important;
   opacity:.92;
   font-family:var(--font-mono);
-  font-size:13px;
+  font-size:14px;
   font-weight:400;
 }
 
 .greedy-nav .visible-links a::before{
-  background:var(--accent-2) !important;
+  background:var(--accent) !important;
 }
 
 .greedy-nav .visible-links a:hover,
 .greedy-nav .visible-links a:focus{
-  background:rgba(155,108,255,.14) !important;
+  background:rgba(111,130,255,.14) !important;
   color:var(--text) !important;
   opacity:1;
-  outline:1px solid rgba(155,108,255,.45) !important;
+  outline:1px solid rgba(111,130,255,.45) !important;
   outline-offset:0;
 }
 
@@ -208,7 +208,7 @@ body::after{
 }
 
 .page__content h1{
-  font-size:28px;
+  font-size:32px;
   line-height:1.22;
   margin:.45rem 0 1rem;
   background:none;
@@ -217,11 +217,11 @@ body::after{
 }
 
 @media (max-width:720px){
-  .page__content h1{font-size:24px}
+  .page__content h1{font-size:27px}
 }
 
 .page__content h2{
-  font-size:18px;
+  font-size:20px;
   line-height:1.35;
   margin-top:2.6rem;
   padding-top:.7rem;
@@ -229,14 +229,14 @@ body::after{
 }
 
 .page__content h3{
-  font-size:15px;
+  font-size:16px;
   line-height:1.45;
   margin-bottom:.55rem;
 }
 
 .page__content p,
 .page__content li{
-  font-size:14px;
+  font-size:15px;
 }
 
 .page__content a{
@@ -280,7 +280,7 @@ body::after{
 .eyebrow{
   display:inline-block;
   font-family:var(--font-mono);
-  font-size:11px;
+  font-size:12px;
   font-weight:400;
   letter-spacing:0;
   color:var(--accent);
@@ -308,7 +308,7 @@ body::after{
 
 .mini-kicker{
   font-family:var(--font-mono);
-  font-size:11px;
+  font-size:12px;
   font-weight:400;
   letter-spacing:0;
   color:var(--accent);
@@ -361,7 +361,7 @@ body::after{
   border-radius:var(--pill);
   border:1px solid rgba(116,154,255,.18);
   background:rgba(111,130,255,.045);
-  font-size:13px;
+  font-size:14px;
 }
 
 .result-table{
@@ -403,7 +403,7 @@ body::after{
 
 .proof-callout b{
   font-family:var(--font-mono);
-  font-size:11px;
+  font-size:12px;
   font-weight:400;
   letter-spacing:0;
 }
@@ -424,7 +424,7 @@ body::after{
     rgba(6,8,18,.72);
   text-decoration:none !important;
   font-family:var(--font-mono);
-  font-size:13px;
+  font-size:14px;
   font-weight:400;
   color:var(--text);
   box-shadow:inset 0 1px 0 rgba(255,255,255,.025), 0 0 16px rgba(111,130,255,.06);
@@ -440,12 +440,12 @@ body::after{
 
 a:focus,
 button:focus{
-  outline:1px solid rgba(155,108,255,.55) !important;
+  outline:1px solid rgba(111,130,255,.55) !important;
   outline-offset:2px !important;
 }
 
 :focus-visible{
-  outline:1px solid rgba(155,108,255,.55) !important;
+  outline:1px solid rgba(111,130,255,.55) !important;
   outline-offset:3px;
   border-radius:10px;
 }
