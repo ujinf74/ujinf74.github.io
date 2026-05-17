@@ -18,6 +18,12 @@ classes: wide
     <source src="/assets/videos/real-vehicle_demo.mp4" type="video/mp4">
   </video>
 
+  <p style="opacity:.76; margin-top:.7rem;">Earlier Isaac Sim prototype:</p>
+  <video controls playsinline preload="metadata"
+    style="width:100%; border-radius:18px; margin-top:.3rem; border:1px solid rgba(255,255,255,.14);">
+    <source src="/assets/videos/isaac_autopark_demo.mp4" type="video/mp4">
+  </video>
+
   <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.8rem;">
     <a class="btn" href="/projects/">Back to Projects</a>
   </div>
@@ -53,8 +59,9 @@ classes: wide
     <li><b>Real-vehicle addon package</b> that layers autonomous parking and FAST-LIO linkage onto the existing HVL/Autoware/Ioniq stack.</li>
     <li><b>FAST-LIO localization bridge</b> that aligns external odometry with the Autoware pose/TF path used by the parking stack.</li>
     <li><b>LiDAR pointcloud adapter and OGM path</b> for probabilistic occupancy-grid generation without prebuilt pointcloud/vector maps.</li>
+    <li><b>Occupancy accumulation</b> with map-frame projection, probability heuristics, stale-cell decay, and ROI reduction for tractable replanning.</li>
     <li><b>Parking planner</b> driven by occupancy grid, current pose, and RViz goal pose.</li>
-    <li><b>Trajectory resampler / filler / follower</b> that produces Autoware control, actuation, and gear command topics.</li>
+    <li><b>Trajectory resampler / filler / follower</b> with continuous reference preparation for low-speed forward/reverse maneuver tracking.</li>
     <li><b>Ioniq command keepalive</b> for engage, hazard, and turn-indicator inputs required by the vehicle command converter.</li>
     <li><b>Launch integration</b> that can bring up the Ioniq driver, ros2_socketcan bridge, and CAN interface path around the existing vehicle stack.</li>
   </ul>
@@ -82,6 +89,7 @@ classes: wide
   <ul>
     <li>Real Hyundai Ioniq parking execution was validated with stable odometry and vehicle motion.</li>
     <li>The launch path wires FAST-LIO odometry, occupancy-grid generation, planner output, trajectory processing, control output, and RViz interaction into one runnable parking stack.</li>
+    <li>The localization bridge supports identity, initialpose, and reference-odometry alignment modes for adapting FAST-LIO odometry into the Autoware pose path.</li>
     <li>The control path publishes <code>/control/command/control_cmd</code>, <code>/control/command/actuation_cmd</code>, and <code>/control/command/gear_cmd</code>, then follows the Ioniq <code>control_converter</code> / <code>control_command</code> / CAN interface.</li>
     <li>The demo video shows the parking stack running on the real vehicle.</li>
   </ul>

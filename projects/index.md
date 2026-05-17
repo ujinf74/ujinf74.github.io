@@ -90,7 +90,7 @@ classes: wide
     </li>
 
     <li><b>Trajectory processing</b>:
-      resampling / filling and continuous-reference preparation for low-speed maneuver tracking
+      resampling / filling and continuous-reference preparation for low-speed forward/reverse maneuver tracking
     </li>
 
     <li><b>Execution layer</b>:

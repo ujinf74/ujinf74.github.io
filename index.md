@@ -36,7 +36,7 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Core Axes</h3>
+  <h3>Focus</h3>
   <div class="mini-grid">
     <div class="mini-card">
       <div class="mini-kicker">Applied Algorithms</div>
@@ -84,7 +84,7 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Context</h3>
+  <h3>Highlights</h3>
   <ul>
     <li><b>Award</b>: KSAE 2024 Smart e-Mobility Competition (EV Division) — Encouragement Prize.</li>
     <li><b>Research</b>: autonomous driving team lead at HuVILab, focused on real-vehicle mapless parking, planning/control under constraints, and coaching systems.</li>

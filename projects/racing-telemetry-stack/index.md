@@ -42,7 +42,7 @@ classes: wide
   <h3>What I Built</h3>
   <ul>
     <li><b>Raspberry Pi runtime</b> with systemd-managed startup, environment-based configuration, and automatic restart behavior.</li>
-    <li><b>ZED-F9R configuration path</b> for measurement rate, message setup, and RTCM input preparation at startup.</li>
+    <li><b>ZED-F9R configuration path</b> for 20 Hz measurement, NAV-PVT, HPPOSLLH, RAWX, ESF-RAW, MON-HW/RF, and RTCM3 input preparation at startup.</li>
     <li><b>RTK correction flow</b> with NTRIP connection, GGA injection, RTCM queueing, retry handling, and fallback behavior.</li>
     <li><b>Buffered logging</b> for date-foldered drive logs, merged GPS/IMU CSV output, and optional raw UBX capture.</li>
     <li><b>Fault handling</b> for idle timeout, invalid GPS jumps, serial retry, PVT timeout handling, and optional receiver reconfiguration.</li>
@@ -71,7 +71,7 @@ classes: wide
 <div class="project-card">
   <h3>Evidence</h3>
   <ul>
-    <li>The project description is tied to concrete runtime components: receiver configuration, NTRIP handling, buffered logs, remote state publishing, and browser streaming.</li>
+    <li>The project description is tied to concrete runtime components: receiver configuration, NTRIP handling, buffered CSV/UBX logs, remote state publishing, and browser streaming.</li>
     <li>The architecture is explicitly connected to the downstream <a href="/projects/racing-analyze-gui/">Racing Analyze GUI</a> instead of being presented as an isolated script.</li>
     <li>Field constraints and recovery behavior are part of the implementation: retries, timeouts, filtering, and monitoring are described as runtime features.</li>
   </ul>
