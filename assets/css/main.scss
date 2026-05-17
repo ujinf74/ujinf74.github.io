@@ -1,8 +1,6 @@
 ---
 ---
 
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap");
-
 @import "minimal-mistakes/skins/dark";
 @import "minimal-mistakes";
 
@@ -30,13 +28,13 @@
   --r:8px;
   --pill:6px;
 
-  --font-mono:"GulimChe", "굴림체", "JetBrains Mono", "D2Coding", "Consolas", monospace;
+  --font-mono:"GulimChe", "굴림체", "DotumChe", "돋움체", "MS Gothic", "Lucida Console", monospace;
 
-  --accent:#5aa7ff;
-  --accent-2:#8b6cff;
-  --accent-3:#d65cff;
-  --accent-soft:rgba(90,167,255,.14);
-  --accent-line:rgba(139,108,255,.45);
+  --accent:#6f82ff;
+  --accent-2:#9b6cff;
+  --accent-3:#d55cff;
+  --accent-soft:rgba(111,130,255,.14);
+  --accent-line:rgba(155,108,255,.45);
 }
 
 @media (prefers-reduced-motion: reduce){
@@ -51,16 +49,17 @@ body{
     linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,.014) 1px, transparent 1px),
     radial-gradient(1200px 700px at 12% 8%, rgba(50,104,255,.18), transparent 62%),
-    radial-gradient(1000px 620px at 88% 16%, rgba(139,108,255,.18), transparent 64%),
-    radial-gradient(860px 580px at 48% 86%, rgba(214,92,255,.10), transparent 60%),
+    radial-gradient(1000px 620px at 88% 16%, rgba(155,108,255,.18), transparent 64%),
+    radial-gradient(860px 580px at 48% 86%, rgba(213,92,255,.10), transparent 60%),
     linear-gradient(180deg, var(--bg0), var(--bg1) 35%, var(--bg2));
   background-size:4px 4px, 4px 4px, auto, auto, auto, auto;
   -webkit-font-smoothing:none;
-  -moz-osx-font-smoothing:grayscale;
   font-smooth:never;
   text-rendering:optimizeSpeed;
+  font-synthesis:none;
+  font-size:14px;
   font-weight:400;
-  line-height:1.68;
+  line-height:1.62;
 }
 
 body::before,
@@ -77,22 +76,22 @@ body::after{
 
 body::before{
   background-image:
-    radial-gradient(1px 1px at 10% 20%, rgba(90,167,255,.62) 50%, transparent 55%),
-    radial-gradient(1px 1px at 30% 70%, rgba(214,92,255,.48) 50%, transparent 55%),
+    radial-gradient(1px 1px at 10% 20%, rgba(111,130,255,.62) 50%, transparent 55%),
+    radial-gradient(1px 1px at 30% 70%, rgba(213,92,255,.48) 50%, transparent 55%),
     radial-gradient(1.5px 1.5px at 65% 25%, rgba(255,255,255,.52) 50%, transparent 55%),
     radial-gradient(1.5px 1.5px at 80% 80%, rgba(126,155,255,.42) 50%, transparent 55%),
-    radial-gradient(2px 2px at 55% 55%, rgba(214,92,255,.34) 50%, transparent 55%),
+    radial-gradient(2px 2px at 55% 55%, rgba(213,92,255,.34) 50%, transparent 55%),
     radial-gradient(2px 2px at 15% 85%, rgba(255,255,255,.38) 50%, transparent 55%),
-    radial-gradient(2px 2px at 90% 35%, rgba(90,167,255,.40) 50%, transparent 55%);
+    radial-gradient(2px 2px at 90% 35%, rgba(111,130,255,.40) 50%, transparent 55%);
   background-size: 260px 260px;
   animation: stars-drift 110s linear infinite, stars-twinkle 7s ease-in-out infinite;
 }
 
 body::after{
   background-image:
-    radial-gradient(3px 3px at 20% 30%, rgba(93,169,255,.72) 50%, transparent 60%),
-    radial-gradient(3px 3px at 75% 40%, rgba(139,108,255,.62) 50%, transparent 60%),
-    radial-gradient(3px 3px at 55% 75%, rgba(214,92,255,.55) 50%, transparent 60%);
+    radial-gradient(3px 3px at 20% 30%, rgba(111,130,255,.72) 50%, transparent 60%),
+    radial-gradient(3px 3px at 75% 40%, rgba(155,108,255,.62) 50%, transparent 60%),
+    radial-gradient(3px 3px at 55% 75%, rgba(213,92,255,.55) 50%, transparent 60%);
   background-size: 520px 520px;
   opacity:.16;
   animation: stars-drift2 160s linear infinite, stars-twinkle 9s ease-in-out infinite;
@@ -148,7 +147,7 @@ body::after{
   border-radius:var(--r);
   border:1px solid var(--line);
   background:
-    linear-gradient(90deg, rgba(90,167,255,.07), rgba(139,108,255,.06)),
+    linear-gradient(90deg, rgba(111,130,255,.07), rgba(155,108,255,.06)),
     linear-gradient(180deg, rgba(9,12,27,.92), rgba(6,8,18,.84));
   box-shadow:var(--shadow2);
   backdrop-filter:blur(9px);
@@ -157,8 +156,8 @@ body::after{
 
 .site-title{
   font-family:var(--font-mono);
-  font-size:2.2rem;
-  line-height:1.08;
+  font-size:22px;
+  line-height:1.2;
   font-weight:400 !important;
   letter-spacing:0;
   text-shadow:none;
@@ -174,11 +173,12 @@ body::after{
   color:var(--text) !important;
   opacity:.92;
   font-family:var(--font-mono);
+  font-size:13px;
   font-weight:400;
 }
 
 .greedy-nav .visible-links a:hover{
-  background:rgba(90,167,255,.08);
+  background:rgba(111,130,255,.08);
   opacity:1;
 }
 
@@ -193,50 +193,51 @@ body::after{
 }
 
 .page__content h1{
-  font-size:3.2rem;
-  line-height:1;
+  font-size:28px;
+  line-height:1.22;
   margin:.45rem 0 1rem;
-  background:linear-gradient(90deg, rgba(248,251,254,.98), var(--accent), var(--accent-2), var(--accent-3));
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
+  background:none;
+  color:var(--accent);
   text-shadow:none;
 }
 
 @media (max-width:720px){
-  .page__content h1{font-size:2.45rem}
+  .page__content h1{font-size:24px}
 }
 
 .page__content h2{
-  font-size:1.7rem;
+  font-size:18px;
+  line-height:1.35;
   margin-top:2.6rem;
   padding-top:.7rem;
   border-top:1px solid rgba(255,255,255,.10);
 }
 
 .page__content h3{
-  font-size:1.24rem;
+  font-size:15px;
+  line-height:1.45;
   margin-bottom:.55rem;
 }
 
 .page__content p,
 .page__content li{
-  font-size:1.01rem;
+  font-size:14px;
 }
 
 .page__content a{
   color:inherit;
   text-decoration:underline;
-  text-decoration-color:rgba(90,167,255,.56);
+  text-decoration-color:rgba(111,130,255,.62);
   text-decoration-thickness:1px;
   text-underline-offset:3px;
 }
 
-.page__content a:hover{ text-decoration-color:rgba(214,92,255,.90) }
+.page__content a:hover{ text-decoration-color:rgba(213,92,255,.90) }
 
 .page__content strong,
 .page__content b{
   color:rgba(250,252,255,.98);
+  font-weight:400;
 }
 
 .project-card,
@@ -245,7 +246,7 @@ body::after{
   border:1px solid var(--line) !important;
   border-radius:var(--r) !important;
   background:
-    linear-gradient(90deg, rgba(90,167,255,.045), rgba(139,108,255,.045)),
+    linear-gradient(90deg, rgba(111,130,255,.045), rgba(155,108,255,.045)),
     linear-gradient(180deg, var(--glass1), var(--glass2)) !important;
   box-shadow:var(--shadow1);
   backdrop-filter:blur(8px);
@@ -264,7 +265,7 @@ body::after{
 .eyebrow{
   display:inline-block;
   font-family:var(--font-mono);
-  font-size:12px;
+  font-size:11px;
   font-weight:400;
   letter-spacing:0;
   color:var(--accent);
@@ -282,7 +283,7 @@ body::after{
   border:1px solid rgba(116,154,255,.18);
   border-radius:var(--r);
   background:
-    linear-gradient(180deg, rgba(90,167,255,.035), rgba(139,108,255,.018)),
+    linear-gradient(180deg, rgba(111,130,255,.035), rgba(155,108,255,.018)),
     var(--glass3);
 }
 
@@ -292,7 +293,7 @@ body::after{
 
 .mini-kicker{
   font-family:var(--font-mono);
-  font-size:12px;
+  font-size:11px;
   font-weight:400;
   letter-spacing:0;
   color:var(--accent);
@@ -312,7 +313,7 @@ body::after{
   border:1px solid rgba(116,154,255,.18);
   border-radius:var(--r);
   background:
-    linear-gradient(180deg, rgba(90,167,255,.035), rgba(139,108,255,.018)),
+    linear-gradient(180deg, rgba(111,130,255,.035), rgba(155,108,255,.018)),
     var(--glass3);
 }
 
@@ -328,7 +329,7 @@ body::after{
 
 .flow-arrow{
   align-self:center;
-  font-size:1rem;
+  font-size:14px;
   color:var(--accent);
   text-shadow:none;
 }
@@ -344,8 +345,8 @@ body::after{
   padding:.4rem .7rem;
   border-radius:var(--pill);
   border:1px solid rgba(116,154,255,.18);
-  background:rgba(90,167,255,.045);
-  font-size:.9rem;
+  background:rgba(111,130,255,.045);
+  font-size:13px;
 }
 
 .result-table{
@@ -367,7 +368,7 @@ body::after{
 .result-table th{
   color:var(--accent);
   font-weight:400;
-  background:rgba(90,167,255,.055);
+  background:rgba(111,130,255,.055);
 }
 
 .result-table tr:last-child td{
@@ -382,12 +383,12 @@ body::after{
   padding:.82rem .9rem;
   border-left:3px solid var(--accent);
   border-radius:var(--r);
-  background:linear-gradient(90deg, rgba(90,167,255,.10), rgba(139,108,255,.07));
+  background:linear-gradient(90deg, rgba(111,130,255,.10), rgba(155,108,255,.07));
 }
 
 .proof-callout b{
   font-family:var(--font-mono);
-  font-size:12px;
+  font-size:11px;
   font-weight:400;
   letter-spacing:0;
 }
@@ -404,25 +405,26 @@ body::after{
   border-radius:var(--pill);
   border:1px solid rgba(116,154,255,.28);
   background:
-    linear-gradient(90deg, rgba(90,167,255,.10), rgba(139,108,255,.08)),
+    linear-gradient(90deg, rgba(111,130,255,.10), rgba(155,108,255,.08)),
     rgba(6,8,18,.72);
   text-decoration:none !important;
   font-family:var(--font-mono);
+  font-size:13px;
   font-weight:400;
   color:var(--text);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.025), 0 0 16px rgba(90,167,255,.06);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.025), 0 0 16px rgba(111,130,255,.06);
   transition:box-shadow 140ms ease, background 140ms ease, border-color 140ms ease, color 140ms ease;
 }
 
 .btn:hover{
   border-color:var(--accent-line);
-  background:linear-gradient(90deg, rgba(90,167,255,.20), rgba(139,108,255,.16), rgba(214,92,255,.10));
+  background:linear-gradient(90deg, rgba(111,130,255,.20), rgba(155,108,255,.16), rgba(213,92,255,.10));
   box-shadow:var(--shadow2);
   color:#ffffff;
 }
 
 :focus-visible{
-  outline:3px solid rgba(90,167,255,.28);
+  outline:3px solid rgba(111,130,255,.28);
   outline-offset:3px;
   border-radius:10px;
 }
