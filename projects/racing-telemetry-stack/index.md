@@ -51,7 +51,7 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Implementation Notes</h3>
+  <h3>Runtime Design</h3>
   <ul>
     <li>The collector is a systemd-managed runtime with receiver setup, correction handling, logging, and restart behavior.</li>
     <li>The monitoring and recovery pieces expose serial state, correction state, GPS validity, and timeout conditions to the operator.</li>
@@ -78,9 +78,9 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Validation Scope</h3>
+  <h3>Evidence Scope</h3>
   <ul>
     <li>This page describes implemented runtime behavior: receiver configuration, NTRIP handling, buffered logs, remote state publishing, and browser streaming.</li>
-    <li>Operational recovery-rate numbers are not listed because they have not been published as a reviewed measurement set.</li>
+    <li>The emphasis is the working data path and field recovery behavior, not a statistical reliability claim.</li>
   </ul>
 </div>

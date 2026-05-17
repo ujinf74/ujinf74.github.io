@@ -78,7 +78,7 @@ classes: wide
 <div class="project-card">
   <h3>Validation Scope</h3>
   <ul>
-    <li>This page focuses on implemented UI behavior and exposed metrics.</li>
-    <li>A driving/coaching decision-impact case study is not included because no reviewed outcome summary is currently published.</li>
+    <li>This page focuses on implemented UI behavior, replay workflow, and exposed segment metrics.</li>
+    <li>The strongest evidence is the reusable analysis workflow: track build, multi-run loading, synchronized replay, flexible plots, and metrics extraction.</li>
   </ul>
 </div>

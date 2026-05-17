@@ -18,7 +18,7 @@ classes: wide
 <div class="project-card">
   <h3>Current Work</h3>
   <p>
-    Recent work includes a Hyundai Ioniq mapless parking addon, a C++/Python ballistic interception solver,
+    Recent work includes a Hyundai Ioniq mapless parking system, a C++/Python ballistic interception solver,
     and RTK/GNSS telemetry collection and analysis tools for racing data.
   </p>
 </div>
@@ -65,7 +65,7 @@ classes: wide
   <h3>Technical Strengths</h3>
   <ul>
     <li><b>Dynamics and numerics</b>: RK4 integration, auxiliary residual design, damping, convergence handling, and solver-facing diagnostics.</li>
-    <li><b>Systems integration</b>: ROS 2 messages, QoS/TF, launch composition, Autoware command topics, CAN-facing vehicle interfaces, and multi-stage engineering flows.</li>
+    <li><b>Systems integration</b>: ROS 2 messages, timing/TF alignment, runtime composition, Autoware-compatible command paths, CAN-facing vehicle interfaces, and multi-stage engineering flows.</li>
     <li><b>Telemetry and field tooling</b>: GNSS/RTK collection, logging, monitoring, replay, and analysis loops tied to real operations.</li>
     <li><b>Packaging and interfaces</b>: C ABI boundaries, Python bindings, deployable runtime configuration, and user-facing analysis tools.</li>
   </ul>

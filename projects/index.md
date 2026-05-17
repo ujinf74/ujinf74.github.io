@@ -8,7 +8,7 @@ classes: wide
 <div class="project-card">
   <p class="eyebrow">Representative Projects</p>
   <p>
-    Four projects covering solver design, autonomy-stack integration, field telemetry runtime, and analysis-tool construction.
+    Four projects covering solver design, real-vehicle autonomy integration, field telemetry runtime, and analysis-tool construction.
     If you want the summary first, start from <a href="/capabilities/">Capabilities</a>.
   </p>
 </div>
@@ -61,7 +61,7 @@ classes: wide
 
   <p>
     <b>Real-vehicle mapless autonomous parking</b> on a Hyundai Ioniq without prebuilt pointcloud/vector maps:
-    <b>FAST-LIO odometry → C++ LiDAR occupancy accumulation → RViz goal-pose planning → delay-aware trajectory following → Ioniq CAN command path</b>.
+    <b>FAST-LIO odometry → C++ LiDAR occupancy-grid updates → RViz goal-pose planning → delay-aware trajectory following → Ioniq CAN command path</b>.
   </p>
 
   <video controls playsinline preload="metadata"
@@ -71,14 +71,14 @@ classes: wide
 
   <b>What I built</b>
   <ul>
-    <li><b>Real-vehicle addon layer</b>: integrated with the existing HVL/Autoware/Ioniq stack</li>
+    <li><b>Real-vehicle integration</b>: connected the parking system to an existing Hyundai Ioniq research platform</li>
 
-    <li><b>FAST-LIO bridge</b>: <code>/Odometry_base_link</code> aligned into the Autoware localization and TF path</li>
+    <li><b>FAST-LIO bridge</b>: LiDAR-inertial odometry aligned into the vehicle localization and TF path</li>
 
     <li><b>Autoware compatibility layer</b>: pointcloud fields/frame adaptation + self-cropping + ground filtering</li>
 
     <li><b>Occupancy mapping</b>:
-      native C++ pointcloud OGM accumulation with timestamp pairing, log-odds sparse tiles, and <b>decay back to unknown</b> for stale cells
+      native C++ pointcloud occupancy-grid updates with timestamp pairing, log-odds sparse tiles, and <b>decay back to unknown</b> for stale cells
     </li>
 
     <li><b>Compute-bounded replanning</b>:
@@ -98,11 +98,11 @@ classes: wide
     </li>
 
     <li><b>Ioniq vehicle interface</b>:
-      Autoware-compatible command output through <code>control_converter</code> / <code>control_command</code> / CAN integration
+      Autoware-compatible command output connected to the vehicle CAN interface
     </li>
 
     <li><b>Real-time engineering & debugging</b>:
-      QoS tuning to avoid backlog/timing loss, RViz2 visualization (OGM/trajectory/vehicle), and CLI status reporting
+      timing/backlog tuning, RViz2 visualization (occupancy grid/trajectory/vehicle), and CLI status reporting
     </li>
   </ul>
 
@@ -112,7 +112,7 @@ classes: wide
 
   <div class="proof-callout">
     <b>Result</b>
-    <span>Real Hyundai Ioniq parking execution with FAST-LIO odometry, C++ LiDAR occupancy mapping, delay-aware trajectory following, and CAN-facing command output.</span>
+    <span>Real Hyundai Ioniq parking execution with FAST-LIO odometry, C++ LiDAR occupancy-grid mapping, delay-aware trajectory following, and CAN-facing command output.</span>
   </div>
 </div>
 

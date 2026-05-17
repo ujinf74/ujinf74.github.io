@@ -29,7 +29,7 @@ classes: wide
   <h3>Selected Work</h3>
   <ul>
     <li><b>ballistic-solver</b>: C++/Python intercept solver with drag dynamics, auxiliary residual correction, benchmarks, and an ICROS 2026 manuscript.</li>
-    <li><b>Mapless Autonomous Parking</b>: Hyundai Ioniq parking addon using FAST-LIO odometry, C++ LiDAR occupancy mapping, delay-aware trajectory following, and CAN-facing control.</li>
+    <li><b>Mapless Autonomous Parking</b>: Hyundai Ioniq parking system using FAST-LIO odometry, C++ LiDAR occupancy-grid mapping, delay-aware trajectory following, and CAN-facing control.</li>
     <li><b>Racing Telemetry Stack</b>: Raspberry Pi GNSS/RTK runtime with receiver configuration, buffered logging, remote monitoring, and recovery handling.</li>
     <li><b>Racing Analyze GUI</b>: MATLAB telemetry workbench for multi-run loading, segment comparison, replay, and metrics extraction.</li>
   </ul>
@@ -44,7 +44,7 @@ classes: wide
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Vehicle Autonomy</div>
-      <p>FAST-LIO odometry, C++ occupancy mapping, response-delay-aware tracking, reverse-capable execution, and Ioniq CAN command integration.</p>
+      <p>FAST-LIO odometry, C++ occupancy-grid mapping, response-delay-aware tracking, reverse-capable execution, and Ioniq CAN command integration.</p>
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Telemetry Operations</div>
@@ -87,7 +87,7 @@ classes: wide
   <h3>Highlights</h3>
   <ul>
     <li><b>Award</b>: KSAE 2024 Smart e-Mobility Competition (EV Division) — Encouragement Prize.</li>
-    <li><b>Research</b>: autonomous driving team lead at HuVILab, focused on real-vehicle mapless parking, planning/control under constraints, and coaching systems.</li>
+    <li><b>Research</b>: autonomous driving team lead at HuVILab, a university vehicle-intelligence lab, focused on real-vehicle mapless parking, planning/control under constraints, and coaching systems.</li>
     <li><b>Operations</b>: telemetry runtime / monitoring / analysis collaboration with Luxon Racing Team in the GTA class of the O-NE SUPERRACE CHAMPIONSHIP.</li>
   </ul>
 </div>
