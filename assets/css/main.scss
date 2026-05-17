@@ -1,6 +1,13 @@
 ---
 ---
 
+$primary-color: #9b6cff;
+$link-color: #9b6cff;
+$link-color-hover: #d55cff;
+$link-color-visited: #8370d8;
+$masthead-link-color: #e8eeff;
+$masthead-link-color-hover: #d55cff;
+
 @import "minimal-mistakes/skins/dark";
 @import "minimal-mistakes";
 
@@ -177,9 +184,17 @@ body::after{
   font-weight:400;
 }
 
-.greedy-nav .visible-links a:hover{
-  background:rgba(111,130,255,.08);
+.greedy-nav .visible-links a::before{
+  background:var(--accent-2) !important;
+}
+
+.greedy-nav .visible-links a:hover,
+.greedy-nav .visible-links a:focus{
+  background:rgba(155,108,255,.14) !important;
+  color:var(--text) !important;
   opacity:1;
+  outline:1px solid rgba(155,108,255,.45) !important;
+  outline-offset:0;
 }
 
 .page__content h1,
@@ -423,8 +438,14 @@ body::after{
   color:#ffffff;
 }
 
+a:focus,
+button:focus{
+  outline:1px solid rgba(155,108,255,.55) !important;
+  outline-offset:2px !important;
+}
+
 :focus-visible{
-  outline:3px solid rgba(111,130,255,.28);
+  outline:1px solid rgba(155,108,255,.55) !important;
   outline-offset:3px;
   border-radius:10px;
 }
