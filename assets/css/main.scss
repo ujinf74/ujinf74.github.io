@@ -1,12 +1,12 @@
 ---
 ---
 
-$primary-color: #6f82ff;
-$link-color: #6f82ff;
+$primary-color: #4f7dff;
+$link-color: #4f7dff;
 $link-color-hover: #d55cff;
-$link-color-visited: #7f88d8;
+$link-color-visited: #7c87d9;
 $masthead-link-color: #e8eeff;
-$masthead-link-color-hover: #6f82ff;
+$masthead-link-color-hover: #4f7dff;
 
 @import "minimal-mistakes/skins/dark";
 @import "minimal-mistakes";
@@ -21,9 +21,9 @@ $masthead-link-color-hover: #6f82ff;
   --bg2:#11102a;
 
   --text:rgba(232,238,255,.96);
-  --muted:rgba(178,189,225,.76);
-  --line:rgba(104,139,255,.28);
-  --line-strong:rgba(157,96,255,.40);
+  --muted:rgba(178,189,225,.74);
+  --line:rgba(111,130,255,.30);
+  --line-strong:rgba(79,125,255,.46);
 
   --glass1:rgba(6,8,18,.86);
   --glass2:rgba(12,13,30,.74);
@@ -35,13 +35,13 @@ $masthead-link-color-hover: #6f82ff;
   --r:8px;
   --pill:6px;
 
-  --font-mono:"GulimChe", "굴림체", "DotumChe", "돋움체", "MS Gothic", "Lucida Console", monospace;
+  --font-mono:"GulimChe", "굴림체", "Lucida Console", "MS Gothic", "Consolas", monospace;
 
-  --accent:#6f82ff;
-  --accent-2:#9b6cff;
+  --accent:#4f7dff;
+  --accent-2:#6f82ff;
   --accent-3:#d55cff;
-  --accent-soft:rgba(111,130,255,.14);
-  --accent-line:rgba(111,130,255,.48);
+  --accent-soft:rgba(79,125,255,.14);
+  --accent-line:rgba(79,125,255,.50);
 }
 
 @media (prefers-reduced-motion: reduce){
@@ -64,7 +64,7 @@ body{
   font-smooth:never;
   text-rendering:optimizeSpeed;
   font-synthesis:none;
-  font-size:15px;
+  font-size:16px;
   font-weight:400;
   line-height:1.62;
 }
@@ -163,7 +163,7 @@ body::after{
 
 .site-title{
   font-family:var(--font-mono);
-  font-size:24px;
+  font-size:26px;
   line-height:1.2;
   font-weight:400 !important;
   letter-spacing:0;
@@ -178,9 +178,9 @@ body::after{
   padding:.48rem .78rem !important;
   text-decoration:none !important;
   color:var(--text) !important;
-  opacity:.92;
+  opacity:.86;
   font-family:var(--font-mono);
-  font-size:14px;
+  font-size:15px;
   font-weight:400;
 }
 
@@ -190,10 +190,10 @@ body::after{
 
 .greedy-nav .visible-links a:hover,
 .greedy-nav .visible-links a:focus{
-  background:rgba(111,130,255,.14) !important;
+  background:rgba(79,125,255,.14) !important;
   color:var(--text) !important;
   opacity:1;
-  outline:1px solid rgba(111,130,255,.45) !important;
+  outline:1px solid rgba(79,125,255,.46) !important;
   outline-offset:0;
 }
 
@@ -208,7 +208,7 @@ body::after{
 }
 
 .page__content h1{
-  font-size:32px;
+  font-size:38px;
   line-height:1.22;
   margin:.45rem 0 1rem;
   background:none;
@@ -217,11 +217,11 @@ body::after{
 }
 
 @media (max-width:720px){
-  .page__content h1{font-size:27px}
+  .page__content h1{font-size:31px}
 }
 
 .page__content h2{
-  font-size:20px;
+  font-size:24px;
   line-height:1.35;
   margin-top:2.6rem;
   padding-top:.7rem;
@@ -229,14 +229,14 @@ body::after{
 }
 
 .page__content h3{
-  font-size:16px;
+  font-size:19px;
   line-height:1.45;
   margin-bottom:.55rem;
 }
 
 .page__content p,
 .page__content li{
-  font-size:15px;
+  font-size:16px;
 }
 
 .page__content a{
@@ -253,6 +253,7 @@ body::after{
 .page__content b{
   color:rgba(250,252,255,.98);
   font-weight:400;
+  opacity:1;
 }
 
 .project-card,
@@ -280,10 +281,11 @@ body::after{
 .eyebrow{
   display:inline-block;
   font-family:var(--font-mono);
-  font-size:12px;
+  font-size:13px;
   font-weight:400;
   letter-spacing:0;
   color:var(--accent);
+  opacity:.92;
   text-shadow:none;
 }
 
@@ -308,10 +310,11 @@ body::after{
 
 .mini-kicker{
   font-family:var(--font-mono);
-  font-size:12px;
+  font-size:13px;
   font-weight:400;
   letter-spacing:0;
   color:var(--accent);
+  opacity:.92;
 }
 
 .flow-diagram{
@@ -344,7 +347,7 @@ body::after{
 
 .flow-arrow{
   align-self:center;
-  font-size:14px;
+  font-size:16px;
   color:var(--accent);
   text-shadow:none;
 }
@@ -361,7 +364,7 @@ body::after{
   border-radius:var(--pill);
   border:1px solid rgba(116,154,255,.18);
   background:rgba(111,130,255,.045);
-  font-size:14px;
+  font-size:15px;
 }
 
 .result-table{
@@ -403,9 +406,11 @@ body::after{
 
 .proof-callout b{
   font-family:var(--font-mono);
-  font-size:12px;
+  font-size:13px;
   font-weight:400;
   letter-spacing:0;
+  color:var(--accent);
+  opacity:.92;
 }
 
 .proof-callout span{
@@ -424,7 +429,7 @@ body::after{
     rgba(6,8,18,.72);
   text-decoration:none !important;
   font-family:var(--font-mono);
-  font-size:14px;
+  font-size:15px;
   font-weight:400;
   color:var(--text);
   box-shadow:inset 0 1px 0 rgba(255,255,255,.025), 0 0 16px rgba(111,130,255,.06);
@@ -440,12 +445,12 @@ body::after{
 
 a:focus,
 button:focus{
-  outline:1px solid rgba(111,130,255,.55) !important;
+  outline:1px solid rgba(79,125,255,.58) !important;
   outline-offset:2px !important;
 }
 
 :focus-visible{
-  outline:1px solid rgba(111,130,255,.55) !important;
+  outline:1px solid rgba(79,125,255,.58) !important;
   outline-offset:3px;
   border-radius:10px;
 }
