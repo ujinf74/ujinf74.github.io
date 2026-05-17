@@ -74,7 +74,8 @@ classes: wide
 <div class="project-card">
   <h3>Leadership</h3>
   <ul>
-    <li><b>Autonomous Driving Team Lead</b>, HuVILab undergraduate research team</li>
+    <li><b>Autonomous Driving Team Lead</b>, HuVILab undergraduate research team — technical direction, integration planning, and project coordination.</li>
+    <li><b>President</b>, 50-member fashion club — member operations, event planning, and team coordination outside an engineering context.</li>
   </ul>
 </div>
 
