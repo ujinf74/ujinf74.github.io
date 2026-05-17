@@ -29,7 +29,7 @@ classes: wide
   <h3>Selected Work</h3>
   <ul>
     <li><b>ballistic-solver</b>: C++/Python intercept solver with drag dynamics, auxiliary residual correction, benchmarks, and an ICROS 2026 manuscript.</li>
-    <li><b>Mapless Autonomous Parking</b>: Hyundai Ioniq parking addon using FAST-LIO odometry, LiDAR occupancy grids, RViz goal input, and CAN-facing control.</li>
+    <li><b>Mapless Autonomous Parking</b>: Hyundai Ioniq parking addon using FAST-LIO odometry, C++ LiDAR occupancy mapping, delay-aware trajectory following, and CAN-facing control.</li>
     <li><b>Racing Telemetry Stack</b>: Raspberry Pi GNSS/RTK runtime with receiver configuration, buffered logging, remote monitoring, and recovery handling.</li>
     <li><b>Racing Analyze GUI</b>: MATLAB telemetry workbench for multi-run loading, segment comparison, replay, and metrics extraction.</li>
   </ul>
@@ -44,7 +44,7 @@ classes: wide
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Vehicle Autonomy</div>
-      <p>FAST-LIO odometry, occupancy-driven parking, reverse-capable execution, and Ioniq CAN command integration.</p>
+      <p>FAST-LIO odometry, C++ occupancy mapping, response-delay-aware tracking, reverse-capable execution, and Ioniq CAN command integration.</p>
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Telemetry Operations</div>
@@ -67,7 +67,7 @@ classes: wide
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Planning + Integration</div>
-      <p><b>Mapless Autonomous Parking</b> shows real-vehicle Ioniq validation, ROS 2/Autoware integration, odometry alignment, and CAN-facing control.</p>
+      <p><b>Mapless Autonomous Parking</b> shows real-vehicle Ioniq validation, ROS 2/Autoware integration, native occupancy mapping, measured-delay control, and CAN-facing execution.</p>
       <a class="btn" href="/projects/mapless-autonomous-parking/">View details</a>
     </div>
     <div class="mini-card">

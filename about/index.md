@@ -54,7 +54,7 @@ classes: wide
 <div class="project-card">
   <h3>Technical Areas</h3>
   <ul>
-    <li><b>Vehicle autonomy</b>: ROS 2, Autoware topic wiring, FAST-LIO odometry, occupancy-grid parking, and CAN-facing command paths.</li>
+    <li><b>Vehicle autonomy</b>: ROS 2, FAST-LIO odometry, C++ occupancy-grid parking, delay-aware tracking, and CAN-facing command paths.</li>
     <li><b>Numerical methods</b>: RK4 integration, auxiliary residual design, damping, convergence handling, and solver diagnostics.</li>
     <li><b>Telemetry systems</b>: GNSS/RTK collection, logging, monitoring, replay, and analysis loops tied to real operations.</li>
     <li><b>Interfaces</b>: C ABI boundaries, Python bindings, launch files, dashboards, and user-facing analysis tools.</li>

@@ -23,7 +23,7 @@ classes: wide
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Vehicle Integration</div>
-      <p>Bridging odometry, perception, planning, control messages, launch composition, and Ioniq CAN-facing tooling into one validated parking stack.</p>
+      <p>Bridging FAST-LIO odometry, C++ occupancy mapping, parking planning, delay-aware control, launch composition, and Ioniq CAN-facing tooling into one validated stack.</p>
       <a class="btn" href="/projects/mapless-autonomous-parking/">Seen in autonomous parking</a>
     </div>
     <div class="mini-card">
@@ -62,7 +62,7 @@ classes: wide
       </tr>
       <tr>
         <td>ROS 2 / vehicle autonomy integration</td>
-        <td>FAST-LIO bridge, occupancy flow, planner wiring, Autoware command topics, Ioniq CAN path, RViz control</td>
+        <td>FAST-LIO bridge, C++ pointcloud OGM, planner wiring, measured-delay follower, Ioniq CAN path, RViz control</td>
         <td><a href="/projects/mapless-autonomous-parking/">Mapless Autonomous Parking</a></td>
       </tr>
       <tr>
@@ -98,7 +98,7 @@ classes: wide
   <h3>Evidence Map</h3>
   <ul>
     <li><b>Measured behavior</b>: solver benchmark tables, regression scripts, and paper-level comparison metrics.</li>
-    <li><b>Runtime integration</b>: launch paths, ROS 2 topic contracts, odometry alignment, command outputs, and real-vehicle parking validation.</li>
+    <li><b>Runtime integration</b>: launch paths, odometry alignment, native OGM updates, delay-aware control, command outputs, and real-vehicle parking validation.</li>
     <li><b>Operational tooling</b>: logs, monitoring, replay, and analysis interfaces that make field behavior inspectable.</li>
   </ul>
 </div>

@@ -61,7 +61,7 @@ classes: wide
 
   <p>
     <b>Real-vehicle mapless autonomous parking</b> on a Hyundai Ioniq without prebuilt pointcloud/vector maps:
-    <b>FAST-LIO odometry → LiDAR probabilistic occupancy grid → RViz goal-pose planning → trajectory following → Ioniq CAN command path</b>.
+    <b>FAST-LIO odometry → C++ LiDAR occupancy accumulation → RViz goal-pose planning → delay-aware trajectory following → Ioniq CAN command path</b>.
   </p>
 
   <video controls playsinline preload="metadata"
@@ -78,7 +78,7 @@ classes: wide
     <li><b>Autoware compatibility layer</b>: pointcloud fields/frame adaptation + self-cropping + ground filtering</li>
 
     <li><b>Occupancy mapping</b>:
-      ego-fixed local OGM → global accumulation with probability heuristics, plus <b>decay back to unknown</b> for stale cells
+      native C++ pointcloud OGM accumulation with timestamp pairing, log-odds sparse tiles, and <b>decay back to unknown</b> for stale cells
     </li>
 
     <li><b>Compute-bounded replanning</b>:
@@ -94,11 +94,11 @@ classes: wide
     </li>
 
     <li><b>Execution layer</b>:
-      trajectory follower publishing <code>/control/command/control_cmd</code>, <code>/control/command/actuation_cmd</code>, and <code>/control/command/gear_cmd</code>
+      delay-aware follower using measured steering/longitudinal response delay for pose prediction, velocity prediction, and separate reference preview
     </li>
 
     <li><b>Ioniq vehicle interface</b>:
-      engage/hazard/turn command keepalive plus <code>control_converter</code> / <code>control_command</code> / CAN integration
+      Autoware-compatible command output through <code>control_converter</code> / <code>control_command</code> / CAN integration
     </li>
 
     <li><b>Real-time engineering & debugging</b>:
@@ -112,7 +112,7 @@ classes: wide
 
   <div class="proof-callout">
     <b>Result</b>
-    <span>Real Hyundai Ioniq parking execution with FAST-LIO odometry, LiDAR occupancy mapping, trajectory following, and CAN-facing command output.</span>
+    <span>Real Hyundai Ioniq parking execution with FAST-LIO odometry, C++ LiDAR occupancy mapping, delay-aware trajectory following, and CAN-facing command output.</span>
   </div>
 </div>
 
