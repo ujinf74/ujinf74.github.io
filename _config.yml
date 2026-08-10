@@ -40,6 +40,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/ujinf74"
+    - label: "YouTube"
+      icon: "fab fa-youtube"
+      url: "https://www.youtube.com/@tickInt"
     - label: "Email"
       icon: "fas fa-envelope"
       url: "mailto:ujin@tukorea.ac.kr"
@@ -48,6 +51,7 @@ social:
   name: "Ujin Kwon"
   links:
     - "https://github.com/ujinf74"
+    - "https://www.youtube.com/@tickInt"
 
 exclude: 
   - Gemfile
