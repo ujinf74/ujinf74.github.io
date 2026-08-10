@@ -3,6 +3,8 @@ main:
     url: /capabilities/
   - title: "Projects"
     url: /projects/
+  - title: "Contributions"
+    url: /contributions/
   - title: "About"
     url: /about/
   - title: "Contact"

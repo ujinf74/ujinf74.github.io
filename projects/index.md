@@ -8,8 +8,8 @@ classes: wide
 <div class="project-card">
   <p class="eyebrow">Representative Projects</p>
   <p>
-    Four projects covering solver design, real-vehicle autonomy integration, field telemetry runtime, and analysis-tool construction.
-    If you want the summary first, start from <a href="/capabilities/">Capabilities</a>.
+    Five projects covering solver design, real-vehicle autonomy integration, vision-based driver assistance, field telemetry runtime, and analysis-tool construction.
+    For a capability-first view, start from <a href="/capabilities/">Capabilities</a>.
   </p>
 </div>
 
@@ -18,8 +18,8 @@ classes: wide
 
   <p>
     <b>Simulate-first intercept optimizer</b> for moving targets under <b>gravity</b> and <b>quadratic drag</b> (+ optional wind).
-    It integrates nonlinear projectile dynamics (RK4) and solves launch angles (θ, φ) using an <b>auxiliary-solution-induced residual</b>
-    with <b>Levenberg–Marquardt</b>, line search, and Broyden-style Jacobian refinement.
+    Its default path minimizes a <b>coordinate-space closest-approach residual</b> with Gauss–Newton, Broyden updates,
+    vacuum-seeded Jacobians, and multistart recovery. The auxiliary-residual method remains available as a research and compatibility path.
   </p>
 
   <video controls playsinline preload="metadata"
@@ -30,11 +30,12 @@ classes: wide
   <b>What I built</b>
   <ul>
     <li><b>Dynamics</b>: fixed-step RK4 with quadratic drag (+ wind as air-velocity)</li>
-    <li><b>Residual method</b>: drag-inclusive miss transformed through an auxiliary vacuum ballistic response</li>
-    <li><b>Numerical optimization</b>: auxiliary residual → LM (damped least squares) + line-search/lambda tries</li>
-    <li><b>Speed</b>: Broyden-style Jacobian refinement to reduce full re-linearizations</li>
+    <li><b>Default residual</b>: closest-approach miss measured directly in coordinate space</li>
+    <li><b>Numerical optimization</b>: vacuum-lead warm start, analytic vacuum Jacobian preconditioning, Gauss–Newton, and multistart fallback</li>
+    <li><b>Speed</b>: Broyden rank-1 Jacobian updates reduce full re-linearizations</li>
     <li><b>Robust outputs</b>: explicit status/message + best-effort solution even on non-ideal convergence</li>
-    <li><b>Deployment</b>: stable C ABI (FFI-ready), PyPI package with prebuilt binaries, Unity/C# via P/Invoke</li>
+    <li><b>Deployment</b>: compiled native C++ core with a modern <code>bs::</code> API, stable C ABI, Python/PyPI, Unity/C#, and Godot/tracker integrations</li>
+    <li><b>Research path</b>: the paper-backed auxiliary residual remains exposed through <code>solve_aux</code></li>
   </ul>
 
   <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
@@ -44,15 +45,15 @@ classes: wide
   </div>
 
   <div class="result-strip">
-    <span><b>Verified benchmark</b></span>
-    <span>fast 0.094 ms median</span>
-    <span>balanced 0.182 ms median</span>
-    <span>precise 0.199 ms median</span>
+    <span><b>Current package benchmark</b></span>
+    <span>fast 0.031 ms median</span>
+    <span>balanced 0.057 ms median</span>
+    <span>precise 0.087 ms median</span>
   </div>
 
   <div class="proof-callout">
     <b>Result</b>
-    <span>Paper-backed residual method, packaged C++/Python runtime, benchmark tables, and explicit solver status outputs.</span>
+    <span>Packaged native solver with current benchmarks, explicit diagnostics, game-engine bindings, and a Rock 5B + STM32 hardware integration.</span>
   </div>
 </div>
 
@@ -113,6 +114,34 @@ classes: wide
   <div class="proof-callout">
     <b>Result</b>
     <span>Real Hyundai Ioniq parking execution with FAST-LIO odometry, C++ LiDAR occupancy-grid mapping, delay-aware trajectory following, and CAN-facing command output.</span>
+  </div>
+</div>
+
+<div class="project-card">
+  <h3>HERO — Vision-Based Parking Assistance <small style="opacity:.7;">(In development · ROS 2 · C++/CUDA · Qt)</small></h3>
+
+  <p>
+    <b>Coaching-only parking assistance</b> for a Hyundai Ioniq, combining camera-only parking perception with
+    a low-vision driver HUD. The perception stack is developed in CARLA against an Autoware LiDAR reference;
+    the interface provides guidance without taking over vehicle control.
+  </p>
+
+  <b>What I am building</b>
+  <ul>
+    <li><b>Vision odometry</b>: two-camera ground-plane motion estimation without vehicle-mounted LiDAR</li>
+    <li><b>Dense occupancy</b>: plane-sweep parking-space estimation implemented in C++/CUDA</li>
+    <li><b>Evaluation</b>: CARLA measurement harness using Autoware LiDAR output as a reference</li>
+    <li><b>Low-vision HUD</b>: angular legibility budgeting, corridor and stop-line guidance, gear state, and degraded-state messaging</li>
+    <li><b>Software boundary</b>: ROS 2 coaching logic separated from the Qt presentation layer, with 26 geometry tests</li>
+  </ul>
+
+  <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
+    <a class="btn" href="/projects/hero/">Detailed page</a>
+  </div>
+
+  <div class="proof-callout">
+    <b>In development</b>
+    <span>Reproducible CARLA evaluation, camera-only occupancy estimation, and a scenario-driven low-vision coaching interface.</span>
   </div>
 </div>
 

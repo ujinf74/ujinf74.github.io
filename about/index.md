@@ -7,10 +7,9 @@ classes: wide
 
 <div class="project-card" style="padding:1.0rem 1.0rem .9rem;">
   <span style="font-size:0.95rem; opacity:0.70;">Ujin Kwon · 권우진</span>
-
   <p style="margin-top:.45rem;">
     I am a Mechanical & Computer Engineering student focused on <b>optimal control</b>, <b>numerical optimization</b>, and <b>dynamics</b>,
-    building <b>nonlinear solvers</b>, <b>real-vehicle autonomy integrations</b>, <b>telemetry software</b>, and <b>analysis tools</b>
+    building <b>nonlinear solvers</b>, <b>vehicle autonomy and vision integrations</b>, <b>telemetry software</b>, and <b>analysis tools</b>
     for robotics, autonomous systems, and vehicle dynamics.
   </p>
 </div>
@@ -18,8 +17,8 @@ classes: wide
 <div class="project-card">
   <h3>Current Work</h3>
   <p>
-    Recent work includes a Hyundai Ioniq mapless parking system, a C++/Python ballistic interception solver,
-    and RTK/GNSS telemetry collection and analysis tools for racing data.
+    Recent work includes a real-vehicle Hyundai Ioniq mapless parking system, the HERO vision and low-vision coaching project,
+    a packaged ballistic interception solver validated on edge hardware, and RTK/GNSS telemetry tooling for racing data.
   </p>
 </div>
 
@@ -41,33 +40,50 @@ classes: wide
   <ul>
     <li>
       <b>Racing telemetry runtime / monitoring / analysis collaboration with Luxon Racing Team</b><br/>
-      Built a <b>Raspberry Pi telemetry runtime</b> around a <b>u-blox ZED-F9R GPS/IMU receiver</b> with startup configuration,
-      RTK/NTRIP correction input, buffered CSV/UBX logging, and operational monitoring for field use.
+      Built a Raspberry Pi runtime around a u-blox ZED-F9R receiver with startup configuration,
+      RTK/NTRIP correction input, buffered logging, remote monitoring, and segment-based analysis for field use.
     </li>
     <li>
-      Extended the same workflow with a <b>browser-based remote monitoring path</b> and a <b>segment-based telemetry analysis GUI</b> for
-      <b>visualization</b> and <b>coaching-oriented run inspection</b> in the <b>GTA class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
+      <b>Ballistic solver hardware validation</b><br/>
+      Integrated the native ARM64 solver on a Rock 5B with live AprilTag tracking and STM32G431 closed-loop actuator control,
+      verifying the library in a physical vision-to-command pipeline.
     </li>
   </ul>
 </div>
 
 <div class="project-card">
+  <h3>Open Source Contributions</h3>
+  <ul>
+    <li>
+      <a href="https://github.com/autowarefoundation/autoware_universe/pull/13151">Autoware Universe #13151</a> —
+      configurable CARLA camera encoding with a measured 4× serialized-payload reduction for the mono8 path.
+    </li>
+    <li>
+      <a href="https://github.com/autowarefoundation/autoware_universe/pull/13154">Autoware Universe #13154</a> —
+      configurable IMU/GNSS noise and bias with backward-compatible zero defaults.
+    </li>
+  </ul>
+  <a class="btn" href="/contributions/">Contribution details</a>
+</div>
+
+<div class="project-card">
   <h3>Technical Areas</h3>
   <ul>
-    <li><b>Vehicle autonomy</b>: ROS 2, FAST-LIO odometry, C++ occupancy-grid parking, delay-aware tracking, and CAN-facing command paths.</li>
-    <li><b>Numerical methods</b>: RK4 integration, auxiliary residual design, damping, convergence handling, and solver diagnostics.</li>
+    <li><b>Vehicle autonomy</b>: ROS 2, FAST-LIO odometry, C++ occupancy mapping, delay-aware tracking, and CAN-facing command paths.</li>
+    <li><b>Vision and HMI</b>: dual-camera motion/occupancy estimation, CARLA evaluation, Qt, and low-vision legibility geometry.</li>
+    <li><b>Numerical methods</b>: RK4 integration, coordinate and auxiliary residuals, Gauss–Newton, convergence handling, and diagnostics.</li>
     <li><b>Telemetry systems</b>: GNSS/RTK collection, logging, monitoring, replay, and analysis loops tied to real operations.</li>
-    <li><b>Interfaces</b>: C ABI boundaries, Python bindings, launch files, dashboards, and user-facing analysis tools.</li>
+    <li><b>Interfaces</b>: modern C++ APIs, C ABI boundaries, Python bindings, ROS 2 interfaces, dashboards, and analysis tools.</li>
   </ul>
 </div>
 
 <div class="project-card">
   <h3>Technical Strengths</h3>
   <ul>
-    <li><b>Dynamics and numerics</b>: RK4 integration, auxiliary residual design, damping, convergence handling, and solver-facing diagnostics.</li>
-    <li><b>Systems integration</b>: ROS 2 messages, timing/TF alignment, runtime composition, Autoware-compatible command paths, CAN-facing vehicle interfaces, and multi-stage engineering flows.</li>
-    <li><b>Telemetry and field tooling</b>: GNSS/RTK collection, logging, monitoring, replay, and analysis loops tied to real operations.</li>
-    <li><b>Packaging and interfaces</b>: C ABI boundaries, Python bindings, deployable runtime configuration, and user-facing analysis tools.</li>
+    <li><b>Dynamics and numerics</b>: translating physical behavior into measurable residuals, convergence paths, benchmarks, and solver-facing diagnostics.</li>
+    <li><b>Systems integration</b>: timing/TF alignment, runtime composition, Autoware-compatible paths, CAN-facing interfaces, and embedded control handoff.</li>
+    <li><b>Verification</b>: simulation harnesses, regression tests, measured payload/runtime results, and physical-device integration.</li>
+    <li><b>Packaging and operations</b>: native libraries, language bindings, deployable configuration, logging, monitoring, and user-facing tools.</li>
   </ul>
 </div>
 

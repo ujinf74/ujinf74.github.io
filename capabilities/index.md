@@ -9,7 +9,7 @@ classes: wide
   <p class="eyebrow">Engineering Focus</p>
   <p>
     The projects below share a practical structure: model the physical or runtime problem, implement the working path,
-    and leave enough logs, metrics, or interfaces to inspect the result.
+    and leave enough tests, logs, metrics, or interfaces to inspect the result.
   </p>
 </div>
 
@@ -18,23 +18,33 @@ classes: wide
   <div class="mini-grid">
     <div class="mini-card">
       <div class="mini-kicker">Applied Algorithms</div>
-      <p>Nonlinear solver design, RK4 integration, auxiliary residual construction, damping, convergence handling, and benchmark-minded implementation.</p>
+      <p>Nonlinear dynamics, coordinate-residual optimization, auxiliary-residual research, convergence handling, and benchmark-minded implementation.</p>
       <a class="btn" href="/projects/ballistic-solver/">Seen in ballistic-solver</a>
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Vehicle Integration</div>
-      <p>Bridging FAST-LIO odometry, C++ occupancy-grid mapping, parking planning, delay-aware control, runtime composition, and Ioniq CAN-facing tooling into one validated vehicle system.</p>
+      <p>FAST-LIO odometry, C++ occupancy mapping, parking planning, measured-delay control, and Ioniq CAN-facing execution in one validated vehicle system.</p>
       <a class="btn" href="/projects/mapless-autonomous-parking/">Seen in autonomous parking</a>
     </div>
     <div class="mini-card">
+      <div class="mini-kicker">Vision + Automotive HMI</div>
+      <p>Dual-camera motion and occupancy estimation paired with angular-legibility budgets and explicit coaching states.</p>
+      <a class="btn" href="/projects/hero/">Seen in HERO</a>
+    </div>
+    <div class="mini-card">
       <div class="mini-kicker">Field Operations</div>
-      <p>Serial transport, GNSS/RTK correction flow, buffered logging, watchdog-style recovery, and remote visibility under unstable conditions.</p>
+      <p>Serial transport, GNSS/RTK correction flow, buffered logging, recovery, and remote visibility under unstable conditions.</p>
       <a class="btn" href="/projects/racing-telemetry-stack/">Seen in telemetry runtime</a>
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Tool Building</div>
       <p>Turning raw operational data into segment-aware analysis, replay, metrics, and inspectable multi-pane workflows.</p>
       <a class="btn" href="/projects/racing-analyze-gui/">Seen in analysis GUI</a>
+    </div>
+    <div class="mini-card">
+      <div class="mini-kicker">Upstream Engineering</div>
+      <p>Converting integration bottlenecks into reviewed, backward-compatible Autoware Universe changes.</p>
+      <a class="btn" href="/contributions/">See merged contributions</a>
     </div>
   </div>
 </div>
@@ -43,42 +53,43 @@ classes: wide
   <h3>Capability Matrix</h3>
   <table class="result-table">
     <thead>
-      <tr>
-        <th>Capability</th>
-        <th>What Shows It</th>
-        <th>Main Evidence</th>
-      </tr>
+      <tr><th>Capability</th><th>What Shows It</th><th>Main Evidence</th></tr>
     </thead>
     <tbody>
       <tr>
         <td>Mathematical modeling</td>
-        <td>Turning physical behavior into a solvable computational model and residual formulation</td>
+        <td>Physical dynamics, coordinate residuals, convergence paths, and explicit numerical diagnostics</td>
         <td><a href="/projects/ballistic-solver/">ballistic-solver</a></td>
       </tr>
       <tr>
         <td>API and deployability</td>
-        <td>C ABI, Python package, Unity/C# interoperability, explicit status outputs</td>
+        <td>Modern C++ API, C ABI, Python/PyPI, Unity/C#, Godot, and ARM64 hardware integration</td>
         <td><a href="/projects/ballistic-solver/">ballistic-solver</a></td>
       </tr>
       <tr>
         <td>ROS 2 / vehicle autonomy integration</td>
-        <td>FAST-LIO bridge, C++ pointcloud occupancy grid, planner integration, measured-delay follower, Ioniq CAN path, RViz control</td>
+        <td>FAST-LIO bridge, occupancy mapping, planner integration, measured-delay follower, and Ioniq CAN path</td>
         <td><a href="/projects/mapless-autonomous-parking/">Mapless Autonomous Parking</a></td>
       </tr>
       <tr>
+        <td>Vision and driver interface</td>
+        <td>Dual-camera odometry, dense occupancy, CARLA evaluation, and low-vision HUD geometry</td>
+        <td><a href="/projects/hero/">HERO</a></td>
+      </tr>
+      <tr>
         <td>Operational robustness</td>
-        <td>NTRIP handling, serial retry, timeout detection, live monitoring, remote deployment workflow</td>
+        <td>NTRIP handling, serial retry, timeout detection, live monitoring, and remote deployment workflow</td>
         <td><a href="/projects/racing-telemetry-stack/">Racing Telemetry Stack</a></td>
       </tr>
       <tr>
         <td>Data analysis tooling</td>
-        <td>Track-core build, segment slicing, synchronized replay, pane-aware visual inspection</td>
+        <td>Track-core build, segment slicing, synchronized replay, and pane-aware visual inspection</td>
         <td><a href="/projects/racing-analyze-gui/">Racing Analyze GUI</a></td>
       </tr>
       <tr>
-        <td>Cross-domain synthesis</td>
-        <td>Collection → monitoring → analysis, or simulation → solver → packaging</td>
-        <td><a href="/projects/">Projects overview</a></td>
+        <td>Open-source collaboration</td>
+        <td>Reviewed upstream changes with measured impact and backward-compatible defaults</td>
+        <td><a href="/contributions/">Autoware contributions</a></td>
       </tr>
     </tbody>
   </table>
@@ -97,8 +108,9 @@ classes: wide
 <div class="project-card">
   <h3>Evidence Map</h3>
   <ul>
-    <li><b>Measured behavior</b>: solver benchmark tables, regression scripts, and paper-level comparison metrics.</li>
-    <li><b>Runtime integration</b>: odometry alignment, native occupancy-grid updates, delay-aware control, command outputs, and real-vehicle parking validation.</li>
+    <li><b>Measured behavior</b>: current solver benchmarks, regression tests, research comparisons, and camera-payload measurements.</li>
+    <li><b>Physical validation</b>: real-vehicle parking and a Rock 5B + STM32 solver integration with live vision input.</li>
+    <li><b>Upstream validation</b>: two reviewed and merged Autoware Universe contributions.</li>
     <li><b>Operational tooling</b>: logs, monitoring, replay, and analysis interfaces that make field behavior inspectable.</li>
   </ul>
 </div>

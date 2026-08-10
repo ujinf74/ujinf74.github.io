@@ -28,8 +28,9 @@ classes: wide
 <div class="project-card">
   <h3>Selected Work</h3>
   <ul>
-    <li><b>ballistic-solver</b>: C++/Python intercept solver with drag dynamics, auxiliary residual correction, benchmarks, and an ICROS 2026 manuscript.</li>
+    <li><b>ballistic-solver</b>: native C++/Python intercept solver with drag dynamics, a modern C++ API, benchmarks, and deployment from games to edge hardware.</li>
     <li><b>Mapless Autonomous Parking</b>: Hyundai Ioniq parking system using FAST-LIO odometry, C++ LiDAR occupancy-grid mapping, delay-aware trajectory following, and CAN-facing control.</li>
+    <li><b>HERO</b> <small style="opacity:.7;">(In development)</small>: vision-only parking perception and a low-vision driver coaching HUD, developed in CARLA against an Autoware LiDAR reference.</li>
     <li><b>Racing Telemetry Stack</b>: Raspberry Pi GNSS/RTK runtime with receiver configuration, buffered logging, remote monitoring, and recovery handling.</li>
     <li><b>Racing Analyze GUI</b>: MATLAB telemetry workbench for multi-run loading, segment comparison, replay, and metrics extraction.</li>
   </ul>
@@ -40,7 +41,7 @@ classes: wide
   <div class="mini-grid">
     <div class="mini-card">
       <div class="mini-kicker">Applied Algorithms</div>
-      <p>Nonlinear dynamics, residual transformation, damping, convergence handling, and explicit failure states.</p>
+      <p>Nonlinear dynamics, coordinate-residual optimization, auxiliary residual research, convergence handling, and explicit failure states.</p>
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Vehicle Autonomy</div>
@@ -54,6 +55,14 @@ classes: wide
       <div class="mini-kicker">Analysis Workflows</div>
       <p>Replay, segment metrics, multi-run comparison, and domain-specific inspection tools for driver review.</p>
     </div>
+    <div class="mini-card">
+      <div class="mini-kicker">Vision + Automotive HMI</div>
+      <p>Dual-camera occupancy estimation, angular legibility budgets, degraded-state display, and low-vision parking guidance.</p>
+    </div>
+    <div class="mini-card">
+      <div class="mini-kicker">Open Source</div>
+      <p>Merged Autoware Universe improvements for CARLA camera transport and configurable IMU/GNSS sensor noise.</p>
+    </div>
   </div>
 </div>
 
@@ -62,7 +71,7 @@ classes: wide
   <div class="mini-grid">
     <div class="mini-card">
       <div class="mini-kicker">Deployable Numerics</div>
-      <p><b>ballistic-solver</b> shows a paper-backed residual method, solver design, API boundaries, packaging, diagnostics, and benchmark numbers.</p>
+      <p><b>ballistic-solver</b> shows solver design, API boundaries, packaging, diagnostics, benchmark numbers, and a Rock 5B + STM32 hardware integration.</p>
       <a class="btn" href="/projects/ballistic-solver/">View details</a>
     </div>
     <div class="mini-card">
@@ -80,6 +89,16 @@ classes: wide
       <p><b>Racing Analyze GUI</b> provides a stateful analysis interface with replay, segment metrics, and pane-based telemetry inspection.</p>
       <a class="btn" href="/projects/racing-analyze-gui/">View details</a>
     </div>
+    <div class="mini-card">
+      <div class="mini-kicker">Vision + Driver Interface</div>
+      <p><b>HERO</b> combines camera-only parking perception with a low-vision coaching HUD. The project is in development.</p>
+      <a class="btn" href="/projects/hero/">View details</a>
+    </div>
+    <div class="mini-card">
+      <div class="mini-kicker">Upstream Engineering</div>
+      <p>Two merged <b>Autoware Universe</b> contributions improve CARLA camera bandwidth and sensor-noise configuration.</p>
+      <a class="btn" href="/contributions/">View contributions</a>
+    </div>
   </div>
 </div>
 
@@ -89,5 +108,6 @@ classes: wide
     <li><b>Award</b>: KSAE 2024 Smart e-Mobility Competition (EV Division) — Encouragement Prize.</li>
     <li><b>Research</b>: autonomous driving team lead at HuVILab, a university vehicle-intelligence lab, focused on real-vehicle mapless parking, planning/control under constraints, and coaching systems.</li>
     <li><b>Operations</b>: telemetry runtime / monitoring / analysis collaboration with Luxon Racing Team in the GTA class of the O-NE SUPERRACE CHAMPIONSHIP.</li>
+    <li><b>Open source</b>: two merged contributions to Autoware Universe's CARLA interface.</li>
   </ul>
 </div>
