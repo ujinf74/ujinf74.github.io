@@ -31,7 +31,6 @@ classes: wide
     <li><b>ballistic-solver</b>: native C++/Python intercept solver with drag dynamics, a modern C++ API, benchmarks, and deployment from games to edge hardware.</li>
     <li><b>Mapless Autonomous Parking</b>: Hyundai Ioniq parking system using FAST-LIO odometry, C++ LiDAR occupancy-grid mapping, delay-aware trajectory following, and CAN-facing control.</li>
     <li><b>Monoscale Visual Odometry</b>: learning-free ROS 2 metric odometry and dense occupancy from ground-plane geometry, cameras, and IMU.</li>
-    <li><b>HERO</b> <small style="opacity:.7;">(In development)</small>: low-vision parking coaching that consumes camera-only perception without taking over vehicle control.</li>
     <li><b>Racing Telemetry Stack</b>: Raspberry Pi GNSS/RTK runtime with receiver configuration, buffered logging, remote monitoring, and recovery handling.</li>
     <li><b>Racing Analyze GUI</b>: packaged Python desktop tool for multi-run comparison, gate-aligned analysis, synchronized replay, and report export.</li>
   </ul>
@@ -57,8 +56,8 @@ classes: wide
       <p>Replay, segment metrics, multi-run comparison, and domain-specific inspection tools for driver review.</p>
     </div>
     <div class="mini-card">
-      <div class="mini-kicker">Vision + Automotive HMI</div>
-      <p>Ground-plane metric odometry, dense occupancy, angular legibility budgets, degraded-state display, and low-vision parking guidance.</p>
+      <div class="mini-kicker">Visual Odometry + Occupancy</div>
+      <p>Ground-plane metric motion, anchor-map correction, dense plane-sweep occupancy, and reproducible CARLA evaluation.</p>
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Open Source</div>
@@ -96,13 +95,8 @@ classes: wide
       <a class="btn" href="/projects/racing-analyze-gui/">View details</a>
     </div>
     <div class="mini-card">
-      <div class="mini-kicker">Vision + Driver Interface</div>
-      <p><b>HERO</b> combines camera-only parking perception with a low-vision coaching HUD. The project is in development.</p>
-      <a class="btn" href="/projects/hero/">View details</a>
-    </div>
-    <div class="mini-card">
       <div class="mini-kicker">Upstream Engineering</div>
-      <p>Two merged <b>Autoware Universe</b> contributions improve CARLA camera bandwidth and sensor-noise configuration.</p>
+      <p>Three merged <b>Autoware Universe</b> contributions improve CARLA sensor timing, camera bandwidth, and sensor-noise configuration.</p>
       <a class="btn" href="/contributions/">View contributions</a>
     </div>
   </div>
@@ -114,6 +108,6 @@ classes: wide
     <li><b>Award</b>: KSAE 2024 Smart e-Mobility Competition (EV Division) — Encouragement Prize.</li>
     <li><b>Research</b>: autonomous driving team lead at HuVILab, a university vehicle-intelligence lab, focused on real-vehicle mapless parking, planning/control under constraints, and coaching systems.</li>
     <li><b>Operations</b>: telemetry runtime / monitoring / analysis collaboration with Luxon Racing Team in the GTA class of the O-NE SUPERRACE CHAMPIONSHIP.</li>
-    <li><b>Open source</b>: two merged contributions to Autoware Universe's CARLA interface.</li>
+    <li><b>Open source</b>: three merged contributions to Autoware Universe's CARLA interface, plus additional proposals under review.</li>
   </ul>
 </div>

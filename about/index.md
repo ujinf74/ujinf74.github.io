@@ -18,13 +18,17 @@ classes: wide
   <h3>Current Work</h3>
   <p>
     Recent work includes a real-vehicle Hyundai Ioniq mapless parking system, learning-free metric visual odometry and dense occupancy,
-    a low-vision parking-coaching interface, a packaged ballistic interception solver, and field-to-desktop racing telemetry tooling.
+    a packaged ballistic interception solver, and field-to-desktop racing telemetry tooling.
   </p>
 </div>
 
 <div class="project-card">
   <h3>Research Experience</h3>
   <ul>
+    <li>
+      <a href="https://github.com/autowarefoundation/autoware_universe/pull/13149">Autoware Universe #13149</a> —
+      corrected floating-point publish-period comparisons that dropped CARLA sensor frames at matched rates.
+    </li>
     <li>
       <b>Undergraduate Research Intern / Autonomous Driving Team Lead, HuVILab</b>
       <small style="opacity:.7;">(Tech University of Korea / 한국공학대학교)</small><br/>
@@ -71,7 +75,7 @@ classes: wide
   <h3>Technical Areas</h3>
   <ul>
     <li><b>Vehicle autonomy</b>: ROS 2, FAST-LIO odometry, C++ occupancy mapping, delay-aware tracking, and CAN-facing command paths.</li>
-    <li><b>Vision and HMI</b>: photometric distance, anchor-map direction/attitude correction, dense plane-sweep occupancy, CARLA evaluation, Qt, and low-vision legibility geometry.</li>
+    <li><b>Visual perception</b>: photometric distance, anchor-map direction/attitude correction, dense plane-sweep occupancy, and CARLA evaluation.</li>
     <li><b>Numerical methods</b>: RK4 integration, coordinate and auxiliary residuals, Gauss–Newton, convergence handling, and diagnostics.</li>
     <li><b>Telemetry systems</b>: GNSS/RTK collection, multi-format log ingestion, gate-aligned timing, synchronized media/replay, and analysis loops tied to real operations.</li>
     <li><b>Interfaces</b>: modern C++ APIs, C ABI boundaries, Python bindings, ROS 2 interfaces, dashboards, and analysis tools.</li>

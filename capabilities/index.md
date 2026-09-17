@@ -27,8 +27,8 @@ classes: wide
       <a class="btn" href="/projects/mapless-autonomous-parking/">Seen in autonomous parking</a>
     </div>
     <div class="mini-card">
-      <div class="mini-kicker">Vision + Automotive HMI</div>
-      <p>Ground-plane metric odometry, anchor-map correction, dense plane-sweep occupancy, and low-vision coaching states.</p>
+      <div class="mini-kicker">Visual Perception</div>
+      <p>Ground-plane metric odometry, anchor-map correction, dense plane-sweep occupancy, and reproducible CARLA evaluation.</p>
       <a class="btn" href="/projects/monoscale/">Seen in Monoscale</a>
     </div>
     <div class="mini-card">
@@ -72,9 +72,9 @@ classes: wide
         <td><a href="/projects/mapless-autonomous-parking/">Mapless Autonomous Parking</a></td>
       </tr>
       <tr>
-        <td>Vision and driver interface</td>
-        <td>Metric camera odometry, anchor-map correction, dense occupancy, CARLA evaluation, and low-vision HUD geometry</td>
-        <td><a href="/projects/monoscale/">Monoscale</a> + <a href="/projects/hero/">HERO</a></td>
+        <td>Visual perception</td>
+        <td>Metric camera odometry, anchor-map direction/attitude correction, dense occupancy, and CARLA evaluation</td>
+        <td><a href="/projects/monoscale/">Monoscale</a></td>
       </tr>
       <tr>
         <td>Operational robustness</td>
@@ -110,7 +110,7 @@ classes: wide
   <ul>
     <li><b>Measured behavior</b>: current solver benchmarks, visual-odometry ablations, telemetry regression tests, research comparisons, and camera-payload measurements.</li>
     <li><b>Physical validation</b>: real-vehicle parking and a Rock 5B + STM32 solver integration with live vision input.</li>
-    <li><b>Upstream validation</b>: two reviewed and merged Autoware Universe contributions.</li>
+    <li><b>Upstream validation</b>: three reviewed and merged Autoware Universe contributions.</li>
     <li><b>Operational tooling</b>: logs, monitoring, replay, and analysis interfaces that make field behavior inspectable.</li>
   </ul>
 </div>

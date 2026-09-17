@@ -6,7 +6,7 @@ classes: wide
 ---
 
 <div class="project-card">
-  <p class="eyebrow">In development · Vision-only parking perception · Low-vision coaching HUD</p>
+  <p class="eyebrow">Additional work · In development · Low-vision coaching HUD</p>
   <p>
     <b>HERO</b> is a coaching-only parking-assistance project for a Hyundai Ioniq. It connects the
     <a href="/projects/monoscale/">Monoscale</a> camera-perception stack to a driver interface designed around
@@ -53,7 +53,7 @@ classes: wide
 <div class="project-card">
   <h3>Engineering Status</h3>
   <p>
-    <b>In development.</b> The current implementation includes a reproducible measurement harness,
-    scenario-driven HUD states, geometry tests, and visual-acuity simulation outputs for interface review.
+    <b>Exploratory and in development.</b> The current implementation includes scenario-driven HUD states,
+    geometry tests, and visual-acuity simulation outputs for interface review. It is retained as supporting work rather than a representative project.
   </p>
 </div>

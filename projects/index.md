@@ -8,7 +8,7 @@ classes: wide
 <div class="project-card">
   <p class="eyebrow">Representative Projects</p>
   <p>
-    Six projects covering solver design, real-vehicle autonomy integration, visual odometry, driver assistance, field telemetry, and analysis-tool construction.
+    Five representative projects covering solver design, real-vehicle autonomy integration, visual odometry, field telemetry, and analysis-tool construction.
     For a capability-first view, start from <a href="/capabilities/">Capabilities</a>.
   </p>
 </div>
@@ -153,31 +153,6 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>HERO — Vision-Based Parking Assistance <small style="opacity:.7;">(In development · ROS 2 · C++/CUDA · Qt)</small></h3>
-
-  <p>
-    <b>Coaching-only parking assistance</b> for a Hyundai Ioniq, connecting the Monoscale camera-perception stack to
-    a low-vision driver HUD. The interface provides guidance without taking over vehicle control.
-  </p>
-
-  <b>What I am building</b>
-  <ul>
-    <li><b>Perception input</b>: metric camera odometry and dense occupancy from <a href="/projects/monoscale/">Monoscale</a></li>
-    <li><b>Low-vision HUD</b>: angular legibility budgeting, corridor and stop-line guidance, gear state, and degraded-state messaging</li>
-    <li><b>Software boundary</b>: ROS 2 coaching logic separated from the Qt presentation layer, with 26 geometry tests</li>
-  </ul>
-
-  <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
-    <a class="btn" href="/projects/hero/">Detailed page</a>
-  </div>
-
-  <div class="proof-callout">
-    <b>In development</b>
-    <span>Reproducible CARLA evaluation, camera-only occupancy estimation, and a scenario-driven low-vision coaching interface.</span>
-  </div>
-</div>
-
-<div class="project-card">
   <h3>Racing Telemetry Stack <small style="opacity:.7;">(Python · Raspberry Pi · ZED-F9R · RTK/NTRIP · Cloudflare Worker)</small></h3>
 
   <p>
@@ -271,6 +246,19 @@ classes: wide
     <b>Result</b>
     <span>Packaged multi-run workbench with physical gate alignment, synchronized media/replay, flexible plots, and reproducible reports.</span>
   </div>
+</div>
+
+<h2>Additional Work</h2>
+
+<div class="project-card">
+  <p class="eyebrow">In development</p>
+  <h3>HERO — Low-Vision Parking Coaching</h3>
+  <p>
+    A coaching-only HUD concept that applies <a href="/projects/monoscale/">Monoscale</a> perception to parking-corridor,
+    stop-line, gear-state, and degraded-state guidance. The ROS 2 coaching logic and Qt presentation layer remain separate;
+    the geometry layer currently has 26 tests. This work is exploratory and does not intervene in vehicle control.
+  </p>
+  <a class="btn" href="/projects/hero/">Development notes</a>
 </div>
 
 <div class="project-card">
