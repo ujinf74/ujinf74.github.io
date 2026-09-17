@@ -28,8 +28,8 @@ classes: wide
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Vision + Automotive HMI</div>
-      <p>Dual-camera motion and occupancy estimation paired with angular-legibility budgets and explicit coaching states.</p>
-      <a class="btn" href="/projects/hero/">Seen in HERO</a>
+      <p>Ground-plane metric odometry, anchor-map correction, dense plane-sweep occupancy, and low-vision coaching states.</p>
+      <a class="btn" href="/projects/monoscale/">Seen in Monoscale</a>
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Field Operations</div>
@@ -38,7 +38,7 @@ classes: wide
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Tool Building</div>
-      <p>Turning raw operational data into segment-aware analysis, replay, metrics, and inspectable multi-pane workflows.</p>
+      <p>Turning heterogeneous logs into gate-aligned timing, synchronized data/media replay, time-loss analysis, and reproducible reports.</p>
       <a class="btn" href="/projects/racing-analyze-gui/">Seen in analysis GUI</a>
     </div>
     <div class="mini-card">
@@ -73,8 +73,8 @@ classes: wide
       </tr>
       <tr>
         <td>Vision and driver interface</td>
-        <td>Dual-camera odometry, dense occupancy, CARLA evaluation, and low-vision HUD geometry</td>
-        <td><a href="/projects/hero/">HERO</a></td>
+        <td>Metric camera odometry, anchor-map correction, dense occupancy, CARLA evaluation, and low-vision HUD geometry</td>
+        <td><a href="/projects/monoscale/">Monoscale</a> + <a href="/projects/hero/">HERO</a></td>
       </tr>
       <tr>
         <td>Operational robustness</td>
@@ -83,7 +83,7 @@ classes: wide
       </tr>
       <tr>
         <td>Data analysis tooling</td>
-        <td>Track-core build, segment slicing, synchronized replay, and pane-aware visual inspection</td>
+        <td>Multi-format logs, gate-aligned timing, simulator registration, synchronized media/replay, and report export</td>
         <td><a href="/projects/racing-analyze-gui/">Racing Analyze GUI</a></td>
       </tr>
       <tr>
@@ -108,7 +108,7 @@ classes: wide
 <div class="project-card">
   <h3>Evidence Map</h3>
   <ul>
-    <li><b>Measured behavior</b>: current solver benchmarks, regression tests, research comparisons, and camera-payload measurements.</li>
+    <li><b>Measured behavior</b>: current solver benchmarks, visual-odometry ablations, telemetry regression tests, research comparisons, and camera-payload measurements.</li>
     <li><b>Physical validation</b>: real-vehicle parking and a Rock 5B + STM32 solver integration with live vision input.</li>
     <li><b>Upstream validation</b>: two reviewed and merged Autoware Universe contributions.</li>
     <li><b>Operational tooling</b>: logs, monitoring, replay, and analysis interfaces that make field behavior inspectable.</li>

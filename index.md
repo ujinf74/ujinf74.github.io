@@ -30,9 +30,10 @@ classes: wide
   <ul>
     <li><b>ballistic-solver</b>: native C++/Python intercept solver with drag dynamics, a modern C++ API, benchmarks, and deployment from games to edge hardware.</li>
     <li><b>Mapless Autonomous Parking</b>: Hyundai Ioniq parking system using FAST-LIO odometry, C++ LiDAR occupancy-grid mapping, delay-aware trajectory following, and CAN-facing control.</li>
-    <li><b>HERO</b> <small style="opacity:.7;">(In development)</small>: vision-only parking perception and a low-vision driver coaching HUD, developed in CARLA against an Autoware LiDAR reference.</li>
+    <li><b>Monoscale Visual Odometry</b>: learning-free ROS 2 metric odometry and dense occupancy from ground-plane geometry, cameras, and IMU.</li>
+    <li><b>HERO</b> <small style="opacity:.7;">(In development)</small>: low-vision parking coaching that consumes camera-only perception without taking over vehicle control.</li>
     <li><b>Racing Telemetry Stack</b>: Raspberry Pi GNSS/RTK runtime with receiver configuration, buffered logging, remote monitoring, and recovery handling.</li>
-    <li><b>Racing Analyze GUI</b>: MATLAB telemetry workbench for multi-run loading, segment comparison, replay, and metrics extraction.</li>
+    <li><b>Racing Analyze GUI</b>: packaged Python desktop tool for multi-run comparison, gate-aligned analysis, synchronized replay, and report export.</li>
   </ul>
 </div>
 
@@ -57,7 +58,7 @@ classes: wide
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Vision + Automotive HMI</div>
-      <p>Dual-camera occupancy estimation, angular legibility budgets, degraded-state display, and low-vision parking guidance.</p>
+      <p>Ground-plane metric odometry, dense occupancy, angular legibility budgets, degraded-state display, and low-vision parking guidance.</p>
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Open Source</div>
@@ -80,13 +81,18 @@ classes: wide
       <a class="btn" href="/projects/mapless-autonomous-parking/">View details</a>
     </div>
     <div class="mini-card">
+      <div class="mini-kicker">Measured Visual Odometry</div>
+      <p><b>Monoscale</b> separates photometric distance measurement from anchor-map direction, attitude, and accumulated-error correction.</p>
+      <a class="btn" href="/projects/monoscale/">View details</a>
+    </div>
+    <div class="mini-card">
       <div class="mini-kicker">Field Runtime</div>
       <p><b>Racing Telemetry Stack</b> shows real-device handling, correction ingestion, fault tolerance, browser monitoring, and operational data flow design.</p>
       <a class="btn" href="/projects/racing-telemetry-stack/">View details</a>
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Analysis Workflow</div>
-      <p><b>Racing Analyze GUI</b> provides a stateful analysis interface with replay, segment metrics, and pane-based telemetry inspection.</p>
+      <p><b>Racing Analyze GUI</b> provides a packaged, stateful analysis interface with gate-aligned timing, replay, media synchronization, and report export.</p>
       <a class="btn" href="/projects/racing-analyze-gui/">View details</a>
     </div>
     <div class="mini-card">

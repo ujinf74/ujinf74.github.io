@@ -8,7 +8,7 @@ classes: wide
 <div class="project-card">
   <p class="eyebrow">Representative Projects</p>
   <p>
-    Five projects covering solver design, real-vehicle autonomy integration, vision-based driver assistance, field telemetry runtime, and analysis-tool construction.
+    Six projects covering solver design, real-vehicle autonomy integration, visual odometry, driver assistance, field telemetry, and analysis-tool construction.
     For a capability-first view, start from <a href="/capabilities/">Capabilities</a>.
   </p>
 </div>
@@ -118,19 +118,51 @@ classes: wide
 </div>
 
 <div class="project-card">
+  <h3>Monoscale Visual Odometry <small style="opacity:.7;">(ROS 2 · C++/CUDA · Cameras + IMU)</small></h3>
+
+  <p>
+    <b>Learning-free metric visual odometry and dense occupancy</b> for vehicles using known camera height and ground-plane geometry.
+    Photometric alignment measures travel distance, while a short-lived feature anchor map estimates direction,
+    corrects accumulated position error, and recovers camera roll/pitch relative to the ground.
+  </p>
+
+  <b>What I built</b>
+  <ul>
+    <li><b>Metric motion</b>: scale from camera mounting height and the ground plane, without stereo, LiDAR, a learned model, or a prebuilt map</li>
+    <li><b>Separated estimation roles</b>: photometric distance in mapless intervals; anchor-map direction, attitude, and accumulated-error correction when anchors are available</li>
+    <li><b>ROS-independent C++ core</b>: estimator logic testable without a ROS graph and reusable inside another process</li>
+    <li><b>Dense occupancy</b>: C++/CUDA plane sweep over raw fisheye images, using odometry roll/pitch in the image warp</li>
+    <li><b>Repeatable evaluation</b>: deterministic bag replay, CARLA ground truth scoring, held-out runs, and 132 core tests</li>
+  </ul>
+
+  <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
+    <a class="btn" href="/projects/monoscale/">Detailed page</a>
+    <a class="btn" href="https://github.com/ujinf74/monoscale">Repo</a>
+  </div>
+
+  <div class="result-strip">
+    <span><b>CARLA, 9 drives</b></span>
+    <span>mean distance-normalized ATE 0.0237%</span>
+    <span>132 core tests</span>
+  </div>
+
+  <div class="proof-callout">
+    <b>Result</b>
+    <span>Metric camera motion and dense occupancy with measured ablations for distance, direction, attitude, and long-term trajectory error.</span>
+  </div>
+</div>
+
+<div class="project-card">
   <h3>HERO — Vision-Based Parking Assistance <small style="opacity:.7;">(In development · ROS 2 · C++/CUDA · Qt)</small></h3>
 
   <p>
-    <b>Coaching-only parking assistance</b> for a Hyundai Ioniq, combining camera-only parking perception with
-    a low-vision driver HUD. The perception stack is developed in CARLA against an Autoware LiDAR reference;
-    the interface provides guidance without taking over vehicle control.
+    <b>Coaching-only parking assistance</b> for a Hyundai Ioniq, connecting the Monoscale camera-perception stack to
+    a low-vision driver HUD. The interface provides guidance without taking over vehicle control.
   </p>
 
   <b>What I am building</b>
   <ul>
-    <li><b>Vision odometry</b>: two-camera ground-plane motion estimation without vehicle-mounted LiDAR</li>
-    <li><b>Dense occupancy</b>: plane-sweep parking-space estimation implemented in C++/CUDA</li>
-    <li><b>Evaluation</b>: CARLA measurement harness using Autoware LiDAR output as a reference</li>
+    <li><b>Perception input</b>: metric camera odometry and dense occupancy from <a href="/projects/monoscale/">Monoscale</a></li>
     <li><b>Low-vision HUD</b>: angular legibility budgeting, corridor and stop-line guidance, gear state, and degraded-state messaging</li>
     <li><b>Software boundary</b>: ROS 2 coaching logic separated from the Qt presentation layer, with 26 geometry tests</li>
   </ul>
@@ -177,11 +209,11 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Racing Analyze GUI <small style="opacity:.7;">(MATLAB · Telemetry Analysis · Driver Coaching)</small></h3>
+  <h3>Racing Analyze GUI <small style="opacity:.7;">(Python · PySide6 · Telemetry Analysis)</small></h3>
 
   <p>
-    <b>Segment-based racing telemetry analysis workbench</b> for comparing multiple logged runs, visualizing driver/vehicle behavior,
-    and supporting <b>coaching-oriented inspection</b> for circuit driving.
+    <b>Packaged racing telemetry analysis workbench</b> for comparing multiple logged runs, aligning them at track gates,
+    visualizing driver and vehicle behavior, and supporting <b>coaching-oriented inspection</b> for circuit driving.
     Developed and used together with the telemetry collection workflow for <b>Luxon Racing Team</b> in the <b>GTA class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
   </p>
 
@@ -190,8 +222,8 @@ classes: wide
 
   <b>What I built</b>
   <ul>
-    <li><b>Fast track/core build</b>:
-      GPS-fix-based <b>track core / segment reference</b> generation for repeated run comparison
+    <li><b>Gate-aligned timing</b>:
+      interpolate each crossing between samples so lap, segment, plot, map, replay, and video boundaries share the same physical instant
     </li>
 
     <li><b>Fast multi-log workflow</b>:
@@ -214,20 +246,20 @@ classes: wide
       arbitrary logged channels can be assigned to <b>x / y / color</b>, enabling broad exploratory analysis across vehicle states and driver inputs
     </li>
 
-    <li><b>Signal conditioning</b>:
-      smoothing and abnormal-data interpolation support for more stable visualization and comparison
+    <li><b>Log compatibility</b>:
+      regular and MoTeC CSV, MoTeC LD, GPS, and simulator-coordinate logs with track registration
     </li>
 
-    <li><b>Pane-level workflow tools</b>:
-      per-pane rerender and pop-out windows for focused inspection without rebuilding the full workspace
+    <li><b>Media and pane workflow</b>:
+      synchronized video/audio, configurable plot panes, drag-and-drop, pop-out windows, and restored sessions
     </li>
 
-    <li><b>Metrics extraction</b>:
-      segment-level metrics such as <b>segment time</b>, <b>velocity statistics</b>, and <b>acceleration-related indicators</b> for quick run ranking and review
+    <li><b>Metrics and reports</b>:
+      segment time, speed and acceleration indicators, time-loss decomposition, and CSV export for further analysis
     </li>
 
     <li><b>Practical use case</b>:
-      supports <b>visualization assistance</b> and <b>coaching workflow</b> for real racing data analysis
+      desktop build paths for Windows and Linux, a headless CLI/library path, and 1,232 automated tests
     </li>
   </ul>
 
@@ -237,7 +269,7 @@ classes: wide
 
   <div class="proof-callout">
     <b>Result</b>
-    <span>Multi-run telemetry workbench with segment slicing, synchronized replay, flexible plots, and metrics extraction.</span>
+    <span>Packaged multi-run workbench with physical gate alignment, synchronized media/replay, flexible plots, and reproducible reports.</span>
   </div>
 </div>
 

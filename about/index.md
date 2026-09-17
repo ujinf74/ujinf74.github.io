@@ -17,8 +17,8 @@ classes: wide
 <div class="project-card">
   <h3>Current Work</h3>
   <p>
-    Recent work includes a real-vehicle Hyundai Ioniq mapless parking system, the HERO vision and low-vision coaching project,
-    a packaged ballistic interception solver validated on edge hardware, and RTK/GNSS telemetry tooling for racing data.
+    Recent work includes a real-vehicle Hyundai Ioniq mapless parking system, learning-free metric visual odometry and dense occupancy,
+    a low-vision parking-coaching interface, a packaged ballistic interception solver, and field-to-desktop racing telemetry tooling.
   </p>
 </div>
 
@@ -41,7 +41,8 @@ classes: wide
     <li>
       <b>Racing telemetry runtime / monitoring / analysis collaboration with Luxon Racing Team</b><br/>
       Built a Raspberry Pi runtime around a u-blox ZED-F9R receiver with startup configuration,
-      RTK/NTRIP correction input, buffered logging, remote monitoring, and segment-based analysis for field use.
+      RTK/NTRIP correction input, buffered logging, and remote monitoring, plus a packaged desktop workflow for
+      gate-aligned timing, synchronized replay, simulator registration, and segment-based analysis.
     </li>
     <li>
       <b>Ballistic solver hardware validation</b><br/>
@@ -70,9 +71,9 @@ classes: wide
   <h3>Technical Areas</h3>
   <ul>
     <li><b>Vehicle autonomy</b>: ROS 2, FAST-LIO odometry, C++ occupancy mapping, delay-aware tracking, and CAN-facing command paths.</li>
-    <li><b>Vision and HMI</b>: dual-camera motion/occupancy estimation, CARLA evaluation, Qt, and low-vision legibility geometry.</li>
+    <li><b>Vision and HMI</b>: photometric distance, anchor-map direction/attitude correction, dense plane-sweep occupancy, CARLA evaluation, Qt, and low-vision legibility geometry.</li>
     <li><b>Numerical methods</b>: RK4 integration, coordinate and auxiliary residuals, Gauss–Newton, convergence handling, and diagnostics.</li>
-    <li><b>Telemetry systems</b>: GNSS/RTK collection, logging, monitoring, replay, and analysis loops tied to real operations.</li>
+    <li><b>Telemetry systems</b>: GNSS/RTK collection, multi-format log ingestion, gate-aligned timing, synchronized media/replay, and analysis loops tied to real operations.</li>
     <li><b>Interfaces</b>: modern C++ APIs, C ABI boundaries, Python bindings, ROS 2 interfaces, dashboards, and analysis tools.</li>
   </ul>
 </div>

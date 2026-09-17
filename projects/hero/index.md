@@ -8,9 +8,9 @@ classes: wide
 <div class="project-card">
   <p class="eyebrow">In development · Vision-only parking perception · Low-vision coaching HUD</p>
   <p>
-    <b>HERO</b> is a coaching-only parking-assistance project for a Hyundai Ioniq. It combines a camera-only
-    perception stack with a driver interface designed around low-vision legibility. Development and measurement
-    run in CARLA; the system provides guidance and does not intervene in vehicle control.
+    <b>HERO</b> is a coaching-only parking-assistance project for a Hyundai Ioniq. It connects the
+    <a href="/projects/monoscale/">Monoscale</a> camera-perception stack to a driver interface designed around
+    low-vision legibility. The system provides guidance and does not intervene in vehicle control.
   </p>
   <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.8rem;">
     <a class="btn" href="/projects/">Back to Projects</a>
@@ -20,10 +20,10 @@ classes: wide
 <div class="project-card">
   <h3>Vision-Only Perception</h3>
   <ul>
-    <li><b>Two-camera ground-plane odometry</b> estimates vehicle motion without vehicle-mounted LiDAR.</li>
-    <li><b>Plane-sweep dense occupancy</b> reconstructs parking-space geometry in C++/CUDA.</li>
-    <li>A reproducible <b>CARLA evaluation harness</b> compares perception output against an Autoware LiDAR reference.</li>
-    <li>Measurement outputs are separated from the presentation layer so the perception path can be evaluated independently.</li>
+    <li><b>Metric ground-plane odometry</b> estimates vehicle motion from one or more cameras and IMU without vehicle-mounted LiDAR.</li>
+    <li><b>Plane-sweep dense occupancy</b> reconstructs parking-space geometry from raw fisheye images in C++/CUDA.</li>
+    <li>A deterministic <b>CARLA evaluation and replay path</b> measures odometry and occupancy against ground truth.</li>
+    <li>The perception implementation and measurements are documented separately on the <a href="/projects/monoscale/">Monoscale project page</a>.</li>
   </ul>
 </div>
 
@@ -42,7 +42,7 @@ classes: wide
   <div class="flow-diagram">
     <div class="flow-step"><b>Cameras</b><span>dual-view CARLA image streams</span></div>
     <div class="flow-arrow">→</div>
-    <div class="flow-step"><b>Perception</b><span>ground-plane odometry and dense occupancy</span></div>
+    <div class="flow-step"><b>Monoscale</b><span>metric ground-plane odometry and dense occupancy</span></div>
     <div class="flow-arrow">→</div>
     <div class="flow-step"><b>Coaching State</b><span>parking geometry, gear, stopping, degraded state</span></div>
     <div class="flow-arrow">→</div>
