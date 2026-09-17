@@ -192,8 +192,8 @@ classes: wide
     Developed and used together with the telemetry collection workflow for <b>Luxon Racing Team</b> in the <b>GTA class of the O-NE SUPERRACE CHAMPIONSHIP</b>.
   </p>
 
-  <img src="/assets/images/racing_analyze_gui.png" alt="Racing Analyze GUI"
-    style="width:100%; border-radius:18px; margin-top:.6rem; border:1px solid rgba(255,255,255,.14);">
+  <img src="/assets/images/racing_analyze_gui_2026.png" alt="PySide6 racing telemetry workspace with time-series plots, GG diagram, track map, and synchronized onboard video" loading="lazy" decoding="async"
+    style="width:100%; aspect-ratio:2048/1049; object-fit:cover; object-position:center bottom; border-radius:18px; margin-top:.6rem; border:1px solid rgba(255,255,255,.14);">
 
   <b>What I built</b>
   <ul>

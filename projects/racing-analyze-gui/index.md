@@ -12,8 +12,11 @@ classes: wide
     aligning them to the same track gates, replaying data and media together, and extracting metrics for coaching-oriented review.
   </p>
 
-  <img src="/assets/images/racing_analyze_gui.png" alt="Racing Analyze GUI"
-    style="width:100%; border-radius:18px; margin-top:.6rem; border:1px solid rgba(255,255,255,.14);">
+  <img src="/assets/images/racing_analyze_gui_2026.png" alt="PySide6 racing telemetry workspace with time-series plots, GG diagram, track map, and synchronized onboard video" loading="lazy" decoding="async"
+    style="width:100%; aspect-ratio:2048/1049; object-fit:cover; object-position:center bottom; border-radius:18px; margin-top:.6rem; border:1px solid rgba(255,255,255,.14);">
+  <p style="margin:.65rem 0 0; opacity:.72; font-size:.9em;">
+    Current PySide6 workspace: multi-log time series, GG analysis, track map, and synchronized onboard video.
+  </p>
 
   <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.8rem;">
     <a class="btn" href="/projects/">Back to Projects</a>
