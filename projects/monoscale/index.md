@@ -14,7 +14,6 @@ classes: wide
   </p>
   <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.8rem;">
     <a class="btn" href="https://github.com/ujinf74/monoscale">Repo</a>
-    <a class="btn" href="/projects/hero/">See the coaching system</a>
     <a class="btn" href="/projects/">Back to Projects</a>
   </div>
 </div>
@@ -31,7 +30,7 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Why The Signals Stay Separate</h3>
+  <h3>Why the Signals Stay Separate</h3>
   <ul>
     <li><b>Without an anchor match</b>, feature tracking keeps motion direction and the forward/reverse sign while photometric alignment supplies the distance.</li>
     <li><b>With an anchor match</b>, the anchor update is kept intact because it contains both current motion and accumulated position-error correction.</li>

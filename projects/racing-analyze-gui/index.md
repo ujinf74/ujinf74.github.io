@@ -63,21 +63,14 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Result</h3>
+  <h3>Result & Evidence</h3>
   <ul>
-    <li>Maintains desktop build paths for Windows and Linux, with CLI and library access for automation.</li>
     <li>Made lap timing, plotted slices, map traces, replay markers, and media share the same gate-crossing convention.</li>
     <li>Connected real and simulator logs through a common track and analysis workflow.</li>
-    <li>Kept the analysis core independent of the UI so the same workflow can run headlessly.</li>
-  </ul>
-</div>
-
-<div class="project-card">
-  <h3>Evidence</h3>
-  <ul>
-    <li>The application handles four log families through one analysis path and checks them with generated equivalent-drive fixtures.</li>
+    <li>Handles four log families through one analysis path and checks them with generated equivalent-drive fixtures.</li>
     <li>The 1,232-test suite covers both calculation and Qt interaction paths; command-line smoke checks exercise gates, loss analysis, reports, and log inspection.</li>
-    <li>The workflow is connected upstream to the <a href="/projects/racing-telemetry-stack/">Racing Telemetry Stack</a>, so this page describes the analysis side of the same field system.</li>
+    <li>Maintains Windows/Linux desktop builds plus CLI and UI-independent library access for automation.</li>
+    <li>Consumes logs from the upstream <a href="/projects/racing-telemetry-stack/">Racing Telemetry Stack</a>.</li>
   </ul>
 </div>
 

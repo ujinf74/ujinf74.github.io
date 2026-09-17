@@ -51,36 +51,19 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Runtime Design</h3>
+  <h3>Operational Result</h3>
   <ul>
-    <li>The collector is a systemd-managed runtime with receiver setup, correction handling, logging, and restart behavior.</li>
-    <li>The monitoring and recovery pieces expose serial state, correction state, GPS validity, and timeout conditions to the operator.</li>
-    <li>The same collected data feeds the analysis workflow, so collection and review are part of one engineering loop.</li>
+    <li><b>20 Hz receiver setup</b> and UBX message configuration run as part of the managed startup path.</li>
+    <li><b>Local evidence</b> remains on the car as date-foldered CSV and optional raw UBX logs.</li>
+    <li><b>Remote evidence</b> exposes correction, GPS, serial, and timeout state through the browser monitor.</li>
+    <li><b>Downstream use</b> connects the collected logs directly to the <a href="/projects/racing-analyze-gui/">Racing Analyze GUI</a>.</li>
   </ul>
 </div>
 
 <div class="project-card">
-  <h3>Result</h3>
+  <h3>Validation Scope</h3>
   <ul>
-    <li>Configured and monitored a ZED-F9R-based Raspberry Pi telemetry runtime.</li>
-    <li>Connected device IO, RTK correction streams, local logging, cloud relay, browser monitoring, and downstream analysis.</li>
-    <li>Added retry, timeout, filtering, and recovery behavior around field data collection.</li>
-  </ul>
-</div>
-
-<div class="project-card">
-  <h3>Evidence</h3>
-  <ul>
-    <li>The project description is tied to concrete runtime components: receiver configuration, NTRIP handling, buffered CSV/UBX logs, remote state publishing, and browser streaming.</li>
-    <li>The architecture is explicitly connected to the downstream <a href="/projects/racing-analyze-gui/">Racing Analyze GUI</a> instead of being presented as an isolated script.</li>
-    <li>Field constraints and recovery behavior are part of the implementation: retries, timeouts, filtering, and monitoring are described as runtime features.</li>
-  </ul>
-</div>
-
-<div class="project-card">
-  <h3>Evidence Scope</h3>
-  <ul>
-    <li>This page describes implemented runtime behavior: receiver configuration, NTRIP handling, buffered logs, remote state publishing, and browser streaming.</li>
-    <li>The emphasis is the working data path and field recovery behavior, not a statistical reliability claim.</li>
+    <li>The verified scope is the implemented device-to-log-to-monitor path and its recovery behavior.</li>
+    <li>No statistical uptime or positioning-accuracy claim is made without a dedicated field dataset.</li>
   </ul>
 </div>

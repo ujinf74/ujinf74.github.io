@@ -76,31 +76,11 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Result</h3>
+  <h3>Validation</h3>
   <ul>
-    <li>Implemented a mapless parking system on a real Hyundai Ioniq platform.</li>
-    <li>Connected FAST-LIO odometry, C++ LiDAR occupancy mapping, RViz goal input, delay-aware trajectory following, Autoware-compatible commands, and the Ioniq CAN path.</li>
-    <li>Validated low-speed parking execution with stable odometry and vehicle motion.</li>
+    <li>Executed low-speed mapless parking on a real Hyundai Ioniq with stable odometry and vehicle motion.</li>
+    <li>Ran the full path from FAST-LIO and live occupancy mapping through planning, trajectory processing, control output, and the vehicle CAN interface.</li>
     <li>Measured real vehicle response delay and reflected it in follower-side pose/velocity prediction.</li>
-  </ul>
-</div>
-
-<div class="project-card">
-  <h3>Evidence</h3>
-  <ul>
-    <li>Real Hyundai Ioniq parking execution was validated with stable odometry and vehicle motion.</li>
-    <li>The runtime path wires FAST-LIO odometry, native occupancy-grid generation, planner output, trajectory processing, control output, and RViz interaction into one runnable parking system.</li>
-    <li>The localization bridge adapts FAST-LIO odometry into the pose frame used by mapping, planning, and trajectory following.</li>
-    <li>The follower compensates measured actuator delay by integrating predicted pose and velocity before computing tracking error and speed control.</li>
-    <li>The demo video shows the parking stack running on the real vehicle.</li>
-  </ul>
-</div>
-
-<div class="project-card">
-  <h3>Engineering Scope</h3>
-  <ul>
-    <li>The work focuses on the parking layer: localization adaptation, live occupancy mapping, parking planning, delay-aware following, and vehicle command integration.</li>
-    <li>The default mapping path uses a native C++ pointcloud occupancy-grid accumulator for live LiDAR updates around the vehicle.</li>
-    <li>The project is presented here as a real-vehicle validation project; the Isaac Sim prototype is shown only as earlier development context.</li>
+    <li>The demo above records the real-vehicle run; the Isaac Sim video is retained only as earlier development context.</li>
   </ul>
 </div>

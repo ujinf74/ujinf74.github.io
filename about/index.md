@@ -8,34 +8,30 @@ classes: wide
 <div class="project-card" style="padding:1.0rem 1.0rem .9rem;">
   <span style="font-size:0.95rem; opacity:0.70;">Ujin Kwon · 권우진</span>
   <p style="margin-top:.45rem;">
-    I am a Mechanical & Computer Engineering student focused on <b>optimal control</b>, <b>numerical optimization</b>, and <b>dynamics</b>,
-    building <b>nonlinear solvers</b>, <b>vehicle autonomy and vision integrations</b>, <b>telemetry software</b>, and <b>analysis tools</b>
-    for robotics, autonomous systems, and vehicle dynamics.
+    I am a Mechanical & Computer Engineering student focused on <b>optimal control</b>, <b>numerical optimization</b>, and <b>dynamics</b>.
+    I build nonlinear solvers, vehicle-autonomy and perception systems, telemetry runtimes, and analysis tools—and validate them with
+    measured experiments, field logs, or physical hardware.
   </p>
 </div>
 
 <div class="project-card">
-  <h3>Current Work</h3>
+  <h3>Education</h3>
   <p>
-    Recent work includes a real-vehicle Hyundai Ioniq mapless parking system, learning-free metric visual odometry and dense occupancy,
-    a packaged ballistic interception solver, and field-to-desktop racing telemetry tooling.
+    <b>Mechanical & Computer Engineering</b><br/>
+    Tech University of Korea / 한국공학대학교
   </p>
 </div>
 
 <div class="project-card">
   <h3>Research Experience</h3>
+  <p>
+    <b>Undergraduate Research Intern / Autonomous Driving Team Lead, HuVILab</b><br/>
+    <span style="opacity:.72;">Tech University of Korea · 2026–Present</span>
+  </p>
   <ul>
-    <li>
-      <a href="https://github.com/autowarefoundation/autoware_universe/pull/13149">Autoware Universe #13149</a> —
-      corrected floating-point publish-period comparisons that dropped CARLA sensor frames at matched rates.
-    </li>
-    <li>
-      <b>Undergraduate Research Intern / Autonomous Driving Team Lead, HuVILab</b>
-      <small style="opacity:.7;">(Tech University of Korea / 한국공학대학교)</small><br/>
-      <b>(2026–Present)</b><br/>
-      Focus: <b>real-vehicle mapless autonomous reverse parking</b>, <b>planning/control under constraints</b>, and <b>driving coaching systems</b>
-      based on trajectory analysis and feedback generation.
-    </li>
+    <li>Led integration and real-vehicle validation of <a href="/projects/mapless-autonomous-parking/">mapless reverse parking</a> on a Hyundai Ioniq.</li>
+    <li>Developed and evaluated <a href="/projects/monoscale/">learning-free metric visual odometry and dense occupancy</a> using cameras, an IMU, and ground-plane geometry.</li>
+    <li>Coordinated localization, mapping, planning, control, simulation, and vehicle-integration work across the undergraduate research team.</li>
   </ul>
 </div>
 
@@ -43,66 +39,33 @@ classes: wide
   <h3>Engineering Experience</h3>
   <ul>
     <li>
-      <b>Racing telemetry runtime / monitoring / analysis collaboration with Luxon Racing Team</b><br/>
-      Built a Raspberry Pi runtime around a u-blox ZED-F9R receiver with startup configuration,
-      RTK/NTRIP correction input, buffered logging, and remote monitoring, plus a packaged desktop workflow for
-      gate-aligned timing, synchronized replay, simulator registration, and segment-based analysis.
+      <b>Racing telemetry collaboration with Luxon Racing Team</b><br/>
+      Built the <a href="/projects/racing-telemetry-stack/">car-side GNSS/RTK runtime</a> and the
+      <a href="/projects/racing-analyze-gui/">desktop analysis workflow</a> used for collection, monitoring, replay, and segment review.
     </li>
     <li>
       <b>Ballistic solver hardware validation</b><br/>
-      Integrated the native ARM64 solver on a Rock 5B with live AprilTag tracking and STM32G431 closed-loop actuator control,
-      verifying the library in a physical vision-to-command pipeline.
+      Integrated the native ARM64 solver on a Rock 5B with live AprilTag tracking and STM32G431 closed-loop actuator control.
     </li>
   </ul>
 </div>
 
 <div class="project-card">
   <h3>Open Source Contributions</h3>
+  <p>Three reviewed and merged Autoware Universe changes:</p>
   <ul>
-    <li>
-      <a href="https://github.com/autowarefoundation/autoware_universe/pull/13151">Autoware Universe #13151</a> —
-      configurable CARLA camera encoding with a measured 4× serialized-payload reduction for the mono8 path.
-    </li>
-    <li>
-      <a href="https://github.com/autowarefoundation/autoware_universe/pull/13154">Autoware Universe #13154</a> —
-      configurable IMU/GNSS noise and bias with backward-compatible zero defaults.
-    </li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13149">#13149</a> — corrected CARLA sensor publish timing at matched rates.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13151">#13151</a> — added configurable camera encoding with a measured 4× payload reduction for <code>mono8</code>.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13154">#13154</a> — added configurable IMU/GNSS noise and bias with backward-compatible defaults.</li>
   </ul>
-  <a class="btn" href="/contributions/">Contribution details</a>
+  <a class="btn" href="/contributions/">Merged work and open proposals</a>
 </div>
 
 <div class="project-card">
-  <h3>Technical Areas</h3>
+  <h3>Leadership & Recognition</h3>
   <ul>
-    <li><b>Vehicle autonomy</b>: ROS 2, FAST-LIO odometry, C++ occupancy mapping, delay-aware tracking, and CAN-facing command paths.</li>
-    <li><b>Visual perception</b>: photometric distance, anchor-map direction/attitude correction, dense plane-sweep occupancy, and CARLA evaluation.</li>
-    <li><b>Numerical methods</b>: RK4 integration, coordinate and auxiliary residuals, Gauss–Newton, convergence handling, and diagnostics.</li>
-    <li><b>Telemetry systems</b>: GNSS/RTK collection, multi-format log ingestion, gate-aligned timing, synchronized media/replay, and analysis loops tied to real operations.</li>
-    <li><b>Interfaces</b>: modern C++ APIs, C ABI boundaries, Python bindings, ROS 2 interfaces, dashboards, and analysis tools.</li>
-  </ul>
-</div>
-
-<div class="project-card">
-  <h3>Technical Strengths</h3>
-  <ul>
-    <li><b>Dynamics and numerics</b>: translating physical behavior into measurable residuals, convergence paths, benchmarks, and solver-facing diagnostics.</li>
-    <li><b>Systems integration</b>: timing/TF alignment, runtime composition, Autoware-compatible paths, CAN-facing interfaces, and embedded control handoff.</li>
-    <li><b>Verification</b>: simulation harnesses, regression tests, measured payload/runtime results, and physical-device integration.</li>
-    <li><b>Packaging and operations</b>: native libraries, language bindings, deployable configuration, logging, monitoring, and user-facing tools.</li>
-  </ul>
-</div>
-
-<div class="project-card">
-  <h3>Leadership</h3>
-  <ul>
-    <li><b>Autonomous Driving Team Lead</b>, HuVILab undergraduate research team — technical direction, integration planning, and project coordination.</li>
-    <li><b>President</b>, 50-member fashion club — member operations, event planning, and team coordination outside an engineering context.</li>
-  </ul>
-</div>
-
-<div class="project-card">
-  <h3>Awards</h3>
-  <ul>
-    <li><b>KSAE 2024 Smart e-Mobility Competition (EV Division)</b> — Encouragement Prize (Honorable Mention)</li>
+    <li><b>Autonomous Driving Team Lead</b>, HuVILab undergraduate research team.</li>
+    <li><b>President</b>, 50-member fashion club.</li>
+    <li><b>KSAE 2024 Smart e-Mobility Competition, EV Division</b> — Encouragement Prize.</li>
   </ul>
 </div>

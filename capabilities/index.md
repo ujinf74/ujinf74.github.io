@@ -6,52 +6,16 @@ classes: wide
 ---
 
 <div class="project-card">
-  <p class="eyebrow">Engineering Focus</p>
+  <p class="eyebrow">Capability to evidence</p>
   <p>
-    The projects below share a practical structure: model the physical or runtime problem, implement the working path,
-    and leave enough tests, logs, metrics, or interfaces to inspect the result.
+    Each capability below points to the project that demonstrates it most directly. The detailed pages carry the
+    measurements, implementation boundaries, and validation limits.
   </p>
 </div>
 
 <div class="project-card">
-  <h3>Technical Areas</h3>
-  <div class="mini-grid">
-    <div class="mini-card">
-      <div class="mini-kicker">Applied Algorithms</div>
-      <p>Nonlinear dynamics, coordinate-residual optimization, auxiliary-residual research, convergence handling, and benchmark-minded implementation.</p>
-      <a class="btn" href="/projects/ballistic-solver/">Seen in ballistic-solver</a>
-    </div>
-    <div class="mini-card">
-      <div class="mini-kicker">Vehicle Integration</div>
-      <p>FAST-LIO odometry, C++ occupancy mapping, parking planning, measured-delay control, and Ioniq CAN-facing execution in one validated vehicle system.</p>
-      <a class="btn" href="/projects/mapless-autonomous-parking/">Seen in autonomous parking</a>
-    </div>
-    <div class="mini-card">
-      <div class="mini-kicker">Visual Perception</div>
-      <p>Ground-plane metric odometry, anchor-map correction, dense plane-sweep occupancy, and reproducible CARLA evaluation.</p>
-      <a class="btn" href="/projects/monoscale/">Seen in Monoscale</a>
-    </div>
-    <div class="mini-card">
-      <div class="mini-kicker">Field Operations</div>
-      <p>Serial transport, GNSS/RTK correction flow, buffered logging, recovery, and remote visibility under unstable conditions.</p>
-      <a class="btn" href="/projects/racing-telemetry-stack/">Seen in telemetry runtime</a>
-    </div>
-    <div class="mini-card">
-      <div class="mini-kicker">Tool Building</div>
-      <p>Turning heterogeneous logs into gate-aligned timing, synchronized data/media replay, time-loss analysis, and reproducible reports.</p>
-      <a class="btn" href="/projects/racing-analyze-gui/">Seen in analysis GUI</a>
-    </div>
-    <div class="mini-card">
-      <div class="mini-kicker">Upstream Engineering</div>
-      <p>Converting integration bottlenecks into reviewed, backward-compatible Autoware Universe changes.</p>
-      <a class="btn" href="/contributions/">See merged contributions</a>
-    </div>
-  </div>
-</div>
-
-<div class="project-card">
   <h3>Capability Matrix</h3>
-  <table class="result-table">
+  <table class="result-table capability-table">
     <thead>
       <tr><th>Capability</th><th>What Shows It</th><th>Main Evidence</th></tr>
     </thead>
@@ -96,12 +60,11 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>How I Tend To Work</h3>
+  <h3>Working Principles</h3>
   <ul>
-    <li><b>Problem first</b>: I start from the engineering bottleneck before choosing the implementation path.</li>
-    <li><b>Runtime matters</b>: implementations should run, fail visibly, recover, and leave inspectable state afterward.</li>
-    <li><b>Diagnostics matter</b>: explicit statuses, replayable logs, plots, debug streams, and operational visibility are recurring themes.</li>
-    <li><b>Interfaces matter</b>: useful cores are packaged behind APIs, launch files, services, or analysis workflows.</li>
+    <li><b>Model the actual bottleneck</b> before choosing the implementation path.</li>
+    <li><b>Make runtime state inspectable</b> through explicit status, logs, plots, replay, or monitoring.</li>
+    <li><b>Package useful cores</b> behind stable APIs, launch paths, services, or analysis workflows.</li>
   </ul>
 </div>
 

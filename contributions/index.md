@@ -11,6 +11,7 @@ classes: wide
     Three changes have been reviewed and merged into Autoware Universe. Three additional proposals remain open
     and are listed separately; an open proposal is not presented as accepted upstream work.
   </p>
+  <p style="opacity:.72; margin-bottom:0;">Status checked on 2026-09-17.</p>
 </div>
 
 <h2>Merged Upstream</h2>
@@ -59,7 +60,7 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Why The Merged Changes Matter</h3>
+  <h3>Why the Merged Changes Matter</h3>
   <p>
     The changes came from practical integration pressure: sensor timing silently reduced effective rates,
     camera bandwidth affected the vision pipeline, and fixed zero-noise sensors limited realistic evaluation.
