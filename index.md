@@ -50,7 +50,7 @@ classes: wide
   <ul>
     <li><b>Physical validation</b>: real-vehicle parking and a Rock 5B + STM32 solver integration.</li>
     <li><b>Measured software</b>: solver benchmarks, perception ablations, telemetry tests, and reproducible evaluation paths.</li>
-    <li><b>Open source</b>: three reviewed and merged Autoware Universe contributions.</li>
+    <li><b>Open source</b>: six merged Autoware Universe contributions and measured technical reviews.</li>
     <li><b>Research and operations</b>: HuVILab autonomous-driving team lead and Luxon Racing Team telemetry collaboration.</li>
   </ul>
   <div style="display:flex; gap:.6rem; flex-wrap:wrap;">

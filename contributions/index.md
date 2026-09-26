@@ -6,105 +6,54 @@ classes: wide
 ---
 
 <div class="project-card">
-  <p class="eyebrow">External pull requests · Current status</p>
+  <p class="eyebrow">Upstream code and technical review</p>
   <p>
-    Three changes have been reviewed and merged into Autoware Universe. Three additional proposals remain open
-    and are listed separately; an open proposal is not presented as accepted upstream work.
+    Six changes merged into Autoware Universe, six proposals still open across Autoware Universe and Spark FAST-LIO,
+    and two technical reviews on other contributors' Autoware PRs.
   </p>
-  <p style="opacity:.72; margin-bottom:0;">Status checked on 2026-09-17.</p>
+  <p style="opacity:.72; margin-bottom:0;">PR status checked on 2026-09-26.</p>
 </div>
 
-<h2>Merged Upstream</h2>
+<h2>Merged Upstream · Autoware Universe</h2>
 
 <div class="project-card">
-  <h3>Correct CARLA Sensor Publish Timing</h3>
-  <p>
-    Fixed a floating-point boundary comparison that dropped frames when the configured CARLA publication rate
-    matched the sensor rate. A small absolute tolerance preserves genuinely early-frame rejection while allowing
-    equal-period frames through.
-  </p>
   <ul>
-    <li><b>Measured reproduction</b>: 20 Hz and 10 Hz cases improved from 134/200 published frames to 200/200.</li>
-    <li><b>Interface impact</b>: none; the correction changes only the period comparison.</li>
-    <li><b>Status</b>: approved, CI-validated, and merged upstream.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13149">#13149 · Sensor publish timing</a> — corrected a floating-point boundary that dropped equal-period frames; the measured 20 Hz and 10 Hz cases went from 134/200 to 200/200 published frames.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13151">#13151 · Mono camera output</a> — made <code>mono8</code> selectable while retaining the original default; serialized image payload was 4× smaller at 960×540.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13154">#13154 · IMU/GNSS noise</a> — added configurable noise and bias parameters with zero-valued defaults.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13407">#13407 · Sensor capture rate</a> — let a mapping set CARLA's <code>sensor_tick</code> and aligned the publish throttle; a requested 25 Hz camera measured 24.95 Hz, up from 19.92 Hz.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13408">#13408 · Capture-frame timestamps</a> — preserved each measurement's CARLA frame through publication, avoiding overwritten measurements and late-callback timestamps.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13411">#13411 · BGR camera output</a> — added selectable <code>bgr8</code> output, removing the unused alpha channel and reducing color-image payload by 25%.</li>
   </ul>
-  <a class="btn" href="https://github.com/autowarefoundation/autoware_universe/pull/13149">View merged PR #13149</a>
-</div>
-
-<div class="project-card">
-  <h3>Configurable CARLA Camera Encoding</h3>
-  <p>
-    Added a configurable image encoding path to the CARLA camera interface so luminance-only consumers can request
-    <code>mono8</code> instead of always transporting <code>bgra8</code>. The original encoding remains the default.
-  </p>
-  <ul>
-    <li><b>Measured payload</b>: 2,073,672 bytes → 518,472 bytes at 960×540.</li>
-    <li><b>Effect</b>: exactly 4× less serialized image payload for the mono8 path.</li>
-    <li><b>Compatibility</b>: existing configurations keep their previous output unless the new option is selected.</li>
-  </ul>
-  <a class="btn" href="https://github.com/autowarefoundation/autoware_universe/pull/13151">View merged PR #13151</a>
-</div>
-
-<div class="project-card">
-  <h3>Configurable IMU and GNSS Noise</h3>
-  <p>
-    Replaced the CARLA interface's zero-only sensor-noise behavior with configurable IMU/GNSS noise and bias
-    parameters while keeping zero-valued defaults for compatibility.
-  </p>
-  <ul>
-    <li>Added configurable noise and bias parameters for simulation and integration testing.</li>
-    <li>Used attribute guards so the interface remains compatible across sensor variants.</li>
-    <li>Preserved the previous zero-noise behavior as the default configuration.</li>
-  </ul>
-  <a class="btn" href="https://github.com/autowarefoundation/autoware_universe/pull/13154">View merged PR #13154</a>
-</div>
-
-<div class="project-card">
-  <h3>Why the Merged Changes Matter</h3>
-  <p>
-    The changes came from practical integration pressure: sensor timing silently reduced effective rates,
-    camera bandwidth affected the vision pipeline, and fixed zero-noise sensors limited realistic evaluation.
-    Each local bottleneck became a reusable upstream correction or configuration path.
-  </p>
 </div>
 
 <h2>Open Proposals</h2>
 
 <div class="project-card">
-  <h3>Autoware CARLA Gear Commands</h3>
-  <p>
-    Adds gear-command subscription, reverse selection, non-driving-gear brake behavior, and gear-status reporting
-    to the CARLA vehicle interface. This is needed for reverse-capable maneuvers such as freespace parking.
-  </p>
-  <div class="proof-callout">
-    <b>Open · Review required</b>
-    <span>This proposal is not merged and currently requires upstream review and conflict resolution.</span>
-  </div>
-  <a class="btn" href="https://github.com/autowarefoundation/autoware_universe/pull/13150">View open PR #13150</a>
+  <h3>Autoware Universe</h3>
+  <ul>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13150">#13150 · Gear commands</a> — reverse selection, non-driving-gear braking, and gear-status reporting for the CARLA vehicle interface.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13406">#13406 · Physics substeps</a> — proposes a bounded CARLA substep to reduce disagreement between reported angular velocity and vehicle rotation.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13409">#13409 · Camera types</a> — proposes publishing depth and semantic camera streams through the existing image path.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13410">#13410 · External ego attachment</a> — proposes attaching sensors to a vehicle owned and driven by another CARLA client.</li>
+  </ul>
 </div>
 
 <div class="project-card">
-  <h3>Normalize Negative Velodyne Point Times</h3>
-  <p>
-    Proposes shifting centered per-point timestamps to the zero-based sweep offsets expected by Spark FAST-LIO,
-    preventing a half-length de-skew and IMU integration interval. The ROS 2 Humble build was checked; full public-sequence validation is not claimed.
-  </p>
-  <div class="proof-callout">
-    <b>Open · Awaiting review</b>
-    <span>The branch is reported mergeable, with no upstream review or CI result recorded.</span>
-  </div>
-  <a class="btn" href="https://github.com/MIT-SPARK/spark-fast-lio/pull/19">View open MIT-SPARK PR #19</a>
+  <h3>Spark FAST-LIO</h3>
+  <ul>
+    <li><a href="https://github.com/MIT-SPARK/spark-fast-lio/pull/19">#19 · Velodyne point times</a> — proposes normalizing centered point timestamps to zero-based sweep offsets.</li>
+    <li><a href="https://github.com/MIT-SPARK/spark-fast-lio/pull/20">#20 · Odometry twist</a> — proposes publishing frame-correct linear and angular velocity, including the offset-point term.</li>
+  </ul>
+  <p>Both Spark FAST-LIO branches were built on ROS 2 Humble; full public-sequence or numerical ground-truth validation is not claimed.</p>
 </div>
 
+<h2>Technical Reviews</h2>
+
 <div class="project-card">
-  <h3>Publish Frame-Correct Odometry Twist</h3>
-  <p>
-    Proposes publishing linear and angular twist in Spark FAST-LIO's configured output frame, including the
-    offset-point velocity term and gyro-bias removal. The ROS 2 Humble build was checked; numerical ground-truth validation is not claimed.
-  </p>
-  <div class="proof-callout">
-    <b>Open · Awaiting review</b>
-    <span>The branch is reported mergeable, with no upstream review or CI result recorded.</span>
-  </div>
-  <a class="btn" href="https://github.com/MIT-SPARK/spark-fast-lio/pull/20">View open MIT-SPARK PR #20</a>
+  <ul>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13372#pullrequestreview-5325066468">#13372 · Ego pose at <code>base_link</code></a> — measured a turning-case mismatch between the shifted pose and odometry twist, including 0.6993 m/s RMS lateral-velocity error, and suggested a follow-up correction.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13433#pullrequestreview-5325138353">#13433 · Initial-pose spawning</a> — checked the pose subscription path and reproduced a spawn-height failure mode with ground snapping disabled; requested validation on a higher-terrain map for the realistic RViz case.</li>
+  </ul>
+  <p>These were submitted as comment reviews; neither is represented as an approval or a merged change.</p>
 </div>

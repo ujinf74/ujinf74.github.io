@@ -52,13 +52,17 @@ classes: wide
 
 <div class="project-card">
   <h3>Open Source Contributions</h3>
-  <p>Three reviewed and merged Autoware Universe changes:</p>
+  <p>Six merged Autoware Universe changes across sensor timing, camera output, simulation noise, capture rate, and timestamp correctness:</p>
   <ul>
     <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13149">#13149</a> — corrected CARLA sensor publish timing at matched rates.</li>
     <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13151">#13151</a> — added configurable camera encoding with a measured 4× payload reduction for <code>mono8</code>.</li>
     <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13154">#13154</a> — added configurable IMU/GNSS noise and bias with backward-compatible defaults.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13407">#13407</a> — aligned CARLA sensor capture and publication rates.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13408">#13408</a> — retained the capture frame and timestamp of each sensor measurement.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13411">#13411</a> — added <code>bgr8</code> camera output with 25% less payload than <code>bgra8</code>.</li>
   </ul>
-  <a class="btn" href="/contributions/">Merged work and open proposals</a>
+  <p>Also submitted measured technical reviews on <a href="https://github.com/autowarefoundation/autoware_universe/pull/13372#pullrequestreview-5325066468">odometry frame consistency</a> and <a href="https://github.com/autowarefoundation/autoware_universe/pull/13433#pullrequestreview-5325138353">initial-pose spawning</a>.</p>
+  <a class="btn" href="/contributions/">Merged work, open proposals, and reviews</a>
 </div>
 
 <div class="project-card">
