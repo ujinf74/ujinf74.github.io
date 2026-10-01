@@ -10,6 +10,9 @@ classes: wide
     Mechanical & Computer Engineering student building <b>applied algorithms and vehicle software</b> that move from
     numerical models to real hardware, field logs, and measurable results.
   </p>
+  <p style="margin-top:.45rem;">
+    Maintainer of <b>Autoware Universe <code>autoware_carla_interface</code></b>, the CARLA simulator bridge for Autoware.
+  </p>
   <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.8rem;">
     <a class="btn" href="/projects/">View selected projects</a>
     <a class="btn" href="/about/">Experience and background</a>
@@ -50,7 +53,7 @@ classes: wide
   <ul>
     <li><b>Physical validation</b>: real-vehicle parking and a Rock 5B + STM32 solver integration.</li>
     <li><b>Measured software</b>: solver benchmarks, perception ablations, telemetry tests, and reproducible evaluation paths.</li>
-    <li><b>Open source</b>: six merged Autoware Universe contributions and measured technical reviews.</li>
+    <li><b>Open source</b>: maintainer of Autoware Universe <code>autoware_carla_interface</code>, with seven merged changes to the package and measured technical reviews.</li>
     <li><b>Research and operations</b>: HuVILab autonomous-driving team lead and Luxon Racing Team telemetry collaboration.</li>
   </ul>
   <div style="display:flex; gap:.6rem; flex-wrap:wrap;">

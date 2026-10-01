@@ -52,8 +52,8 @@ classes: wide
       </tr>
       <tr>
         <td>Open-source collaboration</td>
-        <td>Merged upstream changes, measured integration fixes, and technical code reviews</td>
-        <td><a href="/contributions/">Autoware contributions</a></td>
+        <td>Package maintainership, merged upstream changes, measured integration fixes, and technical code reviews</td>
+        <td><a href="/contributions/">Autoware <code>autoware_carla_interface</code> maintainer</a></td>
       </tr>
     </tbody>
   </table>
@@ -73,7 +73,7 @@ classes: wide
   <ul>
     <li><b>Measured behavior</b>: current solver benchmarks, visual-odometry ablations, telemetry regression tests, research comparisons, and camera-payload measurements.</li>
     <li><b>Physical validation</b>: real-vehicle parking and a Rock 5B + STM32 solver integration with live vision input.</li>
-    <li><b>Upstream validation</b>: six merged Autoware Universe contributions and two technical reviews.</li>
+    <li><b>Upstream validation</b>: maintainer of Autoware Universe <code>autoware_carla_interface</code>, seven merged changes, and two technical reviews.</li>
     <li><b>Operational tooling</b>: logs, monitoring, replay, and analysis interfaces that make field behavior inspectable.</li>
   </ul>
 </div>

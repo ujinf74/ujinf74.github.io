@@ -34,7 +34,7 @@ defaults:
 
 author:
   name: "Ujin Kwon · 권우진"
-  bio: "Applied algorithms, vehicle software,\n telemetry runtimes, and analysis tools"
+  bio: "Applied algorithms, vehicle software,\n telemetry runtimes, and analysis tools.\n Maintainer · Autoware autoware_carla_interface"
   avatar: "/assets/images/avatar.png"
   links:
     - label: "GitHub"
