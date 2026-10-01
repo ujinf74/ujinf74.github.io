@@ -107,8 +107,8 @@ classes: wide
 <div class="project-card">
   <h3>Research Result</h3>
   <p>
-    The ICROS 2026 manuscript evaluates the auxiliary residual now retained in <code>solve_aux</code>.
-    Under identical outer-iteration settings on 10,000 stationary high-arc cases:
+    My sole-author ICROS 2026 paper, <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12952462"><i>Auxiliary-Solution-Induced Residual for Nonlinear Iterative Correction with Application to Ballistic Interception</i></a> (pp. 686–687), evaluates the auxiliary residual
+    now retained in <code>solve_aux</code>. Under identical outer-iteration settings on 10,000 stationary high-arc cases:
   </p>
   <table class="result-table">
     <thead>
@@ -124,6 +124,7 @@ classes: wide
       <tr><td>Auxiliary-solution-induced residual</td><td>0.00%</td><td>3.748 ms</td><td>8.128e-03 m</td></tr>
     </tbody>
   </table>
+  <p style="opacity:.72; margin-bottom:0;">Table 1 of the paper; the implementation is cited there as this public repository.</p>
 </div>
 
 <div class="project-card">

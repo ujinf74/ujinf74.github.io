@@ -36,6 +36,18 @@ classes: wide
 </div>
 
 <div class="project-card">
+  <h3>Publications</h3>
+  <ul>
+    <li>
+      <b>U. Kwon</b> (sole author), “Auxiliary-Solution-Induced Residual for Nonlinear Iterative Correction with Application to Ballistic Interception,”
+      <i>Proc. 2026 ICROS Annual Conference (ICROS 2026)</i>, Daegu, Korea, Jul. 2026, pp. 686–687.
+      <span style="opacity:.72;">[보조해 유도 잔차를 이용한 비선형 반복 보정과 탄도 요격 적용]</span>
+      <br/><a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12952462">DBpia</a> · <a href="/projects/ballistic-solver/">Project page</a> · <a href="https://github.com/ujinf74/ballistic-solver">Code</a>
+    </li>
+  </ul>
+</div>
+
+<div class="project-card">
   <h3>Engineering Experience</h3>
   <ul>
     <li>

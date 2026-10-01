@@ -23,6 +23,7 @@ classes: wide
     <span>0.031 ms fast median</span>
     <span>10,000/10,000 default-path cases</span>
     <span>Rock 5B + STM32 validation</span>
+    <span>Sole-author ICROS 2026 paper</span>
   </div>
   <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.8rem;">
     <a class="btn" href="/projects/ballistic-solver/">Project details</a>

@@ -51,6 +51,7 @@ classes: wide
 <div class="project-card">
   <h3>Evidence at a Glance</h3>
   <ul>
+    <li><b>Publication</b>: sole-author ICROS 2026 paper on auxiliary-solution-induced residuals for ballistic interception (<a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12952462">DBpia</a>).</li>
     <li><b>Physical validation</b>: real-vehicle parking and a Rock 5B + STM32 solver integration.</li>
     <li><b>Measured software</b>: solver benchmarks, perception ablations, telemetry tests, and reproducible evaluation paths.</li>
     <li><b>Open source</b>: maintainer of Autoware Universe <code>autoware_carla_interface</code>, with seven merged changes to the package and measured technical reviews.</li>

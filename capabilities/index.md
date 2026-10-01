@@ -71,6 +71,7 @@ classes: wide
 <div class="project-card">
   <h3>Evidence Map</h3>
   <ul>
+    <li><b>Publication</b>: sole-author ICROS 2026 paper on the solver's residual method, with 0.00% vs. 50.25% failure against direct line-of-sight correction.</li>
     <li><b>Measured behavior</b>: current solver benchmarks, visual-odometry ablations, telemetry regression tests, research comparisons, and camera-payload measurements.</li>
     <li><b>Physical validation</b>: real-vehicle parking and a Rock 5B + STM32 solver integration with live vision input.</li>
     <li><b>Upstream validation</b>: maintainer of Autoware Universe <code>autoware_carla_interface</code>, seven merged changes, and two technical reviews.</li>
