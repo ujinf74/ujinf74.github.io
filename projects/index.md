@@ -73,7 +73,7 @@ classes: wide
     <span>ZED-F9R → Raspberry Pi collector → Cloudflare Worker/SSE monitor → desktop analysis.</span>
   </div>
   <div class="result-strip">
-    <span>Luxon Racing · GT-A P3, SUPERRACE R5 2026</span>
+    <span>Race engineer · Luxon Racing GT-A P3, SUPERRACE R5 2026</span>
   </div>
   <a class="btn" href="/projects/racing-telemetry-stack/">Project details</a>
 </div>

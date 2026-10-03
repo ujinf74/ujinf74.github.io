@@ -55,7 +55,7 @@ classes: wide
     <li><b>Physical validation</b>: real-vehicle parking and a Rock 5B + STM32 solver integration.</li>
     <li><b>Measured software</b>: solver benchmarks, perception ablations, telemetry tests, and reproducible evaluation paths.</li>
     <li><b>Open source</b>: maintainer of Autoware Universe <code>autoware_carla_interface</code>, with seven merged changes to the package and measured technical reviews.</li>
-    <li><b>Research and operations</b>: HuVILab autonomous-driving team lead and Luxon Racing Team telemetry collaboration, including the team’s first podium (GT-A P3, O-NE SUPERRACE Round 5, 2026).</li>
+    <li><b>Research and operations</b>: HuVILab autonomous-driving team lead, and race engineer for Luxon Racing Team — including the team’s first podium (GT-A P3, O-NE SUPERRACE Round 5, 2026).</li>
   </ul>
   <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
     <a class="btn" href="/capabilities/">Capability map</a>

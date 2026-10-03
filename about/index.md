@@ -51,10 +51,10 @@ classes: wide
   <h3>Engineering Experience</h3>
   <ul>
     <li>
-      <b>Racing telemetry collaboration with Luxon Racing Team</b><br/>
+      <b>Race Engineer, Luxon Racing Team</b> <span style="opacity:.72;">· O-NE SUPERRACE Championship, GT-A</span><br/>
       Built the <a href="/projects/racing-telemetry-stack/">car-side GNSS/RTK runtime</a> and the
       <a href="/projects/racing-analyze-gui/">desktop analysis workflow</a> used for collection, monitoring, replay, and segment review.
-      The team took its first podium during the collaboration: P3 in GT-A (driver Jinwook Choi) at O-NE SUPERRACE Round 5, 2026.
+      Took the team’s first podium: P3 in GT-A with driver Jinwook Choi at O-NE SUPERRACE Round 5, 2026.
     </li>
     <li>
       <b>Ballistic solver hardware validation</b><br/>
@@ -89,7 +89,7 @@ classes: wide
     <li><b>Maintainer</b>, Autoware Universe <code>autoware_carla_interface</code>.</li>
     <li><b>Autonomous Driving Team Lead</b>, HuVILab undergraduate research team.</li>
     <li><b>President</b>, 50-member fashion club.</li>
-    <li><b>O-NE SUPERRACE 2026 Round 5, GT-A — P3</b> (Luxon Racing Team, driver Jinwook Choi) — telemetry and analysis collaborator; the team's first podium.</li>
+    <li><b>O-NE SUPERRACE 2026 Round 5, GT-A — P3</b> — race engineer, Luxon Racing Team (driver Jinwook Choi); the team's first podium.</li>
     <li><b>KSAE 2024 Smart e-Mobility Competition, EV Division</b> — Encouragement Prize.</li>
   </ul>
 </div>
