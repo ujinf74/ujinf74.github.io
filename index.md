@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Ujin Kwon
+title: "Ujin Kwon (권우진)"
 permalink: /
 classes: wide
 ---

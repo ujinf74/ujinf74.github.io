@@ -1,5 +1,7 @@
-title: "∞"
-description: "Applied algorithms, vehicle software, telemetry runtimes, and analysis tools"
+title: "Ujin Kwon · ujinf74"
+masthead_title: "∞"
+title_separator: "|"
+description: "Ujin Kwon (권우진, ujinf74) — applied algorithms, vehicle software, telemetry runtimes, and analysis tools. Maintainer of Autoware Universe autoware_carla_interface."
 
 locale: "en-US"
 timezone: "Asia/Seoul"
