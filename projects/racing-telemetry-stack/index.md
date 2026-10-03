@@ -30,6 +30,15 @@ classes: wide
 </div>
 
 <div class="project-card">
+  <h3>In Competition</h3>
+  <p>
+    Used by <b>Luxon Racing Team</b> in the GT-A class of the O-NE SUPERRACE Championship. During the collaboration the team took its
+    first podium: <b>P3 in GT-A</b> with driver Jinwook Choi at Round 5, Everland Speedway, 2026-08-22.
+  </p>
+  <p style="opacity:.72; margin-bottom:0;">The result belongs to the driver and team; this project supplied part of their data workflow.</p>
+</div>
+
+<div class="project-card">
   <h3>Problem</h3>
   <ul>
     <li>The runtime had to survive real field conditions, not lab-perfect sensor input.</li>
