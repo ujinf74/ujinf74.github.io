@@ -48,12 +48,20 @@ author:
     - label: "Email"
       icon: "fas fa-envelope"
       url: "mailto:ujin@tukorea.ac.kr"
+    - label: "ORCID"
+      icon: "fab fa-orcid"
+      url: "https://orcid.org/0009-0007-7339-7650"
+    - label: "ujinf.net"
+      icon: "fas fa-link"
+      url: "https://ujinf.net"
 
 social:
   name: "Ujin Kwon"
   links:
     - "https://github.com/ujinf74"
     - "https://www.youtube.com/@tickInt"
+    - "https://orcid.org/0009-0007-7339-7650"
+    - "https://ujinf.net"
 
 exclude: 
   - Gemfile
