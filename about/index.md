@@ -18,7 +18,7 @@ classes: wide
   <h3>Open Source Maintainership</h3>
   <p>
     <b>Maintainer, Autoware Universe <code>autoware_carla_interface</code></b><br/>
-    <span style="opacity:.72;">Autoware Foundation · 2026-10–Present · <a href="https://github.com/autowarefoundation/autoware_universe/pull/13449">#13449</a></span>
+    <span style="opacity:.72;">Autoware Foundation · <a href="https://github.com/autowarefoundation/autoware_universe/pull/13449">#13449</a></span>
   </p>
   <p>Became maintainer after seven merged changes to the package across sensor timing, camera output, simulation noise, capture rate, and timestamp correctness:</p>
   <ul>

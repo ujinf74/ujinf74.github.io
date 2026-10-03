@@ -8,7 +8,7 @@ classes: wide
 <div class="project-card">
   <p class="eyebrow">Upstream maintainership, code, and technical review</p>
   <p>
-    Maintainer of <b>Autoware Universe <code>autoware_carla_interface</code></b> since 2026-10-01. Seven changes merged into
+    Maintainer of <b>Autoware Universe <code>autoware_carla_interface</code></b>. Seven changes merged into
     the package, five proposals still open across Autoware Universe and Spark FAST-LIO, and two technical reviews on other
     contributors' Autoware PRs.
   </p>
@@ -18,7 +18,7 @@ classes: wide
 <h2>Maintainer · Autoware Universe</h2>
 
 <div class="project-card">
-  <h3><code>autoware_carla_interface</code> <small style="opacity:.7;">CARLA ↔ Autoware bridge · 2026-10-01–present</small></h3>
+  <h3><code>autoware_carla_interface</code> <small style="opacity:.7;">CARLA ↔ Autoware bridge</small></h3>
   <p>
     Listed as a package maintainer in <code>simulator/autoware_carla_interface/package.xml</code>
     (<a href="https://github.com/autowarefoundation/autoware_universe/pull/13449">#13449</a>), alongside the TIER IV maintainers.
