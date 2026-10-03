@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Open Source Contributions"
+title: "Autoware Maintainer · Open Source"
 permalink: /contributions/
 classes: wide
 ---
@@ -31,7 +31,7 @@ classes: wide
   </div>
 </div>
 
-<h2>Merged Upstream · Autoware Universe</h2>
+<h2>Path to Maintainer · Merged Changes</h2>
 
 <div class="project-card">
   <ul>

@@ -6,15 +6,16 @@ classes: wide
 ---
 
 <div class="project-card" style="padding:1.0rem 1.0rem .9rem;">
+  <p style="margin-top:.45rem; font-size:1.08em;">
+    <b>Maintainer of Autoware Universe <code>autoware_carla_interface</code></b>, the CARLA simulator bridge for Autoware.
+  </p>
   <p style="margin-top:.45rem;">
     Mechanical & Computer Engineering student building <b>applied algorithms and vehicle software</b> that move from
     numerical models to real hardware, field logs, and measurable results.
   </p>
-  <p style="margin-top:.45rem;">
-    Maintainer of <b>Autoware Universe <code>autoware_carla_interface</code></b>, the CARLA simulator bridge for Autoware.
-  </p>
   <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.8rem;">
     <a class="btn" href="/projects/">View selected projects</a>
+    <a class="btn" href="/contributions/">Maintainer role</a>
     <a class="btn" href="/about/">Experience and background</a>
   </div>
 </div>
@@ -59,6 +60,6 @@ classes: wide
   </ul>
   <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
     <a class="btn" href="/capabilities/">Capability map</a>
-    <a class="btn" href="/contributions/">Open-source work</a>
+    <a class="btn" href="/contributions/">Maintainer role and upstream work</a>
   </div>
 </div>

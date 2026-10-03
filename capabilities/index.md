@@ -51,7 +51,7 @@ classes: wide
         <td><a href="/projects/racing-analyze-gui/">Racing Analyze GUI</a></td>
       </tr>
       <tr>
-        <td>Open-source collaboration</td>
+        <td>Open-source maintainership</td>
         <td>Package maintainership, merged upstream changes, measured integration fixes, and technical code reviews</td>
         <td><a href="/contributions/">Autoware <code>autoware_carla_interface</code> maintainer</a></td>
       </tr>

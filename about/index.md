@@ -15,6 +15,26 @@ classes: wide
 </div>
 
 <div class="project-card">
+  <h3>Open Source Maintainership</h3>
+  <p>
+    <b>Maintainer, Autoware Universe <code>autoware_carla_interface</code></b><br/>
+    <span style="opacity:.72;">Autoware Foundation · 2026-10–Present · <a href="https://github.com/autowarefoundation/autoware_universe/pull/13449">#13449</a></span>
+  </p>
+  <p>Became maintainer after seven merged changes to the package across sensor timing, camera output, simulation noise, capture rate, and timestamp correctness:</p>
+  <ul>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13149">#13149</a> — corrected CARLA sensor publish timing at matched rates.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13151">#13151</a> — added configurable camera encoding with a measured 4× payload reduction for <code>mono8</code>.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13154">#13154</a> — added configurable IMU/GNSS noise and bias with backward-compatible defaults.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13407">#13407</a> — aligned CARLA sensor capture and publication rates.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13408">#13408</a> — retained the capture frame and timestamp of each sensor measurement.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13411">#13411</a> — added <code>bgr8</code> camera output with 25% less payload than <code>bgra8</code>.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13409">#13409</a> — published depth and semantic-segmentation cameras through the existing image path.</li>
+  </ul>
+  <p>Also submitted measured technical reviews on <a href="https://github.com/autowarefoundation/autoware_universe/pull/13372#pullrequestreview-5325066468">odometry frame consistency</a> and <a href="https://github.com/autowarefoundation/autoware_universe/pull/13433#pullrequestreview-5325138353">initial-pose spawning</a>.</p>
+  <a class="btn" href="/contributions/">Maintainer role, merged work, and reviews</a>
+</div>
+
+<div class="project-card">
   <h3>Education</h3>
   <p>
     <b>Mechanical & Computer Engineering</b><br/>
@@ -61,26 +81,6 @@ classes: wide
       Integrated the native ARM64 solver on a Rock 5B with live AprilTag tracking and STM32G431 closed-loop actuator control.
     </li>
   </ul>
-</div>
-
-<div class="project-card">
-  <h3>Open Source</h3>
-  <p>
-    <b>Maintainer, Autoware Universe <code>autoware_carla_interface</code></b><br/>
-    <span style="opacity:.72;">Autoware Foundation · 2026-10–Present · <a href="https://github.com/autowarefoundation/autoware_universe/pull/13449">#13449</a></span>
-  </p>
-  <p>Seven merged changes to the package across sensor timing, camera output, simulation noise, capture rate, and timestamp correctness:</p>
-  <ul>
-    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13149">#13149</a> — corrected CARLA sensor publish timing at matched rates.</li>
-    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13151">#13151</a> — added configurable camera encoding with a measured 4× payload reduction for <code>mono8</code>.</li>
-    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13154">#13154</a> — added configurable IMU/GNSS noise and bias with backward-compatible defaults.</li>
-    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13407">#13407</a> — aligned CARLA sensor capture and publication rates.</li>
-    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13408">#13408</a> — retained the capture frame and timestamp of each sensor measurement.</li>
-    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13411">#13411</a> — added <code>bgr8</code> camera output with 25% less payload than <code>bgra8</code>.</li>
-    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13409">#13409</a> — published depth and semantic-segmentation cameras through the existing image path.</li>
-  </ul>
-  <p>Also submitted measured technical reviews on <a href="https://github.com/autowarefoundation/autoware_universe/pull/13372#pullrequestreview-5325066468">odometry frame consistency</a> and <a href="https://github.com/autowarefoundation/autoware_universe/pull/13433#pullrequestreview-5325138353">initial-pose spawning</a>.</p>
-  <a class="btn" href="/contributions/">Merged work, open proposals, and reviews</a>
 </div>
 
 <div class="project-card">
