@@ -83,9 +83,8 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Validation Scope</h3>
+  <h3>Registration Diagnostics</h3>
   <ul>
-    <li>The performance figures above are repository-recorded measurements for specified fixtures and machines, not universal runtime guarantees.</li>
-    <li>Simulator registration reports residual and scale diagnostics because a mathematically valid fit can still pair the wrong axes or laps.</li>
+    <li>Simulator registration reports residual and scale diagnostics, catching fits that are mathematically valid but pair the wrong axes or laps.</li>
   </ul>
 </div>

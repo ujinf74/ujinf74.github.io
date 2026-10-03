@@ -53,7 +53,7 @@ classes: wide
 <div class="project-card">
   <h3>Engineering Status</h3>
   <p>
-    <b>Exploratory and in development.</b> The current implementation includes scenario-driven HUD states,
-    geometry tests, and visual-acuity simulation outputs for interface review. It is retained as supporting work rather than a representative project.
+    <b>In development.</b> The current implementation includes scenario-driven HUD states,
+    geometry tests, and visual-acuity simulation outputs for interface review.
   </p>
 </div>

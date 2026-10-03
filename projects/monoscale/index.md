@@ -69,7 +69,7 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Software Boundaries</h3>
+  <h3>Software Architecture</h3>
   <ul>
     <li><b>Estimator core</b>: C++ and ROS-independent, so it can be tested without a graph or composed into another process.</li>
     <li><b>Tracking</b>: C++ KLT front end with an optional OpenCV CUDA path.</li>
@@ -79,11 +79,3 @@ classes: wide
   </ul>
 </div>
 
-<div class="project-card">
-  <h3>Validation Scope</h3>
-  <ul>
-    <li>The trajectory figures above are CARLA measurements under the repository's recorded evaluation conditions.</li>
-    <li>The photometric increment is an inter-frame estimate, not an absolute ground attitude measurement.</li>
-    <li>The occupancy and odometry paths share camera geometry and pose information but remain separate consumers of the image stream.</li>
-  </ul>
-</div>

@@ -9,7 +9,7 @@ classes: wide
   <p class="eyebrow">Representative Projects</p>
   <p>
     Five projects spanning numerical methods, real-vehicle autonomy, visual perception, field telemetry, and analysis tooling.
-    Each summary links to the implementation details, measured results, and validation limits.
+    Each summary links to the implementation details and measured results.
   </p>
 </div>
 
@@ -100,7 +100,7 @@ classes: wide
   <div class="mini-card">
     <div class="mini-kicker">In development</div>
     <h3>HERO — Low-Vision Parking Coaching</h3>
-    <p>Exploratory Qt HUD for parking-corridor, stop-line, gear-state, and degraded-state guidance using Monoscale perception.</p>
+    <p>Qt HUD for parking-corridor, stop-line, gear-state, and degraded-state guidance using Monoscale perception.</p>
     <a class="btn" href="/projects/hero/">Development notes</a>
   </div>
   <div class="mini-card">

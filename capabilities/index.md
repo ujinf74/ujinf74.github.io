@@ -9,7 +9,7 @@ classes: wide
   <p class="eyebrow">Capability to evidence</p>
   <p>
     Each capability below points to the project that demonstrates it most directly. The detailed pages carry the
-    measurements, implementation boundaries, and validation limits.
+    measurements and implementation details.
   </p>
 </div>
 

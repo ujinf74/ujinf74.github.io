@@ -81,6 +81,6 @@ classes: wide
     <li>Executed low-speed mapless parking on a real Hyundai Ioniq with stable odometry and vehicle motion.</li>
     <li>Ran the full path from FAST-LIO and live occupancy mapping through planning, trajectory processing, control output, and the vehicle CAN interface.</li>
     <li>Measured real vehicle response delay and reflected it in follower-side pose/velocity prediction.</li>
-    <li>The demo above records the real-vehicle run; the Isaac Sim video is retained only as earlier development context.</li>
+    <li>The demo above records the real-vehicle run, following earlier development in Isaac Sim.</li>
   </ul>
 </div>

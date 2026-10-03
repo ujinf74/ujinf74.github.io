@@ -12,7 +12,6 @@ classes: wide
     the package, five proposals still open across Autoware Universe and Spark FAST-LIO, and two technical reviews on other
     contributors' Autoware PRs.
   </p>
-  <p style="opacity:.72; margin-bottom:0;">PR status checked on 2026-10-02.</p>
 </div>
 
 <h2>Maintainer · Autoware Universe</h2>
@@ -62,7 +61,6 @@ classes: wide
     <li><a href="https://github.com/MIT-SPARK/spark-fast-lio/pull/19">#19 · Velodyne point times</a> — proposes normalizing centered point timestamps to zero-based sweep offsets.</li>
     <li><a href="https://github.com/MIT-SPARK/spark-fast-lio/pull/20">#20 · Odometry twist</a> — proposes publishing frame-correct linear and angular velocity, including the offset-point term.</li>
   </ul>
-  <p>Both Spark FAST-LIO branches were built on ROS 2 Humble; full public-sequence or numerical ground-truth validation is not claimed.</p>
 </div>
 
 <h2>Technical Reviews</h2>
@@ -72,5 +70,4 @@ classes: wide
     <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13372#pullrequestreview-5325066468">#13372 · Ego pose at <code>base_link</code></a> — measured a turning-case mismatch between the shifted pose and odometry twist, including 0.6993 m/s RMS lateral-velocity error, and suggested a follow-up correction.</li>
     <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13433#pullrequestreview-5325138353">#13433 · Initial-pose spawning</a> <small style="opacity:.7;">(since merged)</small> — checked the pose subscription path and reproduced a spawn-height failure mode with ground snapping disabled; requested validation on a higher-terrain map for the realistic RViz case.</li>
   </ul>
-  <p>These were submitted as comment reviews before the maintainer role; neither is represented as an approval, and #13433's merge is the author's change, not mine.</p>
 </div>

@@ -68,10 +68,3 @@ classes: wide
   </ul>
 </div>
 
-<div class="project-card">
-  <h3>Validation Scope</h3>
-  <ul>
-    <li>The verified scope is the implemented device-to-log-to-monitor path and its recovery behavior.</li>
-    <li>No statistical uptime or positioning-accuracy claim is made without a dedicated field dataset.</li>
-  </ul>
-</div>

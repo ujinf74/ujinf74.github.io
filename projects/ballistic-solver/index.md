@@ -147,10 +147,8 @@ classes: wide
 </div>
 
 <div class="project-card">
-  <h3>Known Limits</h3>
+  <h3>Failure Handling</h3>
   <ul>
-    <li>The consuming runtime must match the solver's physics and integration assumptions.</li>
-    <li>Strongly nonlinear cases remain numerical problems, so convergence depends on conditioning and solver settings.</li>
-    <li>Non-converged cases return explicit statuses and the best result found for caller-side handling.</li>
+    <li>Non-converged cases return explicit statuses and the best result found, so callers can handle them deterministically.</li>
   </ul>
 </div>
