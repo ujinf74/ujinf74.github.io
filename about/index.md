@@ -20,7 +20,7 @@ classes: wide
     <b>Maintainer, Autoware Universe <code>autoware_carla_interface</code></b><br/>
     <span style="opacity:.72;">Autoware Foundation · <a href="https://github.com/autowarefoundation/autoware_universe/pull/13449">#13449</a></span>
   </p>
-  <p>Became maintainer after seven merged changes to the package across sensor timing, camera output, simulation noise, capture rate, and timestamp correctness:</p>
+  <p>Eight merged changes to the package across sensor timing, camera output, simulation noise, capture rate, timestamp correctness, and gear handling:</p>
   <ul>
     <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13149">#13149</a> — corrected CARLA sensor publish timing at matched rates.</li>
     <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13151">#13151</a> — added configurable camera encoding with a measured 4× payload reduction for <code>mono8</code>.</li>
@@ -29,6 +29,7 @@ classes: wide
     <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13408">#13408</a> — retained the capture frame and timestamp of each sensor measurement.</li>
     <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13411">#13411</a> — added <code>bgr8</code> camera output with 25% less payload than <code>bgra8</code>.</li>
     <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13409">#13409</a> — published depth and semantic-segmentation cameras through the existing image path.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13150">#13150</a> — added gear-command handling: reverse, non-driving-gear braking, and gear-status reporting.</li>
   </ul>
   <p>Also submitted measured technical reviews on <a href="https://github.com/autowarefoundation/autoware_universe/pull/13372#pullrequestreview-5325066468">odometry frame consistency</a> and <a href="https://github.com/autowarefoundation/autoware_universe/pull/13433#pullrequestreview-5325138353">initial-pose spawning</a>.</p>
   <a class="btn" href="/contributions/">Maintainer role, merged work, and reviews</a>

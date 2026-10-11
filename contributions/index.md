@@ -8,8 +8,8 @@ classes: wide
 <div class="project-card">
   <p class="eyebrow">Upstream maintainership, code, and technical review</p>
   <p>
-    Maintainer of <b>Autoware Universe <code>autoware_carla_interface</code></b>. Seven changes merged into
-    the package, five proposals still open across Autoware Universe and Spark FAST-LIO, and two technical reviews on other
+    Maintainer of <b>Autoware Universe <code>autoware_carla_interface</code></b>. Eight changes merged into
+    the package, four proposals still open across Autoware Universe and Spark FAST-LIO, and two technical reviews on other
     contributors' Autoware PRs.
   </p>
 </div>
@@ -21,11 +21,11 @@ classes: wide
   <p>
     Listed as a package maintainer in <code>simulator/autoware_carla_interface/package.xml</code>
     (<a href="https://github.com/autowarefoundation/autoware_universe/pull/13449">#13449</a>), alongside the TIER IV maintainers.
-    The role followed seven merged changes to the package's sensor timing, capture-rate, timestamp, camera-output, and noise paths.
+    Eight merged changes to the package's sensor timing, capture-rate, timestamp, camera-output, noise, and vehicle-control paths.
   </p>
   <div class="result-strip">
     <span>Package maintainer</span>
-    <span>7 merged changes</span>
+    <span>8 merged changes</span>
     <span>3 open interface proposals</span>
   </div>
 </div>
@@ -41,6 +41,7 @@ classes: wide
     <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13408">#13408 · Capture-frame timestamps</a> — preserved each measurement's CARLA frame through publication, avoiding overwritten measurements and late-callback timestamps.</li>
     <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13411">#13411 · BGR camera output</a> — added selectable <code>bgr8</code> output, removing the unused alpha channel and reducing color-image payload by 25%.</li>
     <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13409">#13409 · All camera types</a> — matched every <code>sensor.camera.*</code> blueprint in publisher creation and dispatch, so depth and semantic-segmentation cameras publish image and camera-info streams instead of being dropped.</li>
+    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13150">#13150 · Gear commands</a> — reverse selection, non-driving-gear braking, and gear-status reporting for the CARLA vehicle interface.</li>
   </ul>
 </div>
 
@@ -49,7 +50,6 @@ classes: wide
 <div class="project-card">
   <h3>Autoware Universe</h3>
   <ul>
-    <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13150">#13150 · Gear commands</a> — reverse selection, non-driving-gear braking, and gear-status reporting for the CARLA vehicle interface.</li>
     <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13406">#13406 · Physics substeps</a> — proposes a bounded CARLA substep to reduce disagreement between reported angular velocity and vehicle rotation.</li>
     <li><a href="https://github.com/autowarefoundation/autoware_universe/pull/13410">#13410 · External ego attachment</a> — proposes attaching sensors to a vehicle owned and driven by another CARLA client.</li>
   </ul>
