@@ -18,7 +18,7 @@ classes: wide
   <h3>Open Source Maintainership</h3>
   <p>
     <b>Maintainer, Autoware Universe <code>autoware_carla_interface</code></b><br/>
-    <span style="opacity:.72;">Autoware Foundation · <a href="https://github.com/autowarefoundation/autoware_universe/pull/13449">#13449</a></span>
+    <span style="opacity:.72;">Autoware Foundation · <a href="https://github.com/autowarefoundation/autoware_universe/pull/13449">#13449</a> · <a href="https://www.ksae.org/bbs/?number=71717&mode=view&code=member">KSAE member news</a></span>
   </p>
   <p>Eight merged changes to the package across sensor timing, camera output, simulation noise, capture rate, timestamp correctness, and gear handling:</p>
   <ul>
@@ -87,7 +87,7 @@ classes: wide
 <div class="project-card">
   <h3>Leadership & Recognition</h3>
   <ul>
-    <li><b>Maintainer</b>, Autoware Universe <code>autoware_carla_interface</code>.</li>
+    <li><b>Maintainer</b>, Autoware Universe <code>autoware_carla_interface</code> — announced in <a href="https://www.ksae.org/bbs/?number=71717&mode=view&code=member">KSAE member news</a> (2026-10-07).</li>
     <li><b>Autonomous Driving Team Lead</b>, HuVILab undergraduate research team.</li>
     <li><b>President</b>, 50-member fashion club.</li>
     <li><b>O-NE SUPERRACE 2026 Round 5, GT-A — P3</b> — race engineer, Luxon Racing Team (driver Jinwook Choi); the team's first podium.</li>

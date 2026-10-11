@@ -20,13 +20,14 @@ classes: wide
   <h3><code>autoware_carla_interface</code> <small style="opacity:.7;">CARLA ↔ Autoware bridge</small></h3>
   <p>
     Listed as a package maintainer in <code>simulator/autoware_carla_interface/package.xml</code>
-    (<a href="https://github.com/autowarefoundation/autoware_universe/pull/13449">#13449</a>), alongside the TIER IV maintainers.
+    (<a href="https://github.com/autowarefoundation/autoware_universe/pull/13449">#13449</a>), alongside the TIER IV maintainers, following a proposal backed by an existing maintainer (<a href="https://github.com/autowarefoundation/autoware_universe/issues/13439">#13439</a>).
+    Announced in the <a href="https://www.ksae.org/bbs/?number=71717&mode=view&code=member">Korean Society of Automotive Engineers (KSAE) member news</a>, 2026-10-07.
     Eight merged changes to the package's sensor timing, capture-rate, timestamp, camera-output, noise, and vehicle-control paths.
   </p>
   <div class="result-strip">
     <span>Package maintainer</span>
     <span>8 merged changes</span>
-    <span>3 open interface proposals</span>
+    <span>Announced by KSAE</span>
   </div>
 </div>
 
