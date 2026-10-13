@@ -1,0 +1,10 @@
+{%- comment -%}
+  GitHub star/fork counts for a public repo of this account, read at build time
+  through jekyll-github-metadata. Renders nothing if the metadata is unavailable.
+  Usage: {% include repo-stats.html repo="ballistic-solver" %}
+{%- endcomment -%}
+{%- assign repo_stats = site.github.public_repositories | where: "name", include.repo | first -%}
+{%- if repo_stats -%}
+<span>★ {{ repo_stats.stargazers_count }} GitHub stars</span>
+<span>{{ repo_stats.forks_count }} forks</span>
+{%- endif -%}

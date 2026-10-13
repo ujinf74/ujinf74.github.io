@@ -18,6 +18,10 @@ classes: wide
     <source src="/assets/videos/ballistic_demo_low.mp4" type="video/mp4">
   </video>
 
+  <div class="result-strip">
+    {% include repo-stats.html repo="ballistic-solver" %}
+  </div>
+
   <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.8rem;">
     <a class="btn" href="https://github.com/ujinf74/ballistic-solver">GitHub</a>
     <a class="btn" href="https://pypi.org/project/ballistic-solver/">PyPI</a>

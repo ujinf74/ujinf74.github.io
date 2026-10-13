@@ -15,6 +15,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-include-cache
+  - jekyll-github-metadata
 
 minimal_mistakes_skin: "dark"
 
