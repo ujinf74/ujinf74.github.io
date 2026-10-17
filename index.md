@@ -55,7 +55,7 @@ classes: wide
     <li><b>Publication</b>: sole-author ICROS 2026 paper on auxiliary-solution-induced residuals for ballistic interception (<a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12952462">DBpia</a>).</li>
     <li><b>Physical validation</b>: real-vehicle parking and a Rock 5B + STM32 solver integration.</li>
     <li><b>Measured software</b>: solver benchmarks, perception ablations, telemetry tests, and reproducible evaluation paths.</li>
-    <li><b>Open source</b>: maintainer of Autoware Universe <code>autoware_carla_interface</code>, with eight merged changes to the package and measured technical reviews.</li>
+    <li><b>Open source</b>: maintainer of Autoware Universe <code>autoware_carla_interface</code>, with eight merged changes to the package and measured technical reviews — covered by <a href="https://www.mt.co.kr/policy/2026/10/16/2026101609561255343">Money Today</a>, <a href="https://news.unn.net/news/articleView.html?idxno=598761">Korea University News</a>, <a href="https://www.kyosu.net/news/articleView.html?idxno=211319">Kyosu Shinmun</a>, and <a href="/about/">more</a>.</li>
     <li><b>Research and operations</b>: HuVILab autonomous-driving team lead, and race engineer for Luxon Racing Team — including the team’s first podium (GT-A P3, O-NE SUPERRACE Round 5, 2026).</li>
   </ul>
   <div style="display:flex; gap:.6rem; flex-wrap:wrap;">

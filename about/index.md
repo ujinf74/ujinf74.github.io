@@ -36,6 +36,19 @@ classes: wide
 </div>
 
 <div class="project-card">
+  <h3>Press</h3>
+  <p>Coverage of the Autoware Universe maintainer appointment:</p>
+  <ul>
+    <li><b>Tech University of Korea (TU Korea ISSUE)</b> · 2026-10-16 — <a href="https://www.tukorea.ac.kr/bbs/tukorea/108/154059/artclView.do">권우진 학생, 글로벌 자율주행 오픈소스 'Autoware Universe' 국내 유일 공식 Maintainer 선임</a></li>
+    <li><b>Money Today</b> · 2026-10-16 — <a href="https://www.mt.co.kr/policy/2026/10/16/2026101609561255343">한국공학대 학부생이 글로벌 자율주행 주도…오토웨어 메인테이너 선임</a></li>
+    <li><b>Korea University News</b> · 2026-10-16 — <a href="https://news.unn.net/news/articleView.html?idxno=598761">한국공학대 학생 권우진씨, 글로벌 자율주행 오픈소스 국내 유일 공식 Maintainer 선임</a></li>
+    <li><b>Kyosu Shinmun</b> · 2026-10-16 — <a href="https://www.kyosu.net/news/articleView.html?idxno=211319">한국공학대 권우진, 글로벌 오픈소스 ‘Autoware Universe’ 공식 Maintainer 선임</a></li>
+    <li><b>Unimate Alpha</b> · 2026-10-16 — <a href="https://www.unimatea.co.kr/news/articleView.html?idxno=16480">한국공학대 권우진 학생, 글로벌 자율주행 오픈소스 'Autoware Universe' 국내 유일 공식 Maintainer 선임</a></li>
+    <li><b>Korean Society of Automotive Engineers (KSAE) member news</b> · 2026-10-07 — <a href="https://www.ksae.org/bbs/?number=71717&mode=view&code=member">[개인회원] 한국공학대학교 권우진 학사과정, Autoware Universe Maintainer 선임</a></li>
+  </ul>
+</div>
+
+<div class="project-card">
   <h3>Education</h3>
   <p>
     <b>Mechanical & Computer Engineering</b><br/>

@@ -21,13 +21,13 @@ classes: wide
   <p>
     Listed as a package maintainer in <code>simulator/autoware_carla_interface/package.xml</code>
     (<a href="https://github.com/autowarefoundation/autoware_universe/pull/13449">#13449</a>), alongside the TIER IV maintainers, following a proposal backed by an existing maintainer (<a href="https://github.com/autowarefoundation/autoware_universe/issues/13439">#13439</a>).
-    Announced in the <a href="https://www.ksae.org/bbs/?number=71717&mode=view&code=member">Korean Society of Automotive Engineers (KSAE) member news</a>, 2026-10-07.
+    Announced in the <a href="https://www.ksae.org/bbs/?number=71717&mode=view&code=member">Korean Society of Automotive Engineers (KSAE) member news</a> and covered by <a href="https://www.tukorea.ac.kr/bbs/tukorea/108/154059/artclView.do">TU Korea</a>, <a href="https://www.mt.co.kr/policy/2026/10/16/2026101609561255343">Money Today</a>, <a href="https://news.unn.net/news/articleView.html?idxno=598761">Korea University News</a>, <a href="https://www.kyosu.net/news/articleView.html?idxno=211319">Kyosu Shinmun</a>, and <a href="https://www.unimatea.co.kr/news/articleView.html?idxno=16480">Unimate Alpha</a>.
     Eight merged changes to the package's sensor timing, capture-rate, timestamp, camera-output, noise, and vehicle-control paths.
   </p>
   <div class="result-strip">
     <span>Package maintainer</span>
     <span>8 merged changes</span>
-    <span>Announced by KSAE</span>
+    <span>Covered by 5 outlets + KSAE</span>
   </div>
 </div>
 
