@@ -30,7 +30,7 @@ classes: wide
     </div>
     <div class="mini-card">
       <div class="mini-kicker">Measured Perception</div>
-      <p><b>Monoscale</b> provides learning-free metric camera motion and dense occupancy, backed by CARLA evaluation and ablations.</p>
+      <p><b>Monoscale</b> makes ordinary cameras metric using only their mounting height: 0.182% ATE on a held-out 5.2 km real drive, with nothing added to the vehicle.</p>
       <a class="btn" href="/projects/monoscale/">View project</a>
     </div>
     <div class="mini-card">

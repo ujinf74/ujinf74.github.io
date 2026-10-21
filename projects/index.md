@@ -49,13 +49,13 @@ classes: wide
 <div class="project-card">
   <h3>Monoscale Visual Odometry <small style="opacity:.7;">ROS 2 · C++/CUDA · Cameras + IMU</small></h3>
   <p>
-    Learning-free metric camera motion and dense occupancy from known camera height and ground-plane geometry.
-    Photometric distance and anchor-map direction, attitude, and accumulated-error correction remain separate and measurable.
+    Metric odometry and dense occupancy from ordinary monocular cameras, with scale taken from the camera's mounting height
+    above the road. No stereo, LiDAR, learned model, prior map, or wheel encoder; cameras need not overlap.
   </p>
   <div class="result-strip">
-    <span>9 CARLA drives</span>
-    <span>0.0237% mean distance-normalized ATE</span>
-    <span>132 core tests</span>
+    <span>0.182% ATE · 5.2 km real drive (held out)</span>
+    <span>26 mm ATE over 111 m in CARLA</span>
+    <span>149 tests</span>
   </div>
   <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.8rem;">
     <a class="btn" href="/projects/monoscale/">Project details</a>

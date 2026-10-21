@@ -64,7 +64,7 @@ classes: wide
   </p>
   <ul>
     <li>Led integration and real-vehicle validation of <a href="/projects/mapless-autonomous-parking/">mapless reverse parking</a> on a Hyundai Ioniq.</li>
-    <li>Developed and evaluated <a href="/projects/monoscale/">learning-free metric visual odometry and dense occupancy</a> using cameras, an IMU, and ground-plane geometry.</li>
+    <li>Developed <a href="/projects/monoscale/">Monoscale</a>, metric visual odometry and dense occupancy from cameras and an IMU using ground-plane geometry, evaluated in CARLA and on a 5.2 km real-vehicle dataset.</li>
     <li>Coordinated localization, mapping, planning, control, simulation, and vehicle-integration work across the undergraduate research team.</li>
   </ul>
 </div>
